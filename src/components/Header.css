@@ -7,7 +7,7 @@
   background: var(--white);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-  border-radius: 50px;
+  border-radius: 16px;
   max-width: 1600px;
   width: calc(100% - 4rem);
 }
@@ -161,7 +161,7 @@
   background: var(--burgundy);
   color: var(--white);
   padding: 0.65rem 1.75rem;
-  border-radius: 25px;
+  border-radius: 16px;
   font-weight: 600;
   font-size: 0.875rem;
   transition: all 0.2s ease;

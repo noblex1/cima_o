@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Scale, Users, Globe, Award, TrendingUp, Calendar } from 'lucide-react'
+import { ArrowRight, Users, Globe, Award, TrendingUp, Calendar } from 'lucide-react'
 import './Home.css'
 import heroImage from '../../assets/LONDON.jpg'
 import chinaImage from '../../assets/CHINA-1.jpg'
@@ -68,16 +68,11 @@ const Home = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Empowering ADR Professionals<br />
-              Through Excellence
+              Empowering ADR Professionals Worldwide<br />
             </h1>
             <p className="hero-subtitle">
-              Internationally benchmarked training, certification, and professional development for mediators and arbitrators worldwide.
             </p>
             <p className="hero-description">
-              CIMA is a leading international organization dedicated to training, certifying, and supporting 
-              ADR professionals across 33+ countries. We provide world-class education, certification programs, 
-              and professional development opportunities for lawyers, arbitrators, mediators, and ADR practitioners.
             </p>
             <div className="hero-buttons">
               <a href="https://cimalearn.thecima.org" className="btn-hero-primary" target="_blank" rel="noreferrer">
@@ -106,9 +101,14 @@ const Home = () => {
           <div className="services-grid">
             <div className="service-card">
               <div className="service-icon">
-                <Scale size={32} />
+                <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <rect x="7" y="6" width="50" height="39" rx="4" />
+                  <circle cx="32" cy="22" r="6" />
+                  <path d="M20 41c0-6 4.5-10 12-10s12 4 12 10" />
+                  <path d="M32 45v10M23 55h18" />
+                </svg>
               </div>
-              <h3>Training & Certification</h3>
+              <h3>Live Training & Certification</h3>
               <p>Professional ADR courses, executive training, and certification at Associate, Member, and Fellowship levels.</p>
               <Link to="/arbitration" className="service-link">
                 Learn more <ArrowRight size={16} />
