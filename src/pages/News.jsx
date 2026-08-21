@@ -9,43 +9,44 @@ const News = () => {
       id: 1,
       date: 'August 15, 2026',
       title: 'CIMA Arbitration and Mediation Rules 2025 Published',
-      excerpt: 'New comprehensive rules blending international best practice with local pragmatism for global enforceability, reflecting the Global South\'s realities.',
-      image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069'
+      excerpt: 'New comprehensive rules blending international best practice with local pragmatism for global enforceability.',
+      image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069',
+      category: 'Rules & Regulations'
     },
     {
       id: 2,
       date: 'August 10, 2026',
-      title: 'CIMA Becomes Official CPD Provider to Law Society of Kenya',
-      excerpt: 'Official recognition expands professional development opportunities and continuing legal education for legal practitioners across Kenya.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070'
+      title: 'CIMA Becomes Official CPD Provider to Law Society',
+      excerpt: 'Recognition expands professional development opportunities for legal practitioners across Kenya.',
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070',
+      category: 'Partnership'
     },
     {
       id: 3,
       date: 'July 28, 2026',
       title: '2026 CIMA Summer School Announced',
-      excerpt: 'Comprehensive training program brings together ADR professionals from across the globe for intensive certification courses and practical simulations.',
-      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070'
+      excerpt: 'Comprehensive training program brings together ADR professionals from across the globe for intensive certification courses.',
+      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070',
+      category: 'Training'
+    }
+  ]
+
+  const upcomingEvents = [
+    {
+      id: 1,
+      date: 'August - September 2026',
+      title: 'CIMA Summer School on International Arbitration',
+      excerpt: 'Intensive certification courses for aspiring mediators and arbitrators with AI-driven simulations and practical experience.',
+      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070',
+      link: '/events/1'
     },
     {
-      id: 4,
-      date: 'July 15, 2026',
-      title: 'CIMA Launches AI-Driven Simulation Platform',
-      excerpt: 'New technology platform enables enhanced arbitration and mediation training with artificial intelligence-powered scenarios and feedback.',
-      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=2070'
-    },
-    {
-      id: 5,
-      date: 'June 30, 2026',
-      title: 'Membership Growth Across 33+ Countries',
-      excerpt: 'CIMA reports significant expansion in international membership, reflecting growing recognition of professional ADR certification programs.',
-      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070'
-    },
-    {
-      id: 6,
-      date: 'June 18, 2026',
-      title: 'Title Sponsor of MIMAC 2025 Competition',
-      excerpt: 'CIMA announced as 2025 Title Sponsor and Training Partner of the MMCS International Maritime Arbitration Competition in the Maldives.',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070'
+      id: 2,
+      date: '2026',
+      title: 'CIMA Asia-Africa Mock Arbitration Programme',
+      excerpt: 'A practical, hands-on training program where participants prepare cases, present arguments, examine evidence, deliberate, and deliver reasoned awards.',
+      image: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?q=80&w=2070',
+      link: '/events/2'
     }
   ]
 
@@ -59,34 +60,91 @@ const News = () => {
           className="hero-image"
         />
         <div className="hero-content">
-          <h1 className="hero-title">Latest News</h1>
+          <h1 className="hero-title">News & Events</h1>
           <p className="hero-subtitle">
-            Stay updated with CIMA training programs and professional development initiatives
+            Stay updated with CIMA's latest developments and upcoming programs
           </p>
         </div>
       </section>
 
-      <section className="page-content">
+      {/* Latest News Section */}
+      <section className="page-content news-section">
         <div className="container">
-          <div className="news-list">
+          <div className="section-header-news">
+            <div>
+              <h2>Latest News</h2>
+              <p>Stay informed about CIMA's training programs and professional development initiatives</p>
+            </div>
+          </div>
+
+          <div className="news-grid-enhanced">
             {newsItems.map((item) => (
-              <article key={item.id} className="news-item-large">
-                <div className="news-item-image">
+              <article key={item.id} className="news-card-enhanced">
+                <div className="news-card-image">
                   <img src={item.image} alt={item.title} />
+                  <span className="news-category">{item.category}</span>
                 </div>
-                <div className="news-item-content">
-                  <div className="news-item-date">
+                <div className="news-card-content">
+                  <div className="news-card-date">
                     <Calendar size={16} />
                     <span>{item.date}</span>
                   </div>
-                  <h2>{item.title}</h2>
+                  <h3>{item.title}</h3>
                   <p>{item.excerpt}</p>
-                  <Link to={`/news/${item.id}`} className="read-more">
-                    Read full article <ArrowRight size={16} />
+                  <Link to={`/news/${item.id}`} className="news-card-link">
+                    Read more <ArrowRight size={16} />
                   </Link>
                 </div>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Upcoming Events Section */}
+      <section className="page-content events-section-alt">
+        <div className="container">
+          <div className="section-header-news">
+            <div>
+              <h2>Upcoming Events</h2>
+              <p>Join our training programs, mock proceedings, and thought-leadership events</p>
+            </div>
+            <Link to="/events" className="view-all-link">View all events</Link>
+          </div>
+
+          <div className="events-grid-enhanced">
+            {upcomingEvents.map((event) => (
+              <div key={event.id} className="event-card-enhanced">
+                <div className="event-card-image">
+                  <img src={event.image} alt={event.title} />
+                </div>
+                <div className="event-card-content">
+                  <div className="event-card-date">
+                    <Calendar size={18} />
+                    <span>{event.date}</span>
+                  </div>
+                  <h3>{event.title}</h3>
+                  <p>{event.excerpt}</p>
+                  <Link to={event.link} className="event-card-link">
+                    Learn more <ArrowRight size={16} />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="news-cta-section">
+        <div className="container">
+          <div className="news-cta-content">
+            <h2>Stay Connected with CIMA</h2>
+            <p>Subscribe to receive the latest news, event announcements, and insights from the world of alternative dispute resolution</p>
+            <div className="news-cta-form">
+              <input type="email" placeholder="Enter your email" className="news-cta-input" />
+              <button className="news-cta-btn">Subscribe</button>
+            </div>
           </div>
         </div>
       </section>

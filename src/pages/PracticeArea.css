@@ -1,0 +1,343 @@
+/* Unified Practice Area Page Styles */
+.practice-area-page {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Practice Hero Section - Base Styles */
+.practice-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  padding-top: 6rem;
+  overflow: hidden;
+}
+
+/* Hero Background Images by Practice Area */
+.energy-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070');
+}
+
+.financial-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070');
+}
+
+.technology-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070');
+}
+
+.maritime-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1605281317010-fe5ffe798166?q=80&w=2044');
+}
+
+.international-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2070');
+}
+
+.sports-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070');
+}
+
+.labour-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2070');
+}
+
+.ip-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072');
+}
+
+.financial-crime-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070');
+}
+
+.customary-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2032');
+}
+
+.practice-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.practice-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(117, 0, 0, 0.95) 0%, rgba(91, 0, 0, 0.9) 100%);
+  z-index: 2;
+}
+
+.practice-hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 3rem;
+}
+
+.practice-hero-text {
+  max-width: 900px;
+  color: var(--white);
+}
+
+.practice-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+.practice-hero-subtitle {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 231, 0.95);
+  font-weight: 400;
+}
+
+/* Overview Section */
+.practice-overview {
+  padding: 4rem 0;
+  background: var(--white);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.overview-content {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 4rem;
+}
+
+.overview-main h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.overview-main p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+}
+
+.overview-sidebar {
+  position: relative;
+}
+
+.sidebar-card {
+  background: var(--off-white);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.advantages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+.advantages-list li svg {
+  color: var(--burgundy);
+  flex-shrink: 0;
+}
+
+/* Final CTA */
+.final-cta {
+  padding: 6rem 0;
+  background: #252525;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="2"/></svg>');
+  opacity: 0.5;
+}
+
+.final-cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.final-cta-content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.final-cta-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+
+.final-cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.btn-cta-primary,
+.btn-cta-secondary {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-cta-primary {
+  background: var(--white);
+  color: var(--burgundy);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(255, 248, 231, 0.4);
+}
+
+.btn-cta-secondary {
+  background: rgba(255, 248, 231, 0.1);
+  backdrop-filter: blur(10px);
+  color: var(--white);
+  border: 2px solid rgba(255, 248, 231, 0.3);
+}
+
+.btn-cta-secondary:hover {
+  background: var(--white);
+  color: var(--burgundy);
+  border-color: var(--white);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .practice-hero {
+    min-height: 40vh;
+    padding-top: 5rem;
+  }
+
+  .practice-hero-content {
+    padding: 3rem 1.5rem;
+  }
+
+  .practice-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .practice-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .overview-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sidebar-card {
+    position: relative;
+    top: 0;
+  }
+
+  .final-cta-buttons {
+    flex-direction: column;
+  }
+
+  .final-cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .final-cta-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .practice-hero {
+    min-height: 35vh;
+    padding-top: 4.5rem;
+  }
+
+  .practice-hero-content {
+    padding: 2rem 1rem;
+  }
+
+  .practice-hero-title {
+    font-size: 2rem;
+  }
+
+  .practice-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .final-cta {
+    padding: 4rem 0;
+  }
+
+  .final-cta-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .btn-cta-primary,
+  .btn-cta-secondary {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}

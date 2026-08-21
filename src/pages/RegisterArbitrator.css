@@ -1,0 +1,810 @@
+/* Register as an Arbitrator Page Styles */
+
+/* Hero Section */
+.contact-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  overflow: hidden;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(117, 0, 0, 0.85) 0%, rgba(45, 45, 45, 0.9) 100%);
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Overview Section */
+.register-overview {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+.overview-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.overview-intro h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.lead-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.register-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.register-benefit-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.register-benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(117, 0, 0, 0.15);
+  border-color: var(--burgundy);
+}
+
+.register-benefit-card svg {
+  color: var(--burgundy);
+  margin-bottom: 1.5rem;
+}
+
+.register-benefit-card h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.register-benefit-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+/* Eligibility Section */
+.eligibility-section {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.eligibility-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.eligibility-tier {
+  background: var(--off-white);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.eligibility-tier.featured {
+  background: linear-gradient(135deg, rgba(117, 0, 0, 0.05) 0%, rgba(45, 45, 45, 0.03) 100%);
+  border: 3px solid var(--burgundy);
+  transform: scale(1.02);
+}
+
+.eligibility-tier:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(117, 0, 0, 0.12);
+}
+
+.tier-badge {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(117, 0, 0, 0.3);
+}
+
+.eligibility-tier h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.tier-requirements h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.requirements-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.875rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.requirements-list li svg {
+  color: #22c55e;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.tier-note {
+  background: var(--white);
+  padding: 1.25rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--burgundy);
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.tier-note strong {
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Registration Process */
+.registration-process {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+.process-flow {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.process-flow::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  bottom: 30px;
+  width: 3px;
+  background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  opacity: 0.3;
+}
+
+.process-flow-step {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.flow-step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(117, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.flow-step-content {
+  flex: 1;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+}
+
+.flow-step-content h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.flow-step-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.document-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.document-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.document-checklist li svg {
+  color: #22c55e;
+  flex-shrink: 0;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--burgundy);
+  color: var(--white);
+  padding: 0.875rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(117, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: var(--burgundy-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(117, 0, 0, 0.35);
+}
+
+.fee-structure {
+  background: var(--off-white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+}
+
+.fee-level {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.fee-amount {
+  font-weight: 700;
+  color: var(--burgundy);
+  font-size: 1.25rem;
+}
+
+/* Practice Areas Selection */
+.practice-areas-selection {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.practice-areas-selection h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+.practice-areas-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.practice-tag {
+  background: var(--off-white);
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: 2px solid var(--border-color);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.practice-tag:hover {
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  color: var(--white);
+  border-color: var(--burgundy);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(117, 0, 0, 0.2);
+}
+
+/* Ongoing Requirements */
+.ongoing-requirements {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+.ongoing-requirements h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.requirement-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.requirement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(117, 0, 0, 0.15);
+  border-color: var(--burgundy);
+}
+
+.requirement-card svg {
+  color: var(--burgundy);
+  margin-bottom: 1.5rem;
+}
+
+.requirement-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.requirement-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.requirement-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.requirement-card ul li {
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* Call to Action */
+.register-cta {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  color: var(--white);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--burgundy);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(117, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--burgundy-dark);
+  box-shadow: 0 6px 20px rgba(117, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-buttons .btn-primary,
+.cta-buttons .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* For CTA section, primary button should be white with burgundy text */
+.register-cta .btn-primary {
+  background: var(--white);
+  color: var(--burgundy);
+}
+
+.register-cta .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+}
+
+/* Contact Section */
+.register-contact {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+.contact-box {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 2px solid var(--border-color);
+}
+
+.contact-box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.contact-box > p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.contact-details {
+  background: var(--off-white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.contact-details p {
+  margin: 0.75rem 0;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.contact-details strong {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--burgundy);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(117, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  background: var(--burgundy-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(117, 0, 0, 0.35);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .contact-hero {
+    height: 50vh;
+    min-height: 400px;
+  }
+
+  .contact-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .register-overview,
+  .eligibility-section,
+  .registration-process,
+  .practice-areas-selection,
+  .ongoing-requirements,
+  .register-cta,
+  .register-contact {
+    padding: 4rem 0;
+  }
+
+  .overview-intro h2,
+  .section-header h2,
+  .practice-areas-selection h2,
+  .ongoing-requirements h2,
+  .cta-content h2,
+  .contact-box h3 {
+    font-size: 2rem;
+  }
+
+  .register-benefits-grid,
+  .eligibility-tiers,
+  .requirements-grid {
+    gap: 1.5rem;
+  }
+
+  .process-flow::before {
+    left: 20px;
+  }
+
+  .flow-step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .process-flow-step {
+    gap: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-hero {
+    height: 45vh;
+    min-height: 350px;
+  }
+
+  .contact-hero-title {
+    font-size: 2rem;
+  }
+
+  .contact-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .register-overview,
+  .eligibility-section,
+  .registration-process,
+  .practice-areas-selection,
+  .ongoing-requirements,
+  .register-cta,
+  .register-contact {
+    padding: 3rem 0;
+  }
+
+  .overview-intro h2,
+  .section-header h2,
+  .practice-areas-selection h2,
+  .ongoing-requirements h2,
+  .cta-content h2,
+  .contact-box h3 {
+    font-size: 1.75rem;
+  }
+
+  .register-benefits-grid,
+  .eligibility-tiers,
+  .requirements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .register-benefit-card,
+  .eligibility-tier,
+  .requirement-card {
+    padding: 2rem;
+  }
+
+  .process-flow::before {
+    display: none;
+  }
+
+  .process-flow-step {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .flow-step-number {
+    margin: 0 auto;
+  }
+
+  .flow-step-content {
+    padding: 1.5rem;
+  }
+
+  .fee-structure {
+    padding: 1rem;
+  }
+
+  .practice-areas-tags {
+    gap: 0.75rem;
+  }
+
+  .practice-tag {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .contact-box {
+    padding: 2rem;
+  }
+}
