@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Users, Globe, MapPin, BookOpenCheck, Calendar } from 'lucide-react'
+import { ArrowRight, Users, Globe, Award, BookOpenCheck, Calendar } from 'lucide-react'
 import './Home.css'
 import heroImage from '../../assets/LONDON.jpg'
 import chinaImage from '../../assets/CHINA-1.jpg'
@@ -168,14 +168,14 @@ const Home = () => {
       <section className="why-choose">
         <div className="container">
           <div className="section-header">
-            <h2>Why Choose CIMA</h2>
+            <h2>The Oxfordshire Advantage</h2>
             <p>Empowering ADR professionals through internationally benchmarked training and certification</p>
           </div>
 
           <div className="features-grid">
             <div className="feature-item">
-              <MapPin size={28} />
-              <h3>Oxfordshire, United Kingdom</h3>
+              <Award size={28} />
+              <h3>Global Certification</h3>
               <p>Training and certification programs benchmarked to international best practices and standards</p>
             </div>
 
