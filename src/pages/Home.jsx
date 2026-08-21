@@ -1,19 +1,69 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Scale, Users, Globe, Award, TrendingUp, Calendar } from 'lucide-react'
 import './Home.css'
 import heroImage from '../../assets/LONDON.jpg'
+import chinaImage from '../../assets/CHINA-1.jpg'
+import accraTwoImage from '../../assets/ACCRA-2.jpg'
+import accraOneImage from '../../assets/ACCRA-1.jpg'
+
+const heroImages = [
+  { source: heroImage, alt: 'Professional business meeting in London' },
+  { source: chinaImage, alt: 'Professional business meeting in China' },
+  { source: accraTwoImage, alt: 'Professional business meeting in Accra' },
+  { source: accraOneImage, alt: 'Professional business meeting in Accra' },
+]
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const updateMotionPreference = () => setPrefersReducedMotion(mediaQuery.matches)
+
+    updateMotionPreference()
+    mediaQuery.addEventListener('change', updateMotionPreference)
+    return () => mediaQuery.removeEventListener('change', updateMotionPreference)
+  }, [])
+
+  useEffect(() => {
+    if (isPaused || prefersReducedMotion) return undefined
+
+    const timer = window.setInterval(() => {
+      setCurrentSlide((slide) => (slide + 1) % heroImages.length)
+    }, 5000)
+
+    return () => window.clearInterval(timer)
+  }, [isPaused, prefersReducedMotion])
+
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero">
-        <img 
-          src={heroImage} 
-          alt="Professional business meeting"
-          className="hero-image"
-        />
+      <section
+        className="hero"
+        aria-label="CIMA highlights"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+        onFocus={() => setIsPaused(true)}
+        onBlur={() => setIsPaused(false)}
+      >
+        <div
+          className="hero-slides"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          aria-live="polite"
+        >
+          {heroImages.map((image, index) => (
+            <img
+              key={image.source}
+              src={image.source}
+              alt={image.alt}
+              className="hero-image"
+              aria-hidden={index !== currentSlide}
+            />
+          ))}
+        </div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-text">
@@ -35,6 +85,18 @@ const Home = () => {
               </a>
             </div>
           </div>
+        </div>
+        <div className="hero-controls" aria-label="Hero image controls">
+          {heroImages.map((image, index) => (
+            <button
+              key={image.source}
+              type="button"
+              className={`hero-dot${index === currentSlide ? ' active' : ''}`}
+              aria-label={`Show hero image ${index + 1}`}
+              aria-current={index === currentSlide ? 'true' : undefined}
+              onClick={() => setCurrentSlide(index)}
+            />
+          ))}
         </div>
       </section>
 
