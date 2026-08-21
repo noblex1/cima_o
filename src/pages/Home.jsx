@@ -24,6 +24,11 @@ const Home = () => {
             <p className="hero-subtitle">
               Internationally benchmarked training, certification, and professional development for mediators and arbitrators worldwide.
             </p>
+            <p className="hero-description">
+              CIMA is a leading international organization dedicated to training, certifying, and supporting 
+              ADR professionals across 33+ countries. We provide world-class education, certification programs, 
+              and professional development opportunities for lawyers, arbitrators, mediators, and ADR practitioners.
+            </p>
             <div className="hero-buttons">
               <a href="https://cimalearn.thecima.org" className="btn-hero-primary" target="_blank" rel="noreferrer">
                 Explore Training Programs
