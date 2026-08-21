@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Users, Globe, Award, TrendingUp, Calendar } from 'lucide-react'
+import { ArrowRight, Users, Globe, MapPin, BookOpenCheck, Calendar } from 'lucide-react'
 import './Home.css'
 import heroImage from '../../assets/LONDON.jpg'
 import chinaImage from '../../assets/CHINA-1.jpg'
@@ -174,26 +174,26 @@ const Home = () => {
 
           <div className="features-grid">
             <div className="feature-item">
-              <Award size={28} />
-              <h3>International Standards</h3>
+              <MapPin size={28} />
+              <h3>Oxfordshire, United Kingdom</h3>
               <p>Training and certification programs benchmarked to international best practices and standards</p>
             </div>
 
             <div className="feature-item">
-              <TrendingUp size={28} />
-              <h3>AI-Driven Learning</h3>
+              <Users size={28} />
+              <h3>World-Class Faculty</h3>
               <p>Innovative simulations and technology-enhanced training for modern ADR practitioners</p>
             </div>
 
             <div className="feature-item">
-              <Globe size={28} />
-              <h3>Global Recognition</h3>
+              <BookOpenCheck size={28} />
+              <h3>Practiced-Based Learning</h3>
               <p>Professional credentials recognized across 33+ countries with growing international presence</p>
             </div>
 
             <div className="feature-item">
-              <Users size={28} />
-              <h3>Practical Experience</h3>
+              <Globe size={28} />
+              <h3>Global Network</h3>
               <p>Mock proceedings, simulations, and hands-on training to build real-world competence</p>
             </div>
           </div>
@@ -285,9 +285,9 @@ const Home = () => {
               <div className="event-content">
                 <div className="event-date">
                   <Calendar size={18} />
-                  <span>September 2026</span>
+                  <span>August - September 2026</span>
                 </div>
-                <h3>CIMA Autumn Training Academy</h3>
+                <h3>CIMA Summer School on International Arbitration</h3>
                 <p>Intensive certification courses for aspiring mediators and arbitrators with AI-driven simulations and practical experience.</p>
                 <Link to="/events/1" className="event-link">Learn more <ArrowRight size={16} /></Link>
               </div>
@@ -305,7 +305,7 @@ const Home = () => {
                   <Calendar size={18} />
                   <span>2026</span>
                 </div>
-                <h3>2026 Asia-African Mock Arbitration</h3>
+                <h3>CIMA Asia-Africa Mock Arbitration Programme</h3>
                 <p>A practical, hands-on training program where participants prepare cases, present arguments, examine evidence, deliberate, and deliver reasoned awards.</p>
                 <Link to="/events/2" className="event-link">Learn more <ArrowRight size={16} /></Link>
               </div>
