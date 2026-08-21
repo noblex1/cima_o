@@ -303,10 +303,10 @@ const Home = () => {
               <div className="event-content">
                 <div className="event-date">
                   <Calendar size={18} />
-                  <span>October 2026</span>
+                  <span>2026</span>
                 </div>
-                <h3>Mock Arbitration Proceedings Workshop</h3>
-                <p>Practical simulation-based training bridging theory and practice for ADR professionals and students.</p>
+                <h3>2026 Asia-African Mock Arbitration</h3>
+                <p>A practical, hands-on training program where participants prepare cases, present arguments, examine evidence, deliberate, and deliver reasoned awards.</p>
                 <Link to="/events/2" className="event-link">Learn more <ArrowRight size={16} /></Link>
               </div>
             </div>
