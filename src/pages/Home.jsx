@@ -169,32 +169,32 @@ const Home = () => {
         <div className="container">
           <div className="section-header">
             <h2>The Oxfordshire Advantage</h2>
-            <p>Empowering ADR professionals through internationally benchmarked training and certification</p>
+            <p>Leverage Oxfordshire's global connection and knowledge ecosystem.</p>
           </div>
 
           <div className="features-grid">
             <div className="feature-item">
               <Award size={28} />
               <h3>Global Certification</h3>
-              <p>Training and certification programs benchmarked to international best practices and standards</p>
+              <p>Internationally benchmarked training and credentials recognized across 33+ countries</p>
             </div>
 
             <div className="feature-item">
               <Users size={28} />
               <h3>World-Class Faculty</h3>
-              <p>Innovative simulations and technology-enhanced training for modern ADR practitioners</p>
+              <p>Learn from experienced ADR professionals, educators, and practitioners from around the world</p>
             </div>
 
             <div className="feature-item">
               <BookOpenCheck size={28} />
               <h3>Practiced-Based Learning</h3>
-              <p>Professional credentials recognized across 33+ countries with growing international presence</p>
+              <p>Build practical skills through simulations, mock proceedings, and hands-on ADR training</p>
             </div>
 
             <div className="feature-item">
               <Globe size={28} />
               <h3>Global Network</h3>
-              <p>Mock proceedings, simulations, and hands-on training to build real-world competence</p>
+              <p>Connect with ADR professionals and institutions across a growing international community</p>
             </div>
           </div>
         </div>
