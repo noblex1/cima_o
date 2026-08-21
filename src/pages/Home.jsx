@@ -318,8 +318,8 @@ const Home = () => {
       <section className="final-cta">
         <div className="container">
           <div className="final-cta-content">
-            <h2>Ready to Advance Your ADR Career?</h2>
-            <p>Join professionals from 33+ countries and gain internationally recognized ADR certification</p>
+            <h2>Get Certified | Apply for Accreditation</h2>
+            <p>Become a certified fellow (FCIMArb). Gain CIMA recognition for organization, institution or ADR programme.</p>
             <div className="final-cta-buttons">
               <a href="https://cimalearn.thecima.org" className="btn-cta-primary" target="_blank" rel="noreferrer">Explore Programs</a>
               <Link to="/contact" className="btn-cta-secondary">Contact Us</Link>
