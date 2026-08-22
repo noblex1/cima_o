@@ -6,42 +6,66 @@ const Governance = () => {
   const boardMembers = [
     {
       name: "Dr. Osei Bonsu Dickson, FCIMArb",
-      role: "CIMA World Fellow & Professor of Practice",
+      role: "Global Vice-President (Africa) & Dean, CIMA",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400",
-      bio: "A top-tier international lawyer with expertise in cybersecurity law, international commercial arbitration, maritime strategy, national security law and investor-state dispute settlement. Course Director of the Oxford-Africa Forum on International Arbitration."
+      bio: "International lawyer with expertise in cybersecurity law, international commercial arbitration, maritime strategy, and investor-state dispute settlement. CIMA World Fellow and Professor of Practice. Course Director of the Oxford-Africa Forum on International Arbitration. Ranked Global No. 3 and Africa No. 1 on the 2023 Thinkers360 Global List of Top 100 National Security Thought Leaders."
     },
     {
-      name: "Board Member",
-      role: "Trustee",
+      name: "Justice Dennis Dominic Adjei, JSC, FGA",
+      role: "Justice of the Supreme Court of Ghana",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400",
-      bio: "Distinguished member of CIMA's Board of Trustees, providing strategic oversight and guidance for the organization's mission and vision."
+      bio: "Ghanaian jurist and active Justice of the Supreme Court of Ghana. Previously served as Justice of the African Court on Human and Peoples' Rights and Justice of the Court of Appeal of Ghana. Known for his commitment to ensuring justice is accessible to all."
     },
     {
-      name: "Board Member",
-      role: "Trustee",
+      name: "W. Patrick McPhilamy III",
+      role: "International Mediator & Arbitrator",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400",
-      bio: "Respected leader in the ADR community with extensive experience in alternative dispute resolution and professional training."
+      bio: "Seasoned international mediator, arbitrator, and ADR attorney based in California. Earned Master of Laws (LL.M.) from Cambridge University. Focuses on guiding parties toward amicable and lasting settlements in complex disputes. Over 40 years of experience in practice."
     }
   ]
 
   const leadershipTeam = [
     {
-      name: "Nana Ama Okyere",
-      role: "Executive Director",
+      name: "Mankiranjit Kaur",
+      role: "Director of Legal, National Legal Academy, Malaysia",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400",
-      bio: "Nana Ama leads CIMA's strategic vision and day-to-day operations, working to expand access to world-class ADR training."
+      bio: "Heads legal programmes at National Legal Academy, Malaysia. Holds Diploma in International Commercial Arbitration from CIArb University of Oxford. Arbitrator with BICAM and BDAC, and Adjudicator with AIAC. Expertise in ADR, law reforms, and dispute resolution."
     },
     {
-      name: "Kwame Mensah",
-      role: "Director of Programs",
+      name: "David A. Asiedu",
+      role: "Legal Practitioner & ADR Specialist",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400",
-      bio: "Kwame oversees CIMA's certification programs and ensures quality standards across all training initiatives."
+      bio: "Experienced legal practitioner specializing in alternative dispute resolution and commercial arbitration across multiple jurisdictions."
     },
     {
-      name: "Akosua Boateng",
-      role: "Head of Research & Development",
+      name: "Dr. Misha Kumar",
+      role: "ADR Scholar & Practitioner",
       image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=400",
-      bio: "Akosua leads innovation in ADR methodologies and develops new curricula for emerging dispute resolution challenges."
+      bio: "Leading academic and practitioner in alternative dispute resolution with extensive experience in mediation and arbitration training."
+    },
+    {
+      name: "Dr. Simon Peter Tsekpo",
+      role: "International Arbitration Expert",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400",
+      bio: "Expert in international commercial arbitration with focus on cross-border dispute resolution and ADR capacity building."
+    },
+    {
+      name: "Abasiemdiong Etuk",
+      role: "Commercial Arbitrator",
+      image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=400",
+      bio: "Specialized in commercial arbitration and mediation with extensive experience in regional and international dispute resolution."
+    },
+    {
+      name: "Michael Smith",
+      role: "Senior ADR Consultant",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400",
+      bio: "Senior consultant in alternative dispute resolution with focus on institutional development and professional training programs."
+    },
+    {
+      name: "Dr. Kolawale Mayomi",
+      role: "Research Director & ADR Specialist",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400",
+      bio: "Research Director with expertise in ADR innovation and development of new dispute resolution methodologies for emerging challenges."
     }
   ]
 
@@ -150,7 +174,7 @@ const Governance = () => {
               <iframe
                 width="100%"
                 height="500"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                src="https://www.youtube.com/embed/Y7eAsjyGaoI"
                 title="CIMA Leadership Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
