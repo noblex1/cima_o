@@ -5,6 +5,12 @@ import './CommonPages.css'
 const Governance = () => {
   const boardMembers = [
     {
+      name: "Fredrick K.P. Dickson, ACIMArb",
+      role: "Global President, CIMA",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400",
+      bio: "Global President of the Center for International Mediators and Arbitrators. Co-author of 'Navigating International Arbitration: A Comprehensive Guide for Lawyers and ADR Professionals.' Leads CIMA's strategic vision and global expansion initiatives."
+    },
+    {
       name: "Dr. Osei Bonsu Dickson, FCIMArb",
       role: "Global Vice-President (Africa) & Dean, CIMA",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400",
