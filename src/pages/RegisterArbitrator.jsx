@@ -28,6 +28,11 @@ const RegisterArbitrator = () => {
             <p className="lead-text">
               Registration on CIMA's Roll of Arbitrators and Mediators provides international recognition, appointment opportunities, and professional credibility in alternative dispute resolution.
             </p>
+            <div className="register-now-button-wrapper">
+              <a href="https://cimalearn.thecima.org" className="btn-register-now" target="_blank" rel="noreferrer">
+                CLICK HERE TO REGISTER NOW
+              </a>
+            </div>
           </div>
 
           <div className="register-benefits-grid">
