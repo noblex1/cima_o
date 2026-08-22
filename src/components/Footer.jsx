@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react'
+import { Mail, Phone, Linkedin, Twitter } from 'lucide-react'
 import './Footer.css'
 import logoImage from '../../assets/logo.png'
 
@@ -51,22 +51,30 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer-section">
-            <h4 className="footer-title">Contact Us</h4>
-            <ul className="footer-contact">
-              <li>
-                <MapPin size={18} />
-                <span>CIMA House, 4 Naa Shika Avenue<br />Haatso-Mabey, Accra, Ghana</span>
-              </li>
-              <li>
-                <MapPin size={18} />
-                <span>Oxford, United Kingdom</span>
-              </li>
-              <li>
-                <Mail size={18} />
-                <span>info@thecima.org</span>
-              </li>
-            </ul>
+          <div className="footer-section footer-locations-section">
+            <h4 className="footer-title">Our Locations</h4>
+            <div className="footer-locations">
+              <div className="footer-location">
+                <h5>Global Headquarters:</h5>
+                <p>Center for International Mediators and Arbitrators</p>
+                <p>Incorporated in England &amp; Wales, Company No: 16140063</p>
+                <p>Registered Office:<br />26 St. Gabriel, Wantage, OX12 8FJ, United Kingdom</p>
+                <p>International Programmes Office:<br />Regus, Oxford Science Park<br />Robert Robinson Avenue, John Eccles House,<br />Oxford, OX4 4GP, England</p>
+                <a href="mailto:info@thecima.org" className="footer-contact-link">
+                  <Mail size={16} aria-hidden="true" />
+                  <span>info@thecima.org</span>
+                </a>
+              </div>
+              <div className="footer-location">
+                <h5>Africa Headquarters:</h5>
+                <p>Center for International Mediators and Arbitrators</p>
+                <p>World Law Building<br />4 Naa Shika Avenue, Haatso-Mabey,<br />Accra, Ghana</p>
+                <a href="tel:+2330241022964" className="footer-contact-link">
+                  <Phone size={16} aria-hidden="true" />
+                  <span>+233 0241 022 964</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 

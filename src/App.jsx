@@ -32,6 +32,7 @@ import CustomaryArbitration from './pages/CustomaryArbitration'
 import QualificationPathway from './pages/QualificationPathway'
 import RollOfMediators from './pages/RollOfMediators'
 import MembershipRenewals from './pages/MembershipRenewals'
+import YoungForum from './pages/YoungForum'
 import Global100 from './pages/Global100'
 import SubmitDispute from './pages/SubmitDispute'
 import RegisterArbitrator from './pages/RegisterArbitrator'
@@ -71,6 +72,7 @@ function App() {
           <Route path="/practice-areas/customary-arbitration" element={<CustomaryArbitration />} />
           <Route path="/membership/qualification-pathway" element={<QualificationPathway />} />
           <Route path="/membership/roll-of-mediators-arbitrators" element={<RollOfMediators />} />
+          <Route path="/membership/young-forum" element={<YoungForum />} />
           <Route path="/membership/renewals" element={<MembershipRenewals />} />
           <Route path="/global-100" element={<Global100 />} />
           <Route path="/contact/submit-dispute" element={<SubmitDispute />} />

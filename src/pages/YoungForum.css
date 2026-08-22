@@ -1,0 +1,629 @@
+/* CIMA Young Forum Page Styles */
+
+/* Hero Section - Reusing contact-hero styles with custom background */
+.contact-hero::before {
+  background-image: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070');
+}
+
+/* Overview Section */
+.young-forum-overview {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+.overview-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.overview-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.lead-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.overview-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.overview-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stat-box {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(117, 0, 0, 0.12);
+  border-color: var(--burgundy);
+}
+
+.stat-icon {
+  color: var(--burgundy);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mission-card {
+  background: var(--off-white);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(117, 0, 0, 0.15);
+  border-color: var(--burgundy);
+}
+
+.mission-card svg {
+  color: var(--burgundy);
+  margin-bottom: 1.5rem;
+}
+
+.mission-card h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1.25rem;
+}
+
+.mission-card p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+/* Benefits Section */
+.young-forum-benefits {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(117, 0, 0, 0.15);
+  border-color: var(--burgundy);
+}
+
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  color: var(--white);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+/* Membership Eligibility */
+.membership-eligibility {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.membership-eligibility h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.eligibility-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--off-white);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 2px solid var(--border-color);
+}
+
+.eligibility-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.eligibility-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.eligibility-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.check-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.eligibility-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+.eligibility-text strong {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* Activities & Programs */
+.activities-programs {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+.activities-programs h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.activity-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(117, 0, 0, 0.15);
+  border-color: var(--burgundy);
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.activity-header svg {
+  color: var(--burgundy);
+}
+
+.activity-header h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-list li {
+  padding: 0.75rem 0;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.activity-list li:last-child {
+  border-bottom: none;
+}
+
+.activity-list li::before {
+  content: "▸";
+  color: var(--burgundy);
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+/* How to Join */
+.how-to-join {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.join-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.join-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.join-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.join-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.join-step {
+  text-align: center;
+  background: var(--off-white);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.join-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(117, 0, 0, 0.12);
+  border-color: var(--burgundy);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 15px rgba(117, 0, 0, 0.3);
+}
+
+.step-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.step-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+.join-cta {
+  text-align: center;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  color: var(--white);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(117, 0, 0, 0.2);
+}
+
+.join-cta h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.fee-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.fee-description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.btn-join {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--white);
+  color: var(--burgundy);
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-join:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+.young-forum-contact {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+.contact-box-centered {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 2px solid var(--border-color);
+}
+
+.contact-box-centered h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.contact-box-centered > p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.contact-info-simple {
+  background: var(--off-white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.contact-info-simple p {
+  margin: 0.75rem 0;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.contact-info-simple strong {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--burgundy);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(117, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-contact:hover {
+  background: var(--burgundy-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(117, 0, 0, 0.35);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .overview-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .overview-text h2,
+  .mission-card h3,
+  .section-header h2,
+  .membership-eligibility h2,
+  .activities-programs h2,
+  .join-content h2,
+  .contact-box-centered h2 {
+    font-size: 2rem;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .benefits-grid,
+  .activities-grid {
+    gap: 1.5rem;
+  }
+
+  .join-steps {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .eligibility-content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .young-forum-overview,
+  .mission-vision,
+  .young-forum-benefits,
+  .membership-eligibility,
+  .activities-programs,
+  .how-to-join,
+  .young-forum-contact {
+    padding: 3rem 0;
+  }
+
+  .overview-text h2,
+  .mission-card h3,
+  .section-header h2,
+  .membership-eligibility h2,
+  .activities-programs h2,
+  .join-content h2,
+  .contact-box-centered h2 {
+    font-size: 1.75rem;
+  }
+
+  .stat-box,
+  .mission-card,
+  .benefit-card,
+  .activity-card {
+    padding: 2rem;
+  }
+
+  .eligibility-content {
+    padding: 1.5rem;
+  }
+
+  .eligibility-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .join-cta {
+    padding: 2rem;
+  }
+
+  .fee-amount {
+    font-size: 2rem;
+  }
+
+  .contact-box-centered {
+    padding: 2rem;
+  }
+}

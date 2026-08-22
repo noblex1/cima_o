@@ -314,6 +314,103 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Global Professional Network */}
+      <section className="institutional-network">
+        <div className="container">
+          <div className="section-header-center">
+            <h2>Trusted by Global Law Firms & International Organizations</h2>
+            <p>Professionals and institutions from leading organizations around the world have engaged with CIMA through training, fellowship, certification, and professional development.</p>
+          </div>
+
+          <div className="organizations-grid">
+            <div className="org-card">
+              <div className="org-name">World Bank</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Supreme Court of Ghana</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Commonwealth Lawyers Association</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">SOAS University of London</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Oxford University</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">National Legal Academy, Malaysia</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">World Arbitration Review</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Pinsent Masons</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">SPA Ajibade, Nigeria</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Eversheds Sutherland LLP</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Deloitte Ghana</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Ecobank Ghana</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Bank of Ghana</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Ghana School of Law</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">KNUST</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">University of Cape Coast</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Ghana Revenue Authority</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Ghana Police Service</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Ghana Ports and Harbours Authority</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">National Communications Authority</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Office of the Special Prosecutor</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Legal Aid Commission</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Ghana Health Service</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Ministry of Justice, Ghana</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Ministry of Finance, Ghana</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">SSNIT</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Google</div>
+            </div>
+            <div className="org-card">
+              <div className="org-name">Huawei Technologies</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="final-cta">
         <div className="container">

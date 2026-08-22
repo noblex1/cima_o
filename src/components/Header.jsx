@@ -96,6 +96,7 @@ const Header = () => {
               <Link to="/membership/qualification-pathway" className="dropdown-item" onClick={closeMobileMenu}>CIMA Qualification Pathway</Link>
               <Link to="/membership/roll-of-mediators-arbitrators" className="dropdown-item" onClick={closeMobileMenu}>Roll of Mediators & Arbitrators</Link>
               <Link to="/membership/renewals" className="dropdown-item" onClick={closeMobileMenu}>Membership Renewals</Link>
+              <Link to="/membership/young-forum" className="dropdown-item" onClick={closeMobileMenu}>CIMA Young Forum</Link>
             </div>
           </div>
           <a href="https://cimalearn.thecima.org" className="nav-link">Courses</a>
