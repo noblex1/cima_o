@@ -418,22 +418,22 @@
 }
 
 .stat-card {
-  background: var(--white);
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
   padding: 2.5rem 2rem;
   border-radius: 16px;
   text-align: center;
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(117, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(117, 0, 0, 0.2);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .stat-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(117, 0, 0, 0.35);
+  transform: translateY(-6px);
 }
 
 .stat-icon {
-  color: var(--burgundy);
+  color: var(--gold);
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
@@ -442,13 +442,15 @@
 .stat-card .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--gold);
+  color: #FFFFFF;
   margin-bottom: 0.5rem;
+  text-shadow: 0 0 15px rgba(180, 154, 103, 0.5);
 }
 
 .stat-card .stat-label {
   font-size: 1rem;
-  color: var(--text-light);
+  color: #FFFFFF;
+  opacity: 0.95;
 }
 
 .values-section {

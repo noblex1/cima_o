@@ -1,8 +1,64 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Award, Globe, Users, TrendingUp } from 'lucide-react'
 import './CommonPages.css'
 
 const About = () => {
+  const [statsCounted, setStatsCounted] = useState(false)
+
+  useEffect(() => {
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !statsCounted) {
+          setStatsCounted(true)
+          animateCounters()
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: 0.3
+    })
+
+    const statsSection = document.querySelector('.stats-section')
+    if (statsSection) {
+      observer.observe(statsSection)
+    }
+
+    return () => {
+      if (statsSection) {
+        observer.unobserve(statsSection)
+      }
+    }
+  }, [statsCounted])
+
+  const animateCounters = () => {
+    const counters = [
+      { id: 'about-stat-1', target: 33, suffix: '+' },
+      { id: 'about-stat-2', target: 500, suffix: '+' },
+      { id: 'about-stat-3', target: 100, suffix: '+' },
+      { id: 'about-stat-4', target: 3, suffix: ' Levels' }
+    ]
+
+    counters.forEach((counter) => {
+      const element = document.getElementById(counter.id)
+      if (!element) return
+
+      let current = 0
+      const increment = counter.target / 50
+      const duration = 2000
+      const stepTime = duration / 50
+
+      const timer = setInterval(() => {
+        current += increment
+        if (current >= counter.target) {
+          element.textContent = counter.target + counter.suffix
+          clearInterval(timer)
+        } else {
+          element.textContent = Math.floor(current) + counter.suffix
+        }
+      }, stepTime)
+    })
+  }
   return (
     <div className="page">
       <section className="page-hero">
@@ -38,7 +94,7 @@ const About = () => {
               <div className="stat-icon">
                 <Globe size={28} />
               </div>
-              <div className="stat-number">33+</div>
+              <div className="stat-number" id="about-stat-1">0+</div>
               <div className="stat-label">Countries with Members</div>
             </div>
 
@@ -46,7 +102,7 @@ const About = () => {
               <div className="stat-icon">
                 <Users size={28} />
               </div>
-              <div className="stat-number">500+</div>
+              <div className="stat-number" id="about-stat-2">0+</div>
               <div className="stat-label">Professionals Trained</div>
             </div>
 
@@ -54,7 +110,7 @@ const About = () => {
               <div className="stat-icon">
                 <TrendingUp size={28} />
               </div>
-              <div className="stat-number">100+</div>
+              <div className="stat-number" id="about-stat-3">0+</div>
               <div className="stat-label">Expert Instructors</div>
             </div>
 
@@ -62,7 +118,7 @@ const About = () => {
               <div className="stat-icon">
                 <Award size={28} />
               </div>
-              <div className="stat-number">3 Levels</div>
+              <div className="stat-number" id="about-stat-4">0 Levels</div>
               <div className="stat-label">Certification Programs</div>
             </div>
           </div>
