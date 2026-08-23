@@ -29,7 +29,7 @@ const RegisterArbitrator = () => {
               Registration on CIMA's Roll of Arbitrators and Mediators provides international recognition, appointment opportunities, and professional credibility in alternative dispute resolution.
             </p>
             <div className="register-now-button-wrapper">
-              <a href="https://cimalearn.thecima.org" className="btn-register-now" target="_blank" rel="noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSchQT1ws-Zc3jFxrA5e9dHjMriy21_tuDCQXkEFnJgXJ5yRnw/viewform" className="btn-register-now" target="_blank" rel="noreferrer">
                 CLICK HERE TO REGISTER NOW
               </a>
             </div>
@@ -145,7 +145,7 @@ const RegisterArbitrator = () => {
               <div className="flow-step-content">
                 <h3>Complete Application Form</h3>
                 <p>Download and complete the Registration Application Form. Provide detailed information about your education, professional experience, ADR training, and practice areas.</p>
-                <a href="https://cimalearn.thecima.org" className="download-btn" target="_blank" rel="noreferrer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSchQT1ws-Zc3jFxrA5e9dHjMriy21_tuDCQXkEFnJgXJ5yRnw/viewform" className="download-btn" target="_blank" rel="noreferrer">
                   <FileCheck size={18} />
                   Download Application Form
                 </a>
@@ -280,7 +280,7 @@ const RegisterArbitrator = () => {
             <h2>Ready to Join CIMA's Roll?</h2>
             <p>Take the next step in your ADR career. Register today and gain international recognition as a qualified neutral.</p>
             <div className="cta-buttons">
-              <a href="https://cimalearn.thecima.org" className="btn-primary" target="_blank" rel="noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSchQT1ws-Zc3jFxrA5e9dHjMriy21_tuDCQXkEFnJgXJ5yRnw/viewform" className="btn-primary" target="_blank" rel="noreferrer">
                 Download Application Form
               </a>
               <Link to="/membership/qualification-pathway" className="btn-secondary">
