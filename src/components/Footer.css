@@ -132,6 +132,17 @@
   color: var(--burgundy);
 }
 
+.external-icon {
+  display: inline-block;
+  margin-left: 0.25rem;
+  font-size: 0.85em;
+  transition: transform 0.2s;
+}
+
+.footer-links a:hover .external-icon {
+  transform: translate(2px, -2px);
+}
+
 .footer-contact {
   list-style: none;
   display: flex;

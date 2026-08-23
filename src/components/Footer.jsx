@@ -57,6 +57,22 @@ const Footer = () => {
             </ul>
           </div>
 
+          <div className="footer-section">
+            <h4 className="footer-title">Visit other CIMA Sites</h4>
+            <ul className="footer-links">
+              <li>
+                <a href="https://cimalearn.thecima.org" target="_blank" rel="noreferrer">
+                  CIMA Learn <span className="external-icon">↗</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://cimaai.thecima.org" target="_blank" rel="noreferrer">
+                  CIMA AI <span className="external-icon">↗</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <div className="footer-section footer-locations-section">
             <h4 className="footer-title">Our Locations</h4>
             <div className="footer-locations">
