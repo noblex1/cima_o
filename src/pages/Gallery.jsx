@@ -2,6 +2,33 @@ import React, { useState } from 'react'
 import { X, ZoomIn } from 'lucide-react'
 import './CommonPages.css'
 
+// Import all gallery images
+import img1 from '../../gallery/DSC_3988-1-scaled.jpg'
+import img2 from '../../gallery/DSC_3992-1-scaled.jpg'
+import img3 from '../../gallery/DSC_4014-1-1-scaled.jpg'
+import img4 from '../../gallery/WhatsApp-Image-2026-02-19-at-10.37.31-AM-2.jpeg'
+import img5 from '../../gallery/WhatsApp-Image-2025-06-18-at-12.02.53-PM.jpeg'
+import img6 from '../../gallery/DSC_3506-1-scaled.jpg'
+import img7 from '../../gallery/DSC_3577-scaled.jpg'
+import img8 from '../../gallery/DSC_3615-scaled.jpg'
+import img9 from '../../gallery/DSC_3935-scaled.jpg'
+import img10 from '../../gallery/DSC_3937-1-scaled.jpg'
+import img11 from '../../gallery/DSC_3967-scaled.jpg'
+import img12 from '../../gallery/DSC_3986-1-scaled.jpg'
+import img13 from '../../gallery/DSC_4014-1-scaled.jpg'
+import img14 from '../../gallery/DSC_5001-scaled.jpg'
+import img15 from '../../gallery/DSC_5010-scaled.jpg'
+import img16 from '../../gallery/ACCRA-2-scaled.jpg'
+import img17 from '../../gallery/LONDON-1-scaled.jpg'
+import img18 from '../../gallery/WhatsApp-Image-2025-06-16-at-5.07.30-PM.jpeg'
+import img19 from '../../gallery/WhatsApp-Image-2025-06-16-at-5.10.48-PM.jpeg'
+import img20 from '../../gallery/WhatsApp-Image-2025-11-06-at-15.46.15_f9a0f360.jpg'
+import img21 from '../../gallery/WhatsApp-Image-2025-11-06-at-15.48.40_44cc2b50-e1763117022338.jpg'
+import img22 from '../../gallery/WhatsApp-Image-2026-02-19-at-10.15.06-AM-3.jpeg'
+import img23 from '../../gallery/WhatsApp-Image-2026-05-05-at-08.37.jpg'
+import img24 from '../../gallery/2022_john_eccles_10_custom_800x533.jpg'
+import img25 from '../../gallery/multiracial-workers-using-virtual-reality-headsets-2026-01-09-00-01-46-utc-scaled.jpg'
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -9,140 +36,209 @@ const Gallery = () => {
   const categories = [
     { id: 'all', name: 'All Photos' },
     { id: 'events', name: 'Events & Training' },
-    { id: 'team', name: 'Team & Leadership' },
-    { id: 'facilities', name: 'Facilities' }
+    { id: 'facilities', name: 'Facilities & Locations' },
+    { id: 'team', name: 'Team & Activities' }
   ]
 
   const galleryImages = [
-    // CIMA Investiture and Recognition Sokoto 2025 - British Council
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070',
-      alt: 'CIMA Training Session',
+      src: img1,
+      alt: 'CIMA Professional Event',
       category: 'events',
-      title: 'Summer School 2025',
+      title: 'Professional Development Event',
       size: 'large'
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069',
-      alt: 'Award Ceremony',
+      src: img2,
+      alt: 'Training Session',
       category: 'events',
-      title: 'Recognition Ceremony',
+      title: 'Interactive Training Session',
       size: 'medium'
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070',
-      alt: 'Group Photo',
+      src: img3,
+      alt: 'CIMA Workshop',
       category: 'events',
-      title: 'Certification Day',
+      title: 'ADR Workshop',
       size: 'medium'
     },
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070',
-      alt: 'Conference Hall',
-      category: 'events',
-      title: 'Annual Conference',
+      src: img4,
+      alt: 'Group Discussion',
+      category: 'team',
+      title: 'Collaborative Discussion',
       size: 'wide'
     },
-    
-    // CIMA - Ghana Bar Association
     {
       id: 5,
-      src: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2074',
-      alt: 'Speaker Presentation',
-      category: 'team',
-      title: 'Expert Panel Discussion',
+      src: img5,
+      alt: 'Conference Session',
+      category: 'events',
+      title: 'International Conference',
       size: 'medium'
     },
     {
       id: 6,
-      src: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2073',
-      alt: 'Leadership Team',
+      src: img6,
+      alt: 'Professional Gathering',
+      category: 'events',
+      title: 'Professional Network Event',
+      size: 'tall'
+    },
+    {
+      id: 7,
+      src: img7,
+      alt: 'Training Program',
+      category: 'events',
+      title: 'Certification Program',
+      size: 'medium'
+    },
+    {
+      id: 8,
+      src: img8,
+      alt: 'CIMA Session',
+      category: 'events',
+      title: 'Learning Session',
+      size: 'large'
+    },
+    {
+      id: 9,
+      src: img9,
+      alt: 'Event Presentation',
+      category: 'events',
+      title: 'Keynote Presentation',
+      size: 'medium'
+    },
+    {
+      id: 10,
+      src: img10,
+      alt: 'Professional Discussion',
+      category: 'team',
+      title: 'Expert Panel',
+      size: 'medium'
+    },
+    {
+      id: 11,
+      src: img11,
+      alt: 'Workshop Activity',
+      category: 'events',
+      title: 'Interactive Workshop',
+      size: 'wide'
+    },
+    {
+      id: 12,
+      src: img12,
+      alt: 'Team Collaboration',
+      category: 'team',
+      title: 'Team Building',
+      size: 'medium'
+    },
+    {
+      id: 13,
+      src: img13,
+      alt: 'CIMA Training',
+      category: 'events',
+      title: 'Professional Training',
+      size: 'tall'
+    },
+    {
+      id: 14,
+      src: img14,
+      alt: 'Conference Attendees',
+      category: 'events',
+      title: 'Global Conference',
+      size: 'medium'
+    },
+    {
+      id: 15,
+      src: img15,
+      alt: 'Professional Event',
+      category: 'events',
+      title: 'Annual Summit',
+      size: 'large'
+    },
+    {
+      id: 16,
+      src: img16,
+      alt: 'Accra Office',
+      category: 'facilities',
+      title: 'CIMA Africa Headquarters',
+      size: 'wide'
+    },
+    {
+      id: 17,
+      src: img17,
+      alt: 'London Location',
+      category: 'facilities',
+      title: 'CIMA Global Headquarters',
+      size: 'medium'
+    },
+    {
+      id: 18,
+      src: img18,
+      alt: 'Event Gathering',
+      category: 'events',
+      title: 'Community Event',
+      size: 'medium'
+    },
+    {
+      id: 19,
+      src: img19,
+      alt: 'Professional Meeting',
       category: 'team',
       title: 'Leadership Meeting',
       size: 'tall'
     },
     {
-      id: 7,
-      src: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2087',
-      alt: 'Professional Headshot',
+      id: 20,
+      src: img20,
+      alt: 'CIMA Activity',
       category: 'team',
-      title: 'Board Member',
+      title: 'Team Activity',
       size: 'medium'
     },
     {
-      id: 8,
-      src: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2069',
-      alt: 'Team Collaboration',
-      category: 'team',
-      title: 'Strategy Session',
-      size: 'large'
-    },
-    {
-      id: 9,
-      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070',
-      alt: 'Virtual Meeting',
-      category: 'team',
-      title: 'Online Training',
+      id: 21,
+      src: img21,
+      alt: 'Professional Session',
+      category: 'events',
+      title: 'Training Certification',
       size: 'medium'
     },
     {
-      id: 10,
-      src: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2069',
-      alt: 'Office Building',
+      id: 22,
+      src: img22,
+      alt: 'Group Photo',
+      category: 'team',
+      title: 'Team Photo',
+      size: 'wide'
+    },
+    {
+      id: 23,
+      src: img23,
+      alt: 'CIMA Event',
+      category: 'events',
+      title: 'Special Event',
+      size: 'medium'
+    },
+    {
+      id: 24,
+      src: img24,
+      alt: 'Oxford Facility',
       category: 'facilities',
       title: 'Oxford Science Park',
-      size: 'wide'
-    },
-    {
-      id: 11,
-      src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069',
-      alt: 'Modern Office',
-      category: 'facilities',
-      title: 'CIMA Headquarters',
-      size: 'medium'
-    },
-    {
-      id: 12,
-      src: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069',
-      alt: 'Training Room',
-      category: 'facilities',
-      title: 'Training Center',
-      size: 'tall'
-    },
-    {
-      id: 13,
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070',
-      alt: 'Workspace',
-      category: 'facilities',
-      title: 'Collaborative Space',
-      size: 'medium'
-    },
-    {
-      id: 14,
-      src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070',
-      alt: 'Team Workshop',
-      category: 'events',
-      title: 'Mock Arbitration',
       size: 'large'
     },
     {
-      id: 15,
-      src: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070',
-      alt: 'International Event',
+      id: 25,
+      src: img25,
+      alt: 'Modern Training',
       category: 'events',
-      title: 'Global ADR Summit',
-      size: 'wide'
-    },
-    {
-      id: 16,
-      src: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070',
-      alt: 'Ghana Flag',
-      category: 'facilities',
-      title: 'Accra Office',
+      title: 'VR Training Session',
       size: 'medium'
     }
   ]
@@ -169,7 +265,7 @@ const Gallery = () => {
         <div className="hero-content">
           <h1 className="page-title">Gallery</h1>
           <p className="hero-subtitle">
-            Capturing moments from our global ADR community
+            Capturing moments from our global ADR community - training events, professional development, and international collaboration
           </p>
         </div>
       </section>
