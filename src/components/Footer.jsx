@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Mail, Phone, Linkedin, Twitter, Facebook, Youtube } from 'lucide-react'
+import { Mail, Phone, Linkedin, Twitter, Facebook, Youtube, MapPin } from 'lucide-react'
 import './Footer.css'
 import logoImage from '../../assets/logo.png'
 
@@ -82,19 +82,41 @@ const Footer = () => {
                 <p>Incorporated in England &amp; Wales, Company No: 16140063</p>
                 <p>Registered Office:<br />26 St. Gabriel, Wantage, OX12 8FJ, United Kingdom</p>
                 <p>International Programmes Office:<br />Regus, Oxford Science Park<br />Robert Robinson Avenue, John Eccles House,<br />Oxford, OX4 4GP, England</p>
-                <a href="mailto:info@thecima.org" className="footer-contact-link">
-                  <Mail size={16} aria-hidden="true" />
-                  <span>info@thecima.org</span>
-                </a>
+                <div className="footer-location-actions">
+                  <a href="mailto:info@thecima.org" className="footer-contact-link">
+                    <Mail size={16} aria-hidden="true" />
+                    <span>info@thecima.org</span>
+                  </a>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=Oxford+Science+Park+Robert+Robinson+Avenue+Oxford+OX4+4GP+England" 
+                    className="footer-map-link" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    <MapPin size={16} aria-hidden="true" />
+                    <span>View on Map</span>
+                  </a>
+                </div>
               </div>
               <div className="footer-location">
                 <h5>Africa Headquarters:</h5>
                 <p>Center for International Mediators and Arbitrators</p>
                 <p>World Law Building<br />4 Naa Shika Avenue, Haatso-Mabey,<br />Accra, Ghana</p>
-                <a href="tel:+2330241022964" className="footer-contact-link">
-                  <Phone size={16} aria-hidden="true" />
-                  <span>+233 0241 022 964</span>
-                </a>
+                <div className="footer-location-actions">
+                  <a href="tel:+2330241022964" className="footer-contact-link">
+                    <Phone size={16} aria-hidden="true" />
+                    <span>+233 0241 022 964</span>
+                  </a>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=World+Law+Building+4+Naa+Shika+Avenue+Haatso-Mabey+Accra+Ghana" 
+                    className="footer-map-link" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    <MapPin size={16} aria-hidden="true" />
+                    <span>View on Map</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
