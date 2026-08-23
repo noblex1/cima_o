@@ -871,29 +871,29 @@
   margin: 0 auto;
 }
 
-.organizations-grid {
+.logos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.25rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.org-card {
+.logo-card {
   background: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  padding: 1.75rem 1.5rem;
+  border-radius: 16px;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90px;
+  min-height: 140px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
-.org-card::before {
+.logo-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -905,25 +905,31 @@
   transition: opacity 0.3s ease;
 }
 
-.org-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  border-color: rgba(117, 0, 0, 0.15);
+.logo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: rgba(117, 0, 0, 0.2);
 }
 
-.org-card:hover::before {
+.logo-card:hover::before {
   opacity: 1;
 }
 
-.org-name {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--text-dark);
-  text-align: center;
-  line-height: 1.5;
-  letter-spacing: -0.01em;
+.logo-card img {
+  max-width: 100%;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   position: relative;
   z-index: 1;
+  filter: grayscale(0%);
+  transition: all 0.3s ease;
+}
+
+.logo-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 /* Responsive Design */
@@ -944,18 +950,18 @@
     font-size: 1rem;
   }
 
-  .organizations-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
   }
 
-  .org-card {
-    padding: 1.5rem 1.25rem;
-    min-height: 80px;
+  .logo-card {
+    padding: 1.5rem;
+    min-height: 120px;
   }
 
-  .org-name {
-    font-size: 0.9rem;
+  .logo-card img {
+    max-height: 75px;
   }
 }
 
@@ -976,28 +982,28 @@
     font-size: 0.95rem;
   }
 
-  .organizations-grid {
+  .logos-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.875rem;
+    gap: 1.25rem;
   }
 
-  .org-card {
-    padding: 1.25rem 1rem;
-    min-height: 75px;
-    border-radius: 10px;
+  .logo-card {
+    padding: 1.25rem;
+    min-height: 110px;
+    border-radius: 12px;
   }
 
-  .org-name {
-    font-size: 0.85rem;
+  .logo-card img {
+    max-height: 65px;
   }
 }
 
 @media (max-width: 400px) {
-  .organizations-grid {
+  .logos-grid {
     grid-template-columns: 1fr;
   }
 
-  .org-card {
-    padding: 1.5rem 1.25rem;
+  .logo-card {
+    padding: 1.5rem;
   }
 }

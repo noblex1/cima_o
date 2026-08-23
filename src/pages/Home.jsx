@@ -6,6 +6,12 @@ import heroImage from '../../assets/LONDON.jpg'
 import chinaImage from '../../assets/CHINA-1.jpg'
 import accraTwoImage from '../../assets/ACCRA-2.jpg'
 import accraOneImage from '../../assets/ACCRA-1.jpg'
+import logo1 from '../../assets/trusted/1.jpeg'
+import logo2 from '../../assets/trusted/WhatsApp-Image-2026-05-05-at-08.45.jpg'
+import logo3 from '../../assets/trusted/WhatsApp-Image-2026-05-12-at-12.34.07.jpeg'
+import logo4 from '../../assets/trusted/WhatsApp-Image-2026-05-12-at-12.37.17.jpeg'
+import logo5 from '../../assets/trusted/WhatsApp-Image-2026-05-12-at-12.42.17.jpeg'
+import logo6 from '../../assets/trusted/WhatsApp-Image-2026-05-29-at-09.12.27.jpeg'
 
 const heroImages = [
   { source: heroImage, alt: 'Professional business meeting in London' },
@@ -322,93 +328,25 @@ const Home = () => {
         <div className="container">
           <div className="section-header-center">
             <h2>Trusted by Global Law Firms & International Organizations</h2>
-            <p>Professionals and institutions from leading organizations around the world have engaged with CIMA through training, fellowship, certification, and professional development.</p>
           </div>
-
-          <div className="organizations-grid">
-            <div className="org-card">
-              <div className="org-name">World Bank</div>
+          <div className="logos-grid">
+            <div className="logo-card">
+              <img src={logo1} alt="Partner organization" />
             </div>
-            <div className="org-card">
-              <div className="org-name">Supreme Court of Ghana</div>
+            <div className="logo-card">
+              <img src={logo2} alt="Partner organization" />
             </div>
-            <div className="org-card">
-              <div className="org-name">Commonwealth Lawyers Association</div>
+            <div className="logo-card">
+              <img src={logo3} alt="Partner organization" />
             </div>
-            <div className="org-card">
-              <div className="org-name">SOAS University of London</div>
+            <div className="logo-card">
+              <img src={logo4} alt="Partner organization" />
             </div>
-            <div className="org-card">
-              <div className="org-name">Oxford University</div>
+            <div className="logo-card">
+              <img src={logo5} alt="Partner organization" />
             </div>
-            <div className="org-card">
-              <div className="org-name">National Legal Academy, Malaysia</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">World Arbitration Review</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Pinsent Masons</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">SPA Ajibade, Nigeria</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Eversheds Sutherland LLP</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Deloitte Ghana</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Ecobank Ghana</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Bank of Ghana</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Ghana School of Law</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">KNUST</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">University of Cape Coast</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Ghana Revenue Authority</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Ghana Police Service</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Ghana Ports and Harbours Authority</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">National Communications Authority</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Office of the Special Prosecutor</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Legal Aid Commission</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Ghana Health Service</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Ministry of Justice, Ghana</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Ministry of Finance, Ghana</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">SSNIT</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Google</div>
-            </div>
-            <div className="org-card">
-              <div className="org-name">Huawei Technologies</div>
+            <div className="logo-card">
+              <img src={logo6} alt="Partner organization" />
             </div>
           </div>
         </div>
