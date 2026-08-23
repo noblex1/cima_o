@@ -1,25 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './CommonPages.css'
+import justiceAdjeiImage from '../../assets/justice-adjei.jpeg'
+import presidentCampagnaImage from '../../assets/president-campagna.jpg'
+import vicePresidentDicksonImage from '../../assets/vicepresident-dickson.jpg'
 
 const Governance = () => {
   const boardMembers = [
     {
-      name: "Fredrick K.P. Dickson, ACIMArb",
-      role: "Global President, CIMA",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400",
-      bio: "Global President of the Center for International Mediators and Arbitrators. Co-author of 'Navigating International Arbitration: A Comprehensive Guide for Lawyers and ADR Professionals.' Leads CIMA's strategic vision and global expansion initiatives."
+      name: "Francesco Campagna, Esq. FCIMArb",
+      role: "Honorary President, CIMA",
+      image: presidentCampagnaImage,
+      bio: "Francesco Campagna, Esq. FCIMArb, brings a wealth of experience and expertise to the role as an Honorary President. With a background in arbitration and a deep understanding of governance principles, he provides strategic guidance and oversight to ensure the organization's objectives are met effectively."
     },
     {
       name: "Dr. Osei Bonsu Dickson, FCIMArb",
       role: "Global Vice-President (Africa) & Dean, CIMA",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400",
+      image: vicePresidentDicksonImage,
       bio: "International lawyer with expertise in cybersecurity law, international commercial arbitration, maritime strategy, and investor-state dispute settlement. CIMA World Fellow and Professor of Practice. Course Director of the Oxford-Africa Forum on International Arbitration. Ranked Global No. 3 and Africa No. 1 on the 2023 Thinkers360 Global List of Top 100 National Security Thought Leaders."
     },
     {
       name: "Justice Dennis Dominic Adjei, JSC, FGA",
       role: "Justice of the Supreme Court of Ghana",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400",
+      image: justiceAdjeiImage,
       bio: "Ghanaian jurist and active Justice of the Supreme Court of Ghana. Previously served as Justice of the African Court on Human and Peoples' Rights and Justice of the Court of Appeal of Ghana. Known for his commitment to ensuring justice is accessible to all."
     },
     {

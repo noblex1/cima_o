@@ -78,6 +78,9 @@ const Home = () => {
               <a href="https://cimalearn.thecima.org" className="btn-hero-primary" target="_blank" rel="noreferrer">
                 Explore Training Programs
               </a>
+              <a href="https://cimaai.thecima.org" className="btn-hero-secondary" target="_blank" rel="noreferrer">
+                Try CIMA AI
+              </a>
             </div>
           </div>
         </div>

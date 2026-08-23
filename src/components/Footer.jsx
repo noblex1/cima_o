@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Mail, Phone, Linkedin, Twitter } from 'lucide-react'
+import { Mail, Phone, Linkedin, Twitter, Facebook, Youtube } from 'lucide-react'
 import './Footer.css'
 import logoImage from '../../assets/logo.png'
 
@@ -22,10 +22,16 @@ const Footer = () => {
               benchmarked training and certification across 33+ countries worldwide.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-link" aria-label="LinkedIn">
+              <a href="https://web.facebook.com/cimaADR" className="social-link" aria-label="Facebook" target="_blank" rel="noreferrer">
+                <Facebook size={20} />
+              </a>
+              <a href="https://youtube.com/@thecimarb?si=kW2Ym85PhUA4LuD7" className="social-link" aria-label="YouTube" target="_blank" rel="noreferrer">
+                <Youtube size={20} />
+              </a>
+              <a href="https://www.linkedin.com/company/center-for-international-mediators-and-arbitrators/posts/?feedView=all" className="social-link" aria-label="LinkedIn" target="_blank" rel="noreferrer">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="social-link" aria-label="Twitter">
+              <a href="https://x.com/the_cima_" className="social-link" aria-label="Twitter" target="_blank" rel="noreferrer">
                 <Twitter size={20} />
               </a>
             </div>

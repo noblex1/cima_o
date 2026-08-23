@@ -97,21 +97,16 @@
 }
 
 .social-link {
-  width: 40px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(117, 0, 0, 0.1);
   color: var(--burgundy);
-  border-radius: 8px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
 }
 
 .social-link:hover {
-  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(117, 0, 0, 0.3);
+  color: var(--burgundy-dark);
+  transform: translateY(-2px);
 }
 
 .footer-title {
