@@ -433,10 +433,16 @@
 }
 
 .stat-icon {
-  color: var(--gold);
+  color: #FFFFFF !important;
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+  filter: brightness(1.2) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.stat-icon svg {
+  color: #FFFFFF !important;
+  stroke: #FFFFFF !important;
 }
 
 .stat-card .stat-number {
