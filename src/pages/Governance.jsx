@@ -4,6 +4,13 @@ import './CommonPages.css'
 import justiceAdjeiImage from '../../assets/justice-adjei.jpeg'
 import presidentCampagnaImage from '../../assets/president-campagna.jpg'
 import vicePresidentDicksonImage from '../../assets/vicepresident-dickson.jpg'
+import governanceTeamImage from '../../assets/WhatsApp-Image-2025-06-18-at-12.02.53-PM.jpeg'
+import kaurImage from '../../assets/Kaur.png'
+import patrickImage from '../../assets/Patrick.png'
+import davidImage from '../../assets/David updated.jpg'
+import mishaImage from '../../assets/Misha.jpg'
+import simonImage from '../../assets/Simon.jpg'
+import kolawoleImage from '../../assets/Kolawole.jpg'
 
 const Governance = () => {
   const boardMembers = [
@@ -28,7 +35,7 @@ const Governance = () => {
     {
       name: "W. Patrick McPhilamy III",
       role: "International Mediator & Arbitrator",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400",
+      image: patrickImage,
       bio: "Seasoned international mediator, arbitrator, and ADR attorney based in California. Earned Master of Laws (LL.M.) from Cambridge University. Focuses on guiding parties toward amicable and lasting settlements in complex disputes. Over 40 years of experience in practice."
     }
   ]
@@ -37,25 +44,25 @@ const Governance = () => {
     {
       name: "Mankiranjit Kaur",
       role: "Director of Legal, National Legal Academy, Malaysia",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400",
+      image: kaurImage,
       bio: "Heads legal programmes at National Legal Academy, Malaysia. Holds Diploma in International Commercial Arbitration from CIArb University of Oxford. Arbitrator with BICAM and BDAC, and Adjudicator with AIAC. Expertise in ADR, law reforms, and dispute resolution."
     },
     {
       name: "David A. Asiedu",
       role: "Legal Practitioner & ADR Specialist",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400",
+      image: davidImage,
       bio: "Experienced legal practitioner specializing in alternative dispute resolution and commercial arbitration across multiple jurisdictions."
     },
     {
       name: "Dr. Misha Kumar",
       role: "ADR Scholar & Practitioner",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=400",
+      image: mishaImage,
       bio: "Leading academic and practitioner in alternative dispute resolution with extensive experience in mediation and arbitration training."
     },
     {
       name: "Dr. Simon Peter Tsekpo",
       role: "International Arbitration Expert",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400",
+      image: simonImage,
       bio: "Expert in international commercial arbitration with focus on cross-border dispute resolution and ADR capacity building."
     },
     {
@@ -73,7 +80,7 @@ const Governance = () => {
     {
       name: "Dr. Kolawale Mayomi",
       role: "Research Director & ADR Specialist",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400",
+      image: kolawoleImage,
       bio: "Research Director with expertise in ADR innovation and development of new dispute resolution methodologies for emerging challenges."
     }
   ]
@@ -137,7 +144,7 @@ const Governance = () => {
       {/* Image Divider */}
       <section className="image-divider">
         <img 
-          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074" 
+          src={governanceTeamImage}
           alt="CIMA team collaboration"
         />
       </section>
