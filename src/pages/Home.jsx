@@ -24,6 +24,7 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
+  const [statsCounted, setStatsCounted] = useState(false)
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -43,6 +44,62 @@ const Home = () => {
 
     return () => window.clearInterval(timer)
   }, [isPaused, prefersReducedMotion])
+
+  // Counter animation for statistics
+  useEffect(() => {
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !statsCounted) {
+          setStatsCounted(true)
+          animateCounters()
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: 0.3
+    })
+
+    const statsSection = document.querySelector('.statistics')
+    if (statsSection) {
+      observer.observe(statsSection)
+    }
+
+    return () => {
+      if (statsSection) {
+        observer.unobserve(statsSection)
+      }
+    }
+  }, [statsCounted])
+
+  const animateCounters = () => {
+    const counters = [
+      { id: 'stat-1', target: 500, suffix: '+' },
+      { id: 'stat-2', target: 25, suffix: '+' },
+      { id: 'stat-3', target: 100, suffix: '+' },
+      { id: 'stat-4', target: 15, suffix: '+' }
+    ]
+
+    counters.forEach((counter) => {
+      const element = document.getElementById(counter.id)
+      if (!element) return
+
+      let current = 0
+      const increment = counter.target / 50
+      const duration = 2000
+      const stepTime = duration / 50
+
+      const timer = setInterval(() => {
+        current += increment
+        if (current >= counter.target) {
+          element.textContent = counter.target + counter.suffix
+          clearInterval(timer)
+        } else {
+          element.textContent = Math.floor(current) + counter.suffix
+        }
+      }, stepTime)
+    })
+  }
 
   return (
     <div className="home">
@@ -154,19 +211,19 @@ const Home = () => {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item">
-              <div className="stat-number">500+</div>
+              <div className="stat-number" id="stat-1">0+</div>
               <div className="stat-label">Professionals Trained</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">25+</div>
+              <div className="stat-number" id="stat-2">0+</div>
               <div className="stat-label">Countries Reached</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">100+</div>
+              <div className="stat-number" id="stat-3">0+</div>
               <div className="stat-label">Expert Instructors</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">15+</div>
+              <div className="stat-number" id="stat-4">0+</div>
               <div className="stat-label">Years of Excellence</div>
             </div>
           </div>
