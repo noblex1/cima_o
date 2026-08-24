@@ -16,6 +16,7 @@ import Campaigns from './pages/Campaigns'
 import Resources from './pages/Resources'
 import Careers from './pages/Careers'
 import Gallery from './pages/Gallery'
+import Courses from './pages/Courses'
 import Commercial from './pages/Commercial'
 import Construction from './pages/Construction'
 import Investment from './pages/Investment'
@@ -54,6 +55,7 @@ function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/courses" element={<Courses />} />
           <Route path="/news" element={<News />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />

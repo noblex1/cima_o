@@ -99,7 +99,7 @@ const Header = () => {
               <Link to="/membership/young-forum" className="dropdown-item" onClick={closeMobileMenu}>CIMA Young Forum</Link>
             </div>
           </div>
-          <a href="https://cimalearn.thecima.org" className="nav-link">Courses</a>
+          <Link to="/courses" className="nav-link" onClick={closeMobileMenu}>Courses</Link>
           <Link to="/global-100" className="nav-link" onClick={closeMobileMenu}>Global 100</Link>
           
           <div className="nav-item dropdown">
