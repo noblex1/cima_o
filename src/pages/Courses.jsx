@@ -1,6 +1,7 @@
 import React from 'react'
 import { Calendar, ExternalLink } from 'lucide-react'
 import './Courses.css'
+import course1Image from '../../assets/c1.jpg'
 import course2Image from '../../assets/c2.jpeg'
 import course3Image from '../../assets/c3.jpeg'
 
@@ -8,7 +9,7 @@ const Courses = () => {
   const courses = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1589391886645-d51941baf7fb?q=80&w=2070',
+      image: course1Image,
       date: 'August 5, 2026 to December 31, 2026',
       title: 'Online Course on Maritime Mediation',
       description: 'Maritime mediation course for professionals seeking expertise in resolving maritime disputes through alternative dispute resolution methods.',
