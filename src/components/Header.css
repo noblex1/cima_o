@@ -229,6 +229,9 @@
     visibility: hidden;
     border-radius: 16px;
     justify-content: flex-start;
+    max-height: calc(100vh - 7rem);
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .nav.mobile-open {
@@ -304,6 +307,12 @@
 
   .logo-image {
     height: 44px;
+  }
+
+  .nav {
+    top: 4.5rem;
+    padding: 1rem;
+    max-height: calc(100vh - 6rem);
   }
 
   .nav-actions {
