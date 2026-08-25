@@ -10,6 +10,7 @@ import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.
 import asiaAfricaPoster from '../../assets/WhatsApp Image 2026-08-21 at 08.15.32.jpeg'
 import certificate1 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.53.jpeg'
 import certificate2 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.49.jpeg'
+import summerSchoolBrochure from '../../assets/2026 CIMA Summer School (2) (1).pdf'
 import logo1 from '../../assets/trusted/trustedby/AAA.png'
 import logo2 from '../../assets/trusted/trustedby/AF BAR.png'
 import logo3 from '../../assets/trusted/trustedby/GBA.webp'
@@ -366,7 +367,7 @@ const Home = () => {
                   <Link to="/events/summer-school-2026" className="btn-event-register">
                     Register
                   </Link>
-                  <a href="/assets/2026 CIMA Summer School (2) (1).pdf" download className="btn-event-download">
+                  <a href={summerSchoolBrochure} download="CIMA_Summer_School_2026_Brochure.pdf" className="btn-event-download">
                     Download Brochure
                   </a>
                 </div>
@@ -390,7 +391,7 @@ const Home = () => {
                   <a href="https://cimalearn.thecima.org" target="_blank" rel="noreferrer" className="btn-event-register">
                     Register
                   </a>
-                  <a href="/assets/2026 CIMA Summer School (2) (1).pdf" download className="btn-event-download">
+                  <a href={summerSchoolBrochure} download="CIMA_Summer_School_2026_Brochure.pdf" className="btn-event-download">
                     Download Brochure
                   </a>
                 </div>
