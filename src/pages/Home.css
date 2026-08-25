@@ -675,7 +675,6 @@
 .certificate-wrapper {
   position: relative;
   width: 100%;
-  height: 500px;
   overflow: hidden;
   background: #ffffff;
   user-select: none;
@@ -685,6 +684,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 /* Prevent right-click and screenshot protection */
@@ -702,7 +702,8 @@
 
 .certificate-image {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-width: 100%;
   object-fit: contain;
   display: block;
   pointer-events: none;
@@ -795,11 +796,11 @@
   }
 
   .certificate-wrapper {
-    height: 450px;
+    padding: 0.75rem;
   }
 
   .certificate-watermark {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .certificate-info {
@@ -821,11 +822,11 @@
   }
 
   .certificate-wrapper {
-    height: 400px;
+    padding: 0.5rem;
   }
 
   .certificate-watermark {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .certificate-info {

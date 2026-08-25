@@ -456,7 +456,7 @@ const Home = () => {
           <div className="certificates-grid">
             <div className="certificate-card">
               <div className="certificate-wrapper">
-                <div className="certificate-watermark">CIMA</div>
+                <div className="certificate-watermark">Sample</div>
                 <img 
                   src={certificate1} 
                   alt="CIMA Certificate Sample 1"
@@ -476,7 +476,7 @@ const Home = () => {
 
             <div className="certificate-card">
               <div className="certificate-wrapper">
-                <div className="certificate-watermark">CIMA</div>
+                <div className="certificate-watermark">Sample</div>
                 <img 
                   src={certificate2} 
                   alt="CIMA Certificate Sample 2"
