@@ -6,6 +6,7 @@ import heroImage from '../../assets/LONDON.jpg'
 import chinaImage from '../../assets/CHINA-1.jpg'
 import accraTwoImage from '../../assets/ACCRA-2.jpg'
 import accraOneImage from '../../assets/ACCRA-1.jpg'
+import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.01.jpeg'
 import logo1 from '../../assets/trusted/trustedby/AAA.png'
 import logo2 from '../../assets/trusted/trustedby/AF BAR.png'
 import logo3 from '../../assets/trusted/trustedby/GBA.webp'
@@ -348,18 +349,24 @@ const Home = () => {
             <div className="event-card">
               <div className="event-image">
                 <img 
-                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070" 
-                  alt="Conference"
+                  src={summerSchoolPoster} 
+                  alt="CIMA Summer School"
                 />
               </div>
               <div className="event-content">
                 <div className="event-date">
                   <Calendar size={18} />
-                  <span>August - September 2026</span>
+                  <span>26 Aug - 4 Sept, 2026</span>
                 </div>
-                <h3>CIMA Summer School on International Arbitration</h3>
-                <p>Intensive certification courses for aspiring mediators and arbitrators with AI-driven simulations and practical experience.</p>
-                <Link to="/events/1" className="event-link">Learn more <ArrowRight size={16} /></Link>
+                <h3>2026 CIMA Summer School on International Arbitration</h3>
+                <div className="event-actions">
+                  <Link to="/events/summer-school-2026" className="btn-event-register">
+                    Register
+                  </Link>
+                  <a href="/assets/2026 CIMA Summer School (2) (1).pdf" download className="btn-event-download">
+                    Download Brochure
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -375,9 +382,15 @@ const Home = () => {
                   <Calendar size={18} />
                   <span>2026</span>
                 </div>
-                <h3>CIMA Asia-Africa Mock Arbitration Programme</h3>
-                <p>A practical, hands-on training program where participants prepare cases, present arguments, examine evidence, deliberate, and deliver reasoned awards.</p>
-                <Link to="/events/2" className="event-link">Learn more <ArrowRight size={16} /></Link>
+                <h3>Asia-Africa Mock Arbitration Programme</h3>
+                <div className="event-actions">
+                  <a href="https://cimalearn.thecima.org" target="_blank" rel="noreferrer" className="btn-event-register">
+                    Register
+                  </a>
+                  <a href="/assets/2026 CIMA Summer School (2) (1).pdf" download className="btn-event-download">
+                    Download Brochure
+                  </a>
+                </div>
               </div>
             </div>
           </div>

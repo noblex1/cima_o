@@ -37,6 +37,7 @@ import YoungForum from './pages/YoungForum'
 import Global100 from './pages/Global100'
 import SubmitDispute from './pages/SubmitDispute'
 import RegisterArbitrator from './pages/RegisterArbitrator'
+import SummerSchoolDetail from './pages/SummerSchoolDetail'
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
           <Route path="/global-100" element={<Global100 />} />
           <Route path="/contact/submit-dispute" element={<SubmitDispute />} />
           <Route path="/contact/register-arbitrator" element={<RegisterArbitrator />} />
+          <Route path="/events/summer-school-2026" element={<SummerSchoolDetail />} />
         </Routes>
         <Footer />
       </div>
