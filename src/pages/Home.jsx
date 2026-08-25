@@ -82,10 +82,10 @@ const Home = () => {
 
   const animateCounters = () => {
     const counters = [
-      { id: 'stat-1', target: 500, suffix: '+' },
-      { id: 'stat-2', target: 25, suffix: '+' },
+      { id: 'stat-1', target: 1500, suffix: '+' },
+      { id: 'stat-2', target: 33, suffix: '+' },
       { id: 'stat-3', target: 100, suffix: '+' },
-      { id: 'stat-4', target: 15, suffix: '+' }
+      { id: 'stat-4', target: 87, suffix: '+' }
     ]
 
     counters.forEach((counter) => {
