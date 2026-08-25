@@ -644,6 +644,208 @@
   flex-grow: 1;
 }
 
+/* Student Certificates Showcase */
+.certificates-showcase {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certificate-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--border-color);
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background: #ffffff;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Prevent right-click and screenshot protection */
+.certificate-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.certificate-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+/* Large CIMA Watermark */
+.certificate-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(117, 0, 0, 0.08);
+  letter-spacing: 0.2em;
+  pointer-events: none;
+  user-select: none;
+  z-index: 2;
+  white-space: nowrap;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.certificate-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 4;
+}
+
+.certificate-card:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(117, 0, 0, 0.95);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-badge svg {
+  color: var(--gold);
+}
+
+.certificate-info {
+  padding: 2rem;
+}
+
+.certificate-info h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.certificate-info p {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Certificates */
+@media (max-width: 968px) {
+  .certificates-showcase {
+    padding: 4rem 0;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .certificate-wrapper {
+    height: 450px;
+  }
+
+  .certificate-watermark {
+    font-size: 6rem;
+  }
+
+  .certificate-info {
+    padding: 1.75rem;
+  }
+
+  .certificate-info h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates-showcase {
+    padding: 3rem 0;
+  }
+
+  .certificates-grid {
+    gap: 1.5rem;
+  }
+
+  .certificate-wrapper {
+    height: 400px;
+  }
+
+  .certificate-watermark {
+    font-size: 4rem;
+  }
+
+  .certificate-info {
+    padding: 1.5rem;
+  }
+
+  .certificate-info h3 {
+    font-size: 1.15rem;
+  }
+
+  .certificate-info p {
+    font-size: 0.95rem;
+  }
+
+  .certificate-badge {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.85rem;
+  }
+}
+
 /* Final CTA */
 .final-cta {
   padding: 6rem 0;

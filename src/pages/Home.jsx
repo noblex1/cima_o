@@ -8,6 +8,8 @@ import accraTwoImage from '../../assets/ACCRA-2.jpg'
 import accraOneImage from '../../assets/ACCRA-1.jpg'
 import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.01.jpeg'
 import asiaAfricaPoster from '../../assets/WhatsApp Image 2026-08-21 at 08.15.32.jpeg'
+import certificate1 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.53.jpeg'
+import certificate2 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.49.jpeg'
 import logo1 from '../../assets/trusted/trustedby/AAA.png'
 import logo2 from '../../assets/trusted/trustedby/AF BAR.png'
 import logo3 from '../../assets/trusted/trustedby/GBA.webp'
@@ -439,6 +441,58 @@ const Home = () => {
           </div>
           <div className="logos-disclaimer">
             <p>Affiliations are stated for identification only and do not imply institutional endorsement, accreditation, sponsorship or partnership with CIMA.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Student Certificates Showcase */}
+      <section className="certificates-showcase">
+        <div className="container">
+          <div className="section-header-center">
+            <h2>Student Success Stories</h2>
+            <p>Our graduates receive internationally recognized certifications in arbitration and mediation</p>
+          </div>
+          
+          <div className="certificates-grid">
+            <div className="certificate-card">
+              <div className="certificate-wrapper">
+                <div className="certificate-watermark">CIMA</div>
+                <img 
+                  src={certificate1} 
+                  alt="CIMA Certificate Sample 1"
+                  className="certificate-image"
+                />
+                <div className="certificate-overlay">
+                  <div className="certificate-badge">
+                    <Award size={24} />
+                    <span>Verified Certificate</span>
+                  </div>
+                </div>
+              </div>
+              <div className="certificate-info">
+                <h3>CIMA Certificate</h3>
+              </div>
+            </div>
+
+            <div className="certificate-card">
+              <div className="certificate-wrapper">
+                <div className="certificate-watermark">CIMA</div>
+                <img 
+                  src={certificate2} 
+                  alt="CIMA Certificate Sample 2"
+                  className="certificate-image"
+                />
+                <div className="certificate-overlay">
+                  <div className="certificate-badge">
+                    <Award size={24} />
+                    <span>Verified Certificate</span>
+                  </div>
+                </div>
+              </div>
+              <div className="certificate-info">
+                <h3>CIMA Certificate</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
