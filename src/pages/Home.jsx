@@ -6,12 +6,16 @@ import heroImage from '../../assets/LONDON.jpg'
 import chinaImage from '../../assets/CHINA-1.jpg'
 import accraTwoImage from '../../assets/ACCRA-2.jpg'
 import accraOneImage from '../../assets/ACCRA-1.jpg'
-import logo1 from '../../assets/trusted/1.jpeg'
-import logo2 from '../../assets/trusted/WhatsApp-Image-2026-05-05-at-08.45.jpg'
-import logo3 from '../../assets/trusted/WhatsApp-Image-2026-05-12-at-12.34.07.jpeg'
-import logo4 from '../../assets/trusted/WhatsApp-Image-2026-05-12-at-12.37.17.jpeg'
-import logo5 from '../../assets/trusted/WhatsApp-Image-2026-05-12-at-12.42.17.jpeg'
-import logo6 from '../../assets/trusted/WhatsApp-Image-2026-05-29-at-09.12.27.jpeg'
+import logo1 from '../../assets/trusted/trustedby/AAA.png'
+import logo2 from '../../assets/trusted/trustedby/AF BAR.png'
+import logo3 from '../../assets/trusted/trustedby/GBA.webp'
+import logo4 from '../../assets/trusted/trustedby/HARVARD.webp'
+import logo5 from '../../assets/trusted/trustedby/images.jfif'
+import logo6 from '../../assets/trusted/trustedby/LAW SOCIETY.png'
+import logo7 from '../../assets/trusted/trustedby/LCIA.png'
+import logo8 from '../../assets/trusted/trustedby/LSK.png'
+import logo9 from '../../assets/trusted/trustedby/OXFORD U.webp'
+import logo10 from '../../assets/trusted/trustedby/TAS.png'
 
 const heroImages = [
   { source: heroImage, alt: 'Professional business meeting in London' },
@@ -384,7 +388,8 @@ const Home = () => {
       <section className="institutional-network">
         <div className="container">
           <div className="section-header-center">
-            <h2>Trusted by Global Law Firms & International Organizations</h2>
+            <h2>TRUSTED BY PROFESSIONALS WORLDWIDE</h2>
+            <p>Our growing community includes professionals affiliated with leading institutions and organisations worldwide.</p>
           </div>
           <div className="logos-grid">
             <div className="logo-card">
@@ -405,6 +410,21 @@ const Home = () => {
             <div className="logo-card">
               <img src={logo6} alt="Partner organization" />
             </div>
+            <div className="logo-card">
+              <img src={logo7} alt="Partner organization" />
+            </div>
+            <div className="logo-card">
+              <img src={logo8} alt="Partner organization" />
+            </div>
+            <div className="logo-card">
+              <img src={logo9} alt="Partner organization" />
+            </div>
+            <div className="logo-card">
+              <img src={logo10} alt="Partner organization" />
+            </div>
+          </div>
+          <div className="logos-disclaimer">
+            <p>Affiliations are stated for identification only and do not imply institutional endorsement, accreditation, sponsorship or partnership with CIMA.</p>
           </div>
         </div>
       </section>

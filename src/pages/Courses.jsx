@@ -61,8 +61,7 @@ const Courses = () => {
         <div className="container">
           <h1 className="courses-main-title">
             The world's best<br />
-            online ADR education<br />
-            available from Oxfordshire.
+            online ADR education available from Oxfordshire.
           </h1>
         </div>
       </section>
