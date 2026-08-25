@@ -7,6 +7,7 @@ import chinaImage from '../../assets/CHINA-1.jpg'
 import accraTwoImage from '../../assets/ACCRA-2.jpg'
 import accraOneImage from '../../assets/ACCRA-1.jpg'
 import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.01.jpeg'
+import asiaAfricaPoster from '../../assets/WhatsApp Image 2026-08-21 at 08.15.32.jpeg'
 import logo1 from '../../assets/trusted/trustedby/AAA.png'
 import logo2 from '../../assets/trusted/trustedby/AF BAR.png'
 import logo3 from '../../assets/trusted/trustedby/GBA.webp'
@@ -373,8 +374,8 @@ const Home = () => {
             <div className="event-card">
               <div className="event-image">
                 <img 
-                  src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?q=80&w=2070" 
-                  alt="Workshop"
+                  src={asiaAfricaPoster} 
+                  alt="Asia-Africa Mock Arbitration Programme"
                 />
               </div>
               <div className="event-content">
