@@ -63,7 +63,7 @@ const SummerSchoolDetail = () => {
               <div className="event-contact-info">
                 <div className="contact-item">
                   <Phone size={18} />
-                  <span>+233 (0) 536 735 535</span>
+                  <span>+233 (0) 536 735 535 / 024 1022 964</span>
                 </div>
                 <div className="contact-item">
                   <Mail size={18} />
