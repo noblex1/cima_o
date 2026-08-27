@@ -1,5 +1,6 @@
 import React from 'react'
-import { Calendar, ExternalLink } from 'lucide-react'
+import { Calendar, ExternalLink, FileText } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import './Courses.css'
 import course1Image from '../../assets/c1.jpg'
 import course2Image from '../../assets/c2.jpeg'
@@ -34,12 +35,6 @@ const Courses = () => {
       registerLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdobixLiq-WUS3pw49cIdkcirQHlKpUhCk_KD2uzXgGvFOsOQ/viewform',
       color: '#A94442'
     }
-  ]
-
-  const resources = [
-    { title: 'ARBITRATOR RESOURCES', link: '/resources/arbitrator' },
-    { title: 'MEDIATOR RESOURCES', link: '/resources/mediator' },
-    { title: 'PRACTITIONER JOURNALS', link: '/resources/journals' }
   ]
 
   return (
@@ -97,12 +92,11 @@ const Courses = () => {
       {/* Resources Section */}
       <section className="resources-section">
         <div className="container">
-          <div className="resources-grid">
-            {resources.map((resource, index) => (
-              <a key={index} href={resource.link} className="resource-btn">
-                {resource.title}
-              </a>
-            ))}
+          <div className="resources-single">
+            <Link to="/resources" className="resource-btn-single">
+              <FileText size={20} />
+              <span>ADR PROFESSIONAL RESOURCES</span>
+            </Link>
           </div>
         </div>
       </section>

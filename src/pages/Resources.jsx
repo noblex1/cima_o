@@ -1,234 +1,59 @@
 import React from 'react'
-import { FileText, Download, ArrowRight } from 'lucide-react'
-import './CommonPages.css'
+import { Download, FileText } from 'lucide-react'
+import './Resources.css'
+import legalFrameworkPDF from '../../assets/The-Legal-Framework-of-Domestic-and-International-Arbitration.pdf'
 
 const Resources = () => {
+  // Add more resources here as they become available
   const resources = [
-    {
-      id: 1,
-      title: "ACCRA RULES 2025",
-      category: "Rules",
-      description: "Comprehensive arbitration and mediation rules for international disputes"
+    { 
+      name: 'The Legal Framework of Domestic and International Arbitration', 
+      type: 'PDF', 
+      size: '1.1 MB',
+      file: legalFrameworkPDF
     },
-    {
-      id: 2,
-      title: "CIMA RULES 2025",
-      category: "Rules",
-      description: "Official Center for International Mediators and Arbitrators rules and procedures"
-    },
-    {
-      id: 3,
-      title: "2026 ANNUAL WORKPLAN",
-      category: "Planning",
-      description: "Strategic objectives and programs for mediators and arbitrators community"
-    },
-    {
-      id: 4,
-      title: "Code of Ethics - For Lawyers and Mediators and Arbitrators",
-      category: "Ethics",
-      description: "Professional standards and ethical guidelines for ADR practitioners"
-    },
-    {
-      id: 5,
-      title: "Join CIMA",
-      category: "Membership",
-      description: "Become part of the global community of certified mediators and arbitrators"
-    },
-    {
-      id: 6,
-      title: "Member Login",
-      category: "Portal",
-      description: "Access your member dashboard, certificates, and exclusive resources"
-    },
-    {
-      id: 7,
-      title: "Equality, Diversity & Inclusion (EDI) Policy",
-      category: "Policy",
-      description: "CIMA's commitment to fostering an inclusive ADR community"
-    },
-    {
-      id: 8,
-      title: "CIMA Course Completion Policy",
-      category: "Policy",
-      description: "Requirements and standards for training program completion"
-    },
-    {
-      id: 9,
-      title: "CIMA Conflict Resolution Policy",
-      category: "Policy",
-      description: "Internal procedures for addressing disputes and conflicts"
-    },
-    {
-      id: 10,
-      title: "CIMA Code of Conduct and Ethics for Members",
-      category: "Ethics",
-      description: "Professional conduct standards for all CIMA members"
-    },
-    {
-      id: 11,
-      title: "CIMA Privacy Policy",
-      category: "Policy",
-      description: "How we collect, use, and protect your personal information"
-    },
-    {
-      id: 12,
-      title: "CIMA Terms & Conditions",
-      category: "Legal",
-      description: "Terms governing use of CIMA services and programs"
-    },
-    {
-      id: 13,
-      title: "Professional Liability and Indemnity",
-      category: "Legal",
-      description: "Coverage and protection for certified practitioners"
-    },
-    {
-      id: 14,
-      title: "Fees Schedule",
-      category: "Financial",
-      description: "Membership dues, training fees, and certification costs"
-    },
-    {
-      id: 15,
-      title: "FAQs",
-      category: "Support",
-      description: "Frequently asked questions about CIMA programs and services"
-    },
-    {
-      id: 16,
-      title: "Continuing Professional Development",
-      category: "Training",
-      description: "Ongoing education requirements and opportunities for members"
-    },
-    {
-      id: 17,
-      title: "E-Learning Platform",
-      category: "Training",
-      description: "Access online courses, webinars, and training materials"
-    },
-    {
-      id: 18,
-      title: "Member Referral List",
-      category: "Directory",
-      description: "Find certified mediators and arbitrators by location and specialty"
-    },
-    {
-      id: 19,
-      title: "Publications and Research",
-      category: "Resources",
-      description: "Journal articles, case studies, and ADR research papers"
-    },
-    {
-      id: 20,
-      title: "Events & Webinars",
-      category: "Events",
-      description: "Upcoming training sessions, conferences, and networking events"
-    },
-    {
-      id: 21,
-      title: "CIMA_PRACTICAL USER GUIDE FOR ADR_FINAL",
-      category: "Guide",
-      description: "Comprehensive guide for applying ADR principles in practice"
-    },
-    {
-      id: 22,
-      title: "Legal Information",
-      category: "Legal",
-      description: "Important legal notices and regulatory compliance information"
-    }
+    // Add more resources below this line
   ]
 
-  const getCategoryColor = (category) => {
-    const colors = {
-      'Rules': 'category-burgundy',
-      'Policy': 'category-gold',
-      'Ethics': 'category-burgundy',
-      'Training': 'category-gold',
-      'Legal': 'category-burgundy',
-      'Membership': 'category-gold',
-      'Portal': 'category-burgundy',
-      'Financial': 'category-gold',
-      'Support': 'category-burgundy',
-      'Directory': 'category-gold',
-      'Resources': 'category-burgundy',
-      'Events': 'category-gold',
-      'Guide': 'category-burgundy',
-      'Planning': 'category-gold'
-    }
-    return colors[category] || 'category-default'
-  }
-
   return (
-    <div className="common-page">
+    <div className="resources-page">
       {/* Hero Section */}
-      <section className="page-hero resources-hero">
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1 className="page-title">Resources</h1>
-          <p className="hero-subtitle">
-            Access comprehensive guides, policies, and tools for ADR professionals
-          </p>
+      <section className="resources-hero">
+        <div className="container">
+          <h1>ADR Professional Resources</h1>
+          <p>Download essential materials, guides, and journals for alternative dispute resolution professionals</p>
         </div>
       </section>
 
-      {/* Resources Grid Section */}
-      <section className="content-section resources-main">
+      {/* Resources List */}
+      <section className="resources-content">
         <div className="container">
-          <div className="resources-intro">
-            <h2>Explore Our Resources</h2>
-            <p>Everything you need to excel in alternative dispute resolution - from rules and policies to training materials and professional tools</p>
-          </div>
-
-          <div className="resources-grid">
-            {resources.map((resource) => (
-              <div key={resource.id} className="resource-card">
-                <div className="resource-icon">
-                  <FileText size={28} />
+          <div className="resources-list">
+            {resources.map((resource, index) => (
+              <div key={index} className="resource-item">
+                <div className="resource-info">
+                  <FileText size={24} />
+                  <div>
+                    <h4>{resource.name}</h4>
+                    <span className="resource-meta">{resource.type} • {resource.size}</span>
+                  </div>
                 </div>
-                <div className="resource-content">
-                  <span className={`resource-category ${getCategoryColor(resource.category)}`}>
-                    {resource.category}
-                  </span>
-                  <h3>{resource.title}</h3>
-                  <p>{resource.description}</p>
-                </div>
-                <button className="resource-btn">
-                  <span>Download</span>
-                  <Download size={16} />
-                </button>
+                <a href={resource.file} download className="btn-download">
+                  <Download size={18} />
+                  Download
+                </a>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="resources-cta">
+      {/* Coming Soon Notice */}
+      <section className="coming-soon-notice">
         <div className="container">
-          <div className="resources-cta-content">
-            <div className="resources-cta-text">
-              <h2>Need More Information?</h2>
-              <p>Our team is ready to help you find the resources and support you need for your ADR practice</p>
-            </div>
-            <a href="mailto:info@thecima.org" className="btn-resources-contact">
-              Contact Us <ArrowRight size={18} />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Subscribe Section */}
-      <section className="subscribe-section">
-        <div className="container">
-          <div className="subscribe-content">
-            <div className="subscribe-text">
-              <h3>Subscribe for latest updates & insights</h3>
-              <p>Stay informed about new resources, policy updates, and professional development opportunities</p>
-            </div>
-            <div className="subscribe-form">
-              <input type="email" placeholder="Email" className="subscribe-input" />
-              <button className="subscribe-btn">Subscribe</button>
-            </div>
+          <div className="notice-box">
+            <h3>More Resources Coming Soon</h3>
+            <p>We're continuously updating our resource library with new materials for ADR professionals. Check back regularly for new additions.</p>
           </div>
         </div>
       </section>
