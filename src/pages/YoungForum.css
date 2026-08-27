@@ -59,23 +59,28 @@
   border-color: var(--burgundy);
 }
 
-.stat-icon {
-  color: var(--burgundy);
+.young-forum-overview .stat-icon {
+  color: var(--burgundy) !important;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
 
-.stat-number {
+.young-forum-overview .stat-icon svg {
+  color: var(--burgundy) !important;
+  stroke: var(--burgundy) !important;
+}
+
+.young-forum-overview .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--text-dark);
+  color: var(--burgundy) !important;
   margin-bottom: 0.5rem;
 }
 
-.stat-label {
+.young-forum-overview .stat-label {
   font-size: 1rem;
-  color: var(--text-light);
+  color: var(--burgundy) !important;
   font-weight: 500;
 }
 
