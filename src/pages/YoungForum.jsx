@@ -278,7 +278,7 @@ const YoungForum = () => {
               <p className="fee-description">
                 Reduced rates available for students and professionals from developing countries
               </p>
-              <a href="https://cimalearn.thecima.org" className="btn-join" target="_blank" rel="noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZJJFa2qkSDfz6GS1aYKyOjTz6ZKDX1LWrlbUoXb58688IOA/viewform?usp=header" className="btn-join" target="_blank" rel="noreferrer">
                 Apply Now
               </a>
             </div>
