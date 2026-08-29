@@ -84,7 +84,8 @@ const Home = () => {
     const counters = [
       { id: 'stat-1', target: 1500, suffix: '+' },
       { id: 'stat-2', target: 33, suffix: '+' },
-      { id: 'stat-3', target: 75, suffix: '+' }
+      { id: 'stat-3', target: 75, suffix: '+' },
+      { id: 'stat-4', target: 27, suffix: '+' }
     ]
 
     counters.forEach((counter) => {
@@ -228,6 +229,10 @@ const Home = () => {
             <div className="stat-item">
               <div className="stat-number" id="stat-3">0+</div>
               <div className="stat-label">Expert Instructors</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number" id="stat-4">0+</div>
+              <div className="stat-label">Partners</div>
             </div>
           </div>
         </div>
