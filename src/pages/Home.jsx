@@ -9,7 +9,6 @@ import accraOneImage from '../../assets/ACCRA-1.jpg'
 import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.01.jpeg'
 import asiaAfricaPoster from '../../assets/WhatsApp Image 2026-08-21 at 08.15.32.jpeg'
 import certificate1 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.53.jpeg'
-import certificate2 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.49.jpeg'
 import summerSchoolBrochure from '../../assets/2026 CIMA Summer School (2) (1).pdf'
 import logo1 from '../../assets/trusted/trustedby/AAA.png'
 import logo2 from '../../assets/trusted/trustedby/AF BAR.png'
@@ -85,8 +84,7 @@ const Home = () => {
     const counters = [
       { id: 'stat-1', target: 1500, suffix: '+' },
       { id: 'stat-2', target: 33, suffix: '+' },
-      { id: 'stat-3', target: 75, suffix: '+' },
-      { id: 'stat-4', target: 87, suffix: '+' }
+      { id: 'stat-3', target: 75, suffix: '+' }
     ]
 
     counters.forEach((counter) => {
@@ -183,7 +181,7 @@ const Home = () => {
                   <path d="M32 45v10M23 55h18" />
                 </svg>
               </div>
-              <h3>Live Training & Certification</h3>
+              <h3>Global Training & Certification</h3>
               <p>Professional ADR courses, executive training, and certification at Associate, Member, and Fellowship levels.</p>
               <Link to="/arbitration" className="service-link">
                 Learn more <ArrowRight size={16} />
@@ -205,7 +203,7 @@ const Home = () => {
               <div className="service-icon">
                 <Globe size={32} />
               </div>
-              <h3>Global Network</h3>
+              <h3>International Network</h3>
               <p>Join professionals across 33+ countries committed to excellence in alternative dispute resolution.</p>
               <Link to="/about" className="service-link">
                 Learn more <ArrowRight size={16} />
@@ -230,10 +228,6 @@ const Home = () => {
             <div className="stat-item">
               <div className="stat-number" id="stat-3">0+</div>
               <div className="stat-label">Expert Instructors</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number" id="stat-4">0+</div>
-              <div className="stat-label">Years of Excellence</div>
             </div>
           </div>
         </div>
@@ -316,7 +310,7 @@ const Home = () => {
               />
               <div className="news-content">
                 <span className="news-date">August 10, 2026</span>
-                <h3>CIMA Becomes Official CPD Provider to Law Society</h3>
+                <h3>CIMA Becomes Official CPD Provider to Law Society of Kenya</h3>
                 <p>Recognition expands professional development opportunities for legal practitioners across Kenya.</p>
                 <Link to="/news/2" className="read-more">Read more <ArrowRight size={16} /></Link>
               </div>
@@ -461,26 +455,6 @@ const Home = () => {
                 <img 
                   src={certificate1} 
                   alt="CIMA Certificate Sample 1"
-                  className="certificate-image"
-                />
-                <div className="certificate-overlay">
-                  <div className="certificate-badge">
-                    <Award size={24} />
-                    <span>Verified Certificate</span>
-                  </div>
-                </div>
-              </div>
-              <div className="certificate-info">
-                <h3>CIMA Certificate</h3>
-              </div>
-            </div>
-
-            <div className="certificate-card">
-              <div className="certificate-wrapper">
-                <div className="certificate-watermark">Sample</div>
-                <img 
-                  src={certificate2} 
-                  alt="CIMA Certificate Sample 2"
                   className="certificate-image"
                 />
                 <div className="certificate-overlay">
