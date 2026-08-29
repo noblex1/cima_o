@@ -9,6 +9,41 @@
       }
     }
   ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "thecima.org"
+        }
+      ],
+      "destination": "https://www.thecima.org",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "thecima.org"
+        }
+      ],
+      "destination": "https://www.thecima.org/:path*",
+      "permanent": true
+    }
+  ],
   "routes": [
     {
       "src": "/assets/(.*)",
