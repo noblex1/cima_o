@@ -46,7 +46,7 @@ const YoungForum = () => {
                   <Globe size={32} />
                 </div>
                 <div className="stat-number">25+</div>
-                <div className="stat-label">Countries</div>
+                <div className="stat-label">Jurisdictions</div>
               </div>
               <div className="stat-box">
                 <div className="stat-icon">
@@ -276,7 +276,7 @@ const YoungForum = () => {
               <h3>Membership Fee</h3>
               <p className="fee-amount">$50 per year</p>
               <p className="fee-description">
-                Reduced rates available for students and professionals from developing countries
+                Reduced rates available for students and professionals from developing jurisdictions
               </p>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZJJFa2qkSDfz6GS1aYKyOjTz6ZKDX1LWrlbUoXb58688IOA/viewform?usp=header" className="btn-join" target="_blank" rel="noreferrer">
                 Apply Now

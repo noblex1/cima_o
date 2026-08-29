@@ -71,7 +71,7 @@ const About = () => {
         <div className="hero-content">
           <h1 className="hero-title">About CIMA</h1>
           <p className="hero-subtitle">
-            Empowering ADR professionals across 33+ countries worldwide
+            Empowering ADR professionals across 33+ jurisdictions worldwide
           </p>
         </div>
       </section>
@@ -83,7 +83,7 @@ const About = () => {
             <p className="lead-text">
               The Center for International Mediators and Arbitrators (CIMA), headquartered in Oxford and Accra, 
               is dedicated to empowering lawyers, ADR practitioners, and students through internationally 
-              benchmarked training and certification. With members in more than 33 countries, we provide 
+              benchmarked training and certification. With members in more than 33 jurisdictions, we provide 
               AI-driven simulations, thought-leadership events, practical mock proceedings, and comprehensive 
               professional development programs.
             </p>
@@ -95,7 +95,7 @@ const About = () => {
                 <Globe size={28} />
               </div>
               <div className="stat-number" id="about-stat-1">0+</div>
-              <div className="stat-label">Countries with Members</div>
+              <div className="stat-label">Jurisdictions with Members</div>
             </div>
 
             <div className="stat-card">

@@ -153,7 +153,7 @@ const Commercial = () => {
             </div>
             <div className="stat-item">
               <div className="stat-number">25+</div>
-              <div className="stat-label">Countries Represented</div>
+              <div className="stat-label">Jurisdictions Represented</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">100+</div>
@@ -197,7 +197,7 @@ const Commercial = () => {
             <div className="feature-item">
               <FileText size={28} />
               <h3>Enforceable Awards</h3>
-              <p>Awards recognized and enforceable under the New York Convention across 170+ countries worldwide</p>
+              <p>Awards recognized and enforceable under the New York Convention across 170+ jurisdictions worldwide</p>
             </div>
           </div>
         </div>

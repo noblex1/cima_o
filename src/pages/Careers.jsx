@@ -13,7 +13,7 @@ const Careers = () => {
     },
     {
       id: 2,
-      title: "DEPUTY COUNTRY LEAD - KENYA",
+      title: "DEPUTY JURISDICTION LEAD - KENYA",
       location: "Nairobi",
       type: "Full-time",
       description: "Lead strategic initiatives and operations for CIMA's Kenya branch and expansion activities"
@@ -143,7 +143,7 @@ const Careers = () => {
     {
       icon: <Users size={32} />,
       title: "Global Network",
-      description: "Connect with ADR professionals across 33+ countries and leading institutions"
+      description: "Connect with ADR professionals across 33+ jurisdictions and leading institutions"
     },
     {
       icon: <Target size={32} />,

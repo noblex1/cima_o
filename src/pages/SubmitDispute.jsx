@@ -268,7 +268,7 @@ const SubmitDispute = () => {
             <div className="benefit-feature">
               <CheckCircle2 size={32} />
               <h3>Enforceable Awards</h3>
-              <p>Awards are enforceable under the New York Convention in over 160 countries worldwide</p>
+              <p>Awards are enforceable under the New York Convention in over 160 jurisdictions worldwide</p>
             </div>
             <div className="benefit-feature">
               <Users size={32} />

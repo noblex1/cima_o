@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
             <p className="footer-description">
               Empowering lawyers, ADR practitioners, and students through internationally 
-              benchmarked training and certification across 33+ countries worldwide.
+              benchmarked training and certification across 33+ jurisdictions worldwide.
             </p>
             <div className="footer-social">
               <a href="https://web.facebook.com/cimaADR" className="social-link" aria-label="Facebook" target="_blank" rel="noreferrer">

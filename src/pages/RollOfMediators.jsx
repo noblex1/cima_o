@@ -217,7 +217,7 @@ const RollOfMediators = () => {
           <div className="eligibility-content">
             <h2>Becoming a Member of the Roll</h2>
             <p className="lead-text">
-              CIMA membership is open to individuals worldwide, irrespective of their country of origin. 
+              CIMA membership is open to individuals worldwide, irrespective of their jurisdiction of origin. 
               To become a member of the Center for International Mediators and Arbitrators (CIMA), you 
               choose between three membership categories: Associate (ACIMArb), Member (MCIMArb), or 
               Fellow (FCIMArb).
@@ -292,7 +292,7 @@ const RollOfMediators = () => {
               <Globe size={40} />
               <h3>Global Coverage</h3>
               <p>
-                Access ADR professionals across 33+ countries with diverse jurisdictional experience. Our 
+                Access ADR professionals across 33+ jurisdictions with diverse jurisdictional experience. Our 
                 members serve clients worldwide and understand international dispute resolution frameworks.
               </p>
             </div>
@@ -411,7 +411,7 @@ const RollOfMediators = () => {
         <div className="container">
           <div className="final-cta-content">
             <h2>Join the Roll of Certified Mediators & Arbitrators</h2>
-            <p>Enhance your visibility and access opportunities as a listed CIMA neutral recognized across 33+ countries</p>
+            <p>Enhance your visibility and access opportunities as a listed CIMA neutral recognized across 33+ jurisdictions</p>
             <div className="final-cta-buttons">
               <Link to="/contact" className="btn-cta-primary">Apply for Roll Inclusion</Link>
               <Link to="/membership/qualification-pathway" className="btn-cta-secondary">

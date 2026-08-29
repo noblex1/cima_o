@@ -205,7 +205,7 @@ const Home = () => {
                 <Globe size={32} />
               </div>
               <h3>International Network</h3>
-              <p>Join professionals across 33+ countries committed to excellence in alternative dispute resolution.</p>
+              <p>Join professionals across 33+ jurisdictions committed to excellence in alternative dispute resolution.</p>
               <Link to="/about" className="service-link">
                 Learn more <ArrowRight size={16} />
               </Link>
@@ -224,7 +224,7 @@ const Home = () => {
             </div>
             <div className="stat-item">
               <div className="stat-number" id="stat-2">0+</div>
-              <div className="stat-label">Countries Reached</div>
+              <div className="stat-label">Jurisdictions Reached</div>
             </div>
             <div className="stat-item">
               <div className="stat-number" id="stat-3">0+</div>
@@ -250,7 +250,7 @@ const Home = () => {
             <div className="feature-item">
               <Award size={28} />
               <h3>Global Certification</h3>
-              <p>Internationally benchmarked training and credentials recognized across 33+ countries</p>
+              <p>Internationally benchmarked training and credentials recognized across 33+ jurisdictions</p>
             </div>
 
             <div className="feature-item">

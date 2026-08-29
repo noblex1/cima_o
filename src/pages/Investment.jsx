@@ -163,7 +163,7 @@ const Investment = () => {
             </div>
             <div className="stat-item">
               <div className="stat-number">40+</div>
-              <div className="stat-label">Countries Represented</div>
+              <div className="stat-label">Jurisdictions Represented</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">75+</div>

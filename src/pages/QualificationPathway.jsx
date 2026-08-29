@@ -12,7 +12,7 @@ const QualificationPathway = () => {
           <div className="membership-hero-text">
             <h1 className="membership-hero-title">CIMA Qualification Pathway</h1>
             <p className="membership-hero-subtitle">
-              Learning Becomes Leadership. Join Professionals in 33+ Countries
+              Learning Becomes Leadership. Join Professionals in 33+ Jurisdictions
             </p>
           </div>
         </div>
@@ -426,7 +426,7 @@ const QualificationPathway = () => {
               <GraduationCap size={36} />
               <h3>Global Network</h3>
               <p>
-                Connect with over 500+ ADR professionals across 33+ countries, facilitating knowledge exchange, 
+                Connect with over 500+ ADR professionals across 33+ jurisdictions, facilitating knowledge exchange, 
                 collaboration, and cross-border opportunities.
               </p>
             </div>
@@ -565,7 +565,7 @@ const QualificationPathway = () => {
             <div className="faq-item">
               <h4>Are CIMA qualifications recognized internationally?</h4>
               <p>
-                Yes, CIMA qualifications are recognized across 33+ countries and by major ADR institutions 
+                Yes, CIMA qualifications are recognized across 33+ jurisdictions and by major ADR institutions 
                 worldwide, following international best practices.
               </p>
             </div>
@@ -601,7 +601,7 @@ const QualificationPathway = () => {
         <div className="container">
           <div className="final-cta-content">
             <h2>Begin Your Qualification Journey Today</h2>
-            <p>Join professionals across 33+ countries who have advanced their careers through CIMA's qualification pathway</p>
+            <p>Join professionals across 33+ jurisdictions who have advanced their careers through CIMA's qualification pathway</p>
             <div className="final-cta-buttons">
               <a href="https://cimalearn.thecima.org" className="btn-cta-primary" target="_blank" rel="noreferrer">
                 Explore Training Programs

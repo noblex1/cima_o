@@ -63,7 +63,7 @@ const Arbitration = () => {
                   <FileText size={24} />
                   <div>
                     <h4>International Recognition</h4>
-                    <p>CIMA credentials are recognized across 33+ countries with growing global acceptance</p>
+                    <p>CIMA credentials are recognized across 33+ jurisdictions with growing global acceptance</p>
                   </div>
                 </div>
               </div>
