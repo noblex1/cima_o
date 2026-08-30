@@ -10,7 +10,7 @@ import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.
 import asiaAfricaPoster from '../../assets/WhatsApp Image 2026-08-21 at 08.15.32.jpeg'
 import certificate1 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.53.jpeg'
 import summerSchoolBrochure from '../../assets/2026 CIMA Summer School (2) (1).pdf'
-import asiaAfricaBrochure from '../../assets/Asia-Africa Mock Arbitration Flyer.pdf'
+import asiaAfricaBrochure from '../../assets/Asia-Africa Mock Arbitration Flyer (1).pdf'
 import logo1 from '../../assets/trusted/trustedby/AAA.png'
 import logo2 from '../../assets/trusted/trustedby/AF BAR.png'
 import logo3 from '../../assets/trusted/trustedby/GBA.webp'
