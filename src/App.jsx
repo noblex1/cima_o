@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -40,55 +41,59 @@ import SubmitDispute from './pages/SubmitDispute'
 import RegisterArbitrator from './pages/RegisterArbitrator'
 import SummerSchoolDetail from './pages/SummerSchoolDetail'
 import ArbitratorProfile from './pages/ArbitratorProfile'
+import SuccessStoryProfile from './pages/SuccessStoryProfile'
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="app">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/arbitration" element={<Arbitration />} />
-          <Route path="/mediation" element={<Mediation />} />
-          <Route path="/rules" element={<Rules />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/governance" element={<Governance />} />
-          <Route path="/oxfordshire" element={<Oxfordshire />} />
-          <Route path="/campaigns" element={<Campaigns />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/practice-areas/commercial" element={<Commercial />} />
-          <Route path="/practice-areas/construction" element={<Construction />} />
-          <Route path="/practice-areas/investment" element={<Investment />} />
-          <Route path="/practice-areas/energy" element={<Energy />} />
-          <Route path="/practice-areas/financial" element={<Financial />} />
-          <Route path="/practice-areas/technology" element={<Technology />} />
-          <Route path="/practice-areas/maritime" element={<Maritime />} />
-          <Route path="/practice-areas/international" element={<International />} />
-          <Route path="/practice-areas/sports" element={<Sports />} />
-          <Route path="/practice-areas/labour" element={<Labour />} />
-          <Route path="/practice-areas/intellectual-property" element={<IntellectualProperty />} />
-          <Route path="/practice-areas/financial-crime" element={<FinancialCrime />} />
-          <Route path="/practice-areas/customary-arbitration" element={<CustomaryArbitration />} />
-          <Route path="/membership/qualification-pathway" element={<QualificationPathway />} />
-          <Route path="/membership/roll-of-mediators-arbitrators" element={<RollOfMediators />} />
-          <Route path="/membership/young-forum" element={<YoungForum />} />
-          <Route path="/membership/renewals" element={<MembershipRenewals />} />
-          <Route path="/global-100" element={<Global100 />} />
-          <Route path="/contact/submit-dispute" element={<SubmitDispute />} />
-          <Route path="/contact/register-arbitrator" element={<RegisterArbitrator />} />
-          <Route path="/events/summer-school-2026" element={<SummerSchoolDetail />} />
-          <Route path="/arbitrator/:profileId" element={<ArbitratorProfile />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="app">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/arbitration" element={<Arbitration />} />
+            <Route path="/mediation" element={<Mediation />} />
+            <Route path="/rules" element={<Rules />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/governance" element={<Governance />} />
+            <Route path="/oxfordshire" element={<Oxfordshire />} />
+            <Route path="/campaigns" element={<Campaigns />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/practice-areas/commercial" element={<Commercial />} />
+            <Route path="/practice-areas/construction" element={<Construction />} />
+            <Route path="/practice-areas/investment" element={<Investment />} />
+            <Route path="/practice-areas/energy" element={<Energy />} />
+            <Route path="/practice-areas/financial" element={<Financial />} />
+            <Route path="/practice-areas/technology" element={<Technology />} />
+            <Route path="/practice-areas/maritime" element={<Maritime />} />
+            <Route path="/practice-areas/international" element={<International />} />
+            <Route path="/practice-areas/sports" element={<Sports />} />
+            <Route path="/practice-areas/labour" element={<Labour />} />
+            <Route path="/practice-areas/intellectual-property" element={<IntellectualProperty />} />
+            <Route path="/practice-areas/financial-crime" element={<FinancialCrime />} />
+            <Route path="/practice-areas/customary-arbitration" element={<CustomaryArbitration />} />
+            <Route path="/membership/qualification-pathway" element={<QualificationPathway />} />
+            <Route path="/membership/roll-of-mediators-arbitrators" element={<RollOfMediators />} />
+            <Route path="/membership/young-forum" element={<YoungForum />} />
+            <Route path="/membership/renewals" element={<MembershipRenewals />} />
+            <Route path="/global-100" element={<Global100 />} />
+            <Route path="/contact/submit-dispute" element={<SubmitDispute />} />
+            <Route path="/contact/register-arbitrator" element={<RegisterArbitrator />} />
+            <Route path="/events/summer-school-2026" element={<SummerSchoolDetail />} />
+            <Route path="/arbitrator/:profileId" element={<ArbitratorProfile />} />
+            <Route path="/success-story/:storyId" element={<SuccessStoryProfile />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </HelmetProvider>
   )
 }
 

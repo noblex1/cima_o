@@ -646,7 +646,164 @@
   flex-grow: 1;
 }
 
-/* Student Certificates Showcase */
+/* Student Success Stories - Card Style */
+.success-stories {
+  padding: 6rem 0;
+  background: linear-gradient(to bottom, #fafafa 0%, #ffffff 100%);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.success-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.success-story-card {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.success-story-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(117, 0, 0, 0.15);
+  border-color: var(--burgundy);
+}
+
+.success-story-image {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, var(--off-white) 0%, var(--light-gray) 100%);
+}
+
+.success-story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.success-story-card:hover .success-story-image img {
+  transform: scale(1.05);
+}
+
+.success-story-content {
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: var(--off-white);
+}
+
+.success-story-content h3 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0;
+  line-height: 1.3;
+  display: inline;
+}
+
+.success-qualification {
+  font-size: 0.95rem;
+  color: var(--burgundy);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline;
+  margin-left: 0.5rem;
+  margin-bottom: 0;
+}
+
+.success-story-content > div:first-child {
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.success-location {
+  font-size: 1rem;
+  color: var(--text-light);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.success-preview {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .success-stories {
+    padding: 4rem 0;
+  }
+
+  .success-stories-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .success-story-card {
+    max-width: 100%;
+  }
+
+  .success-story-image {
+    height: 350px;
+  }
+
+  .success-story-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .success-stories {
+    padding: 3rem 0;
+  }
+
+  .success-stories-grid {
+    gap: 1.5rem;
+  }
+
+  .success-story-image {
+    height: 320px;
+  }
+
+  .success-story-content {
+    padding: 1.5rem;
+  }
+
+  .success-story-content h3 {
+    font-size: 1.35rem;
+  }
+
+  .success-qualification {
+    font-size: 0.9rem;
+  }
+
+  .success-preview {
+    font-size: 0.9rem;
+  }
+}
 .certificates-showcase {
   padding: 6rem 0;
   background: var(--off-white);

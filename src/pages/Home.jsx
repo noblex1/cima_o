@@ -21,6 +21,7 @@ import logo8 from '../../assets/trusted/trustedby/LSK.png'
 import logo9 from '../../assets/trusted/trustedby/OXFORD U.webp'
 import logo10 from '../../assets/trusted/trustedby/TAS.png'
 import iainSharpImage from '../../assets/ian.jpeg'
+import amandaLeeImage from '../../assets/lee.jpeg'
 
 const heroImages = [
   { source: heroImage, alt: 'Professional business meeting in London' },
@@ -480,32 +481,35 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Student Certificates Showcase */}
-      <section className="certificates-showcase">
+      {/* Student Success Stories */}
+      <section className="success-stories">
         <div className="container">
           <div className="section-header-center">
             <h2>Student Success Stories</h2>
-            <p>Our graduates receive internationally recognized certifications in arbitration and mediation</p>
+            <p>Real journeys from CIMA students achieving professional excellence in arbitration and mediation</p>
           </div>
           
-          <div className="certificates-grid">
-            <div className="certificate-card">
-              <div className="certificate-wrapper">
-                <div className="certificate-watermark">Sample</div>
+          <div className="success-stories-grid">
+            {/* Amanda Lee Success Story Card */}
+            <div className="success-story-card">
+              <div className="success-story-image">
                 <img 
-                  src={certificate1} 
-                  alt="CIMA Certificate Sample 1"
-                  className="certificate-image"
+                  src={amandaLeeImage} 
+                  alt="Amanda Lee ACIMArb"
                 />
-                <div className="certificate-overlay">
-                  <div className="certificate-badge">
-                    <Award size={24} />
-                    <span>Verified Certificate</span>
-                  </div>
-                </div>
               </div>
-              <div className="certificate-info">
-                <h3>CIMA Certificate</h3>
+              <div className="success-story-content">
+                <div>
+                  <h3>Amanda Lee</h3>
+                  <p className="success-qualification">ACIMArb</p>
+                </div>
+                <p className="success-location">Singapore</p>
+                <p className="success-preview">
+                  Amanda Lee's CIMA journey began with one lecture. After hearing CIMA Fellow Iain Sharp speak at the 2026 CIMA Winter Academy, she took the next step and is now ACIMArb qualified.
+                </p>
+                <Link to="/success-story/amanda-lee" className="btn-read-more">
+                  Read Story <ArrowRight size={18} />
+                </Link>
               </div>
             </div>
           </div>
@@ -516,10 +520,10 @@ const Home = () => {
       <section className="final-cta">
         <div className="container">
           <div className="final-cta-content">
-            <h2>CIMA Accreditation for ADR Centers</h2>
-            <p>Position your ADR Center for excellence.<br />Credibility • Recognition • Standards</p>
+            <h2>Apply for CIMA Accreditation</h2>
+            <p>Become a CIMA-Accredited ADR Center.<br />Demonstrate your commitment to professional excellence, quality standards and best practice in ADR.</p>
             <div className="final-cta-buttons">
-              <Link to="/contact" className="btn-cta-primary">Apply Now</Link>
+              <a href="mailto:info@thecima.org" className="btn-cta-primary">Apply Now: info@thecima.org</a>
             </div>
           </div>
         </div>

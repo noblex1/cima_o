@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { ArrowLeft, ExternalLink, Share2, Check } from 'lucide-react'
 import './ArbitratorProfile.css'
 import iainSharpImage from '../../assets/ian.jpeg'
@@ -77,8 +78,42 @@ const ArbitratorProfile = () => {
     )
   }
 
+  // Construct absolute URL for the profile
+  const profileUrl = `https://www.thecima.org/arbitrator/${profileId}`
+  const imageUrl = `https://www.thecima.org${arbitrator.image}`
+  const description = `${arbitrator.name}, ${arbitrator.title} - ${arbitrator.subtitle}. ${arbitrator.expertise.slice(0, 3).join(', ')}.`
+
   return (
     <div className="arbitrator-profile-page">
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>{arbitrator.name} - Global Arbitrator Spotlight | CIMA</title>
+        <meta name="title" content={`${arbitrator.name} - Global Arbitrator Spotlight | CIMA`} />
+        <meta name="description" content={description} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content={profileUrl} />
+        <meta property="og:title" content={`${arbitrator.name} - Global Arbitrator Spotlight`} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`${arbitrator.name} - CIMA Global Arbitrator`} />
+        <meta property="profile:first_name" content={arbitrator.name.split(' ')[0]} />
+        <meta property="profile:last_name" content={arbitrator.name.split(' ').slice(1).join(' ')} />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={profileUrl} />
+        <meta name="twitter:title" content={`${arbitrator.name} - Global Arbitrator Spotlight`} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={imageUrl} />
+
+        {/* LinkedIn specific */}
+        <meta property="og:site_name" content="CIMA - Center for International Mediators and Arbitrators" />
+      </Helmet>
+
       {/* Back Button */}
       <div className="profile-back">
         <div className="profile-navigation">
