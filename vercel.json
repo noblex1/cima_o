@@ -66,6 +66,10 @@
       "dest": "/assets/$1"
     },
     {
+      "src": "/og-images/(.*)",
+      "dest": "/og-images/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
