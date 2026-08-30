@@ -72,8 +72,9 @@ const SuccessStoryProfile = () => {
   }
 
   // Construct absolute URLs
-  const storyUrl = `https://www.thecima.org/success-story/${storyId}`
-  const imageUrl = `https://www.thecima.org${story.ogImage}`
+  const baseUrl = window.location.origin
+  const storyUrl = `${baseUrl}/success-story/${storyId}`
+  const imageUrl = `${baseUrl}${story.ogImage}`
   const description = `${story.story.intro} Read how ${story.name} achieved ${story.qualification} certification through CIMA's professional training programs.`
 
   return (

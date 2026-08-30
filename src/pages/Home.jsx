@@ -452,7 +452,7 @@ const Home = () => {
         <div className="container">
           <div className="section-header-center">
             <h2>Global Arbitrator Spotlight</h2>
-            <p>A CIMA monthly profile featuring arbitrators shaping dispute resolution across jurisdictions.</p>
+            <p>A CIMA weekly profile featuring leading arbitrators, mediators and neutrals shaping global dispute resolution.</p>
           </div>
 
           <div className="arbitrator-grid">
@@ -469,6 +469,7 @@ const Home = () => {
                   <h3>Iain Sharp</h3>
                   <p className="arbitrator-title">FCIArb, FCIMArb</p>
                 </div>
+                <p className="arbitrator-firm">Partner, Hill Dickinson LLP</p>
                 <p className="arbitrator-preview">
                   An English solicitor and Partner at Hill Dickinson in Singapore, specialising in international commercial arbitration, international trade and commodities, energy and natural resources.
                 </p>
