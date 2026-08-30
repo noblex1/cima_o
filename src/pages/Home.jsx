@@ -20,6 +20,7 @@ import logo7 from '../../assets/trusted/trustedby/LCIA.png'
 import logo8 from '../../assets/trusted/trustedby/LSK.png'
 import logo9 from '../../assets/trusted/trustedby/OXFORD U.webp'
 import logo10 from '../../assets/trusted/trustedby/TAS.png'
+import iainSharpImage from '../../assets/ian.jpeg'
 
 const heroImages = [
   { source: heroImage, alt: 'Professional business meeting in London' },
@@ -445,6 +446,40 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Global Arbitrator Section */}
+      <section className="global-arbitrator">
+        <div className="container">
+          <div className="section-header-center">
+            <h2>Global Arbitrator Spotlight</h2>
+            <p>A CIMA monthly profile featuring arbitrators shaping dispute resolution across jurisdictions.</p>
+          </div>
+
+          <div className="arbitrator-grid">
+            {/* Iain Sharp Profile */}
+            <div className="arbitrator-card">
+              <div className="arbitrator-image">
+                <img 
+                  src={iainSharpImage} 
+                  alt="Iain Sharp FCIArb, FCIMArb"
+                />
+              </div>
+              <div className="arbitrator-content">
+                <div>
+                  <h3>Iain Sharp</h3>
+                  <p className="arbitrator-title">FCIArb, FCIMArb</p>
+                </div>
+                <p className="arbitrator-preview">
+                  An English solicitor and Partner at Hill Dickinson in Singapore, specialising in international commercial arbitration, international trade and commodities, energy and natural resources.
+                </p>
+                <Link to="/arbitrator/iain-sharp" className="btn-read-more">
+                  Read More <ArrowRight size={18} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Student Certificates Showcase */}
       <section className="certificates-showcase">
         <div className="container">
@@ -481,11 +516,10 @@ const Home = () => {
       <section className="final-cta">
         <div className="container">
           <div className="final-cta-content">
-            <h2>Get Certified | Apply for Accreditation</h2>
-            <p>Become a certified fellow (FCIMArb). Gain CIMA recognition for organization, institution or ADR programme.</p>
+            <h2>CIMA Accreditation for ADR Centers</h2>
+            <p>Position your ADR Center for excellence.<br />Credibility • Recognition • Standards</p>
             <div className="final-cta-buttons">
-              <a href="https://cimalearn.thecima.org" className="btn-cta-primary" target="_blank" rel="noreferrer">Explore Programs</a>
-              <Link to="/contact" className="btn-cta-secondary">Contact Us</Link>
+              <Link to="/contact" className="btn-cta-primary">Apply Now</Link>
             </div>
           </div>
         </div>

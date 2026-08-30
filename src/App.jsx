@@ -39,6 +39,7 @@ import Global100 from './pages/Global100'
 import SubmitDispute from './pages/SubmitDispute'
 import RegisterArbitrator from './pages/RegisterArbitrator'
 import SummerSchoolDetail from './pages/SummerSchoolDetail'
+import ArbitratorProfile from './pages/ArbitratorProfile'
 
 function App() {
   return (
@@ -83,6 +84,7 @@ function App() {
           <Route path="/contact/submit-dispute" element={<SubmitDispute />} />
           <Route path="/contact/register-arbitrator" element={<RegisterArbitrator />} />
           <Route path="/events/summer-school-2026" element={<SummerSchoolDetail />} />
+          <Route path="/arbitrator/:profileId" element={<ArbitratorProfile />} />
         </Routes>
         <Footer />
       </div>
