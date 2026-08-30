@@ -7,10 +7,6 @@
       "config": {
         "distDir": "dist"
       }
-    },
-    {
-      "src": "api/og.js",
-      "use": "@vercel/node"
     }
   ],
   "headers": [
@@ -64,35 +60,7 @@
       "permanent": true
     }
   ],
-  "rewrites": [
-    {
-      "source": "/arbitrator/:id",
-      "destination": "/api/og?type=arbitrator&id=:id",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "(?:facebookexternalhit|Twitterbot|LinkedInBot|Slurp|Googlebot|bingbot|Baiduspider|Discordbot|WhatsApp|Telegram|Slack|Viber|TikTok|OGScraper|OpenGraph)"
-        }
-      ]
-    },
-    {
-      "source": "/success-story/:id",
-      "destination": "/api/og?type=success-story&id=:id",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "(?:facebookexternalhit|Twitterbot|LinkedInBot|Slurp|Googlebot|bingbot|Baiduspider|Discordbot|WhatsApp|Telegram|Slack|Viber|TikTok|OGScraper|OpenGraph)"
-        }
-      ]
-    }
-  ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
     {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
