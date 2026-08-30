@@ -469,7 +469,7 @@ const Home = () => {
                   <h3>Iain Sharp</h3>
                   <p className="arbitrator-title">FCIArb, FCIMArb</p>
                 </div>
-                <p className="arbitrator-firm">Partner, Hill Dickinson LLP</p>
+                <p className="arbitrator-firm">Hill Dickinson LLP</p>
                 <p className="arbitrator-preview">
                   An English solicitor and Partner at Hill Dickinson in Singapore, specialising in international commercial arbitration, international trade and commodities, energy and natural resources.
                 </p>
