@@ -276,6 +276,45 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Global Arbitration Resource Hub */}
+      <section className="resource-hub">
+        <div className="container">
+          <div className="section-header-center">
+            <h2>Global Arbitration Resource Hub</h2>
+            <p>A curated gateway to leading arbitration institutions and professional resources.</p>
+          </div>
+
+          <div className="institutions-showcase">
+            <a href="https://iccwbo.org/dispute-resolution/dispute-resolution-services/icc-international-court-of-arbitration/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
+              <img src="/global resources/images (1).png" alt="ICC International Court of Arbitration" />
+            </a>
+            <a href="https://www.lcia.org/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
+              <img src="/global resources/images (4).jpg" alt="LCIA" />
+            </a>
+            <a href="https://siac.org.sg/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
+              <img src="/global resources/images.jpg" alt="SIAC" />
+            </a>
+            <a href="https://www.hkiac.org/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
+              <img src="/global resources/images.png" alt="HKIAC" />
+            </a>
+            <a href="https://sccarbitrationinstitute.se/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
+              <img src="/global resources/logo_main.png" alt="SCC Arbitration Institute" />
+            </a>
+            <a href="https://www.icdr.org/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
+              <img src="/global resources/logo.png" alt="ICDR" />
+            </a>
+          </div>
+
+          <Link to="/arbitration-resources" className="view-all-resources">
+            View All Resources <ArrowRight size={18} />
+          </Link>
+
+          <div className="resource-hub-disclaimer">
+            <p><strong>Disclaimer:</strong> External resources are provided for professional and educational reference. Inclusion does not imply affiliation, partnership or endorsement by CIMA or the organisations listed.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Image Banner */}
       <section className="image-banner">
         <img 

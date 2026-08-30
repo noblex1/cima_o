@@ -1,0 +1,18 @@
+ARBITRATION LOGOS - Download Instructions
+==========================================
+
+Please download the official logos from these websites and save them in this folder:
+
+1. icc-logo.png - https://iccwbo.org/ (look for their logo in footer or about page)
+2. lcia-logo.png - https://www.lcia.org/ 
+3. siac-logo.png - https://siac.org.sg/
+4. hkiac-logo.png - https://www.hkiac.org/
+5. scc-logo.png - https://sccarbitrationinstitute.se/
+6. icdr-logo.png - https://www.icdr.org/
+
+Logo Requirements:
+- Format: PNG with transparent background (preferred) or JPG
+- Size: Approximately 200-300px wide
+- High resolution for retina displays
+
+Once downloaded, the website will automatically display them!

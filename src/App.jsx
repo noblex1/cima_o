@@ -42,6 +42,7 @@ import RegisterArbitrator from './pages/RegisterArbitrator'
 import SummerSchoolDetail from './pages/SummerSchoolDetail'
 import ArbitratorProfile from './pages/ArbitratorProfile'
 import SuccessStoryProfile from './pages/SuccessStoryProfile'
+import ArbitrationResources from './pages/ArbitrationResources'
 
 function App() {
   return (
@@ -89,6 +90,7 @@ function App() {
             <Route path="/events/summer-school-2026" element={<SummerSchoolDetail />} />
             <Route path="/arbitrator/:profileId" element={<ArbitratorProfile />} />
             <Route path="/success-story/:storyId" element={<SuccessStoryProfile />} />
+            <Route path="/arbitration-resources" element={<ArbitrationResources />} />
           </Routes>
           <Footer />
         </div>
