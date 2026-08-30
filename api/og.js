@@ -1,35 +1,6 @@
 // Vercel serverless function to generate OpenGraph meta tags for social sharing
 export default function handler(req, res) {
-  // List of known social media and SEO crawlers
-  const botUserAgents = [
-    'facebookexternalhit',
-    'Twitterbot',
-    'LinkedInBot',
-    'Slurp',
-    'Googlebot',
-    'bingbot',
-    'Baiduspider',
-    'Discordbot',
-    'WhatsApp',
-    'Telegram',
-    'Slack',
-    'Viber',
-    'TikTok'
-  ];
-
-  const userAgent = req.headers['user-agent'] || '';
-  const isBot = botUserAgents.some(bot => userAgent.includes(bot));
-
   const { type, id } = req.query;
-
-  // If not a bot, redirect to the React app
-  if (!isBot) {
-    const redirectUrl = type === 'arbitrator' 
-      ? `/arbitrator/${id}`
-      : `/success-story/${id}`;
-    res.redirect(302, redirectUrl);
-    return;
-  }
 
   // Profile data (same as in React component)
   const arbitratorsData = {
