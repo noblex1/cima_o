@@ -22,6 +22,12 @@ import logo9 from '../../assets/trusted/trustedby/OXFORD U.webp'
 import logo10 from '../../assets/trusted/trustedby/TAS.png'
 import iainSharpImage from '../../assets/ian.jpeg'
 import amandaLeeImage from '../../assets/lee.jpeg'
+import iccLogo from '../../assets/arbitration-logos/icc-logo.png'
+import lciaLogo from '../../assets/arbitration-logos/lcia-logo.jpg'
+import siacLogo from '../../assets/arbitration-logos/siac-logo.jpg'
+import hkiacLogo from '../../assets/arbitration-logos/hkiac-logo.png'
+import sccLogo from '../../assets/arbitration-logos/scc-logo.png'
+import icdrLogo from '../../assets/arbitration-logos/icdr-logo.png'
 
 const heroImages = [
   { source: heroImage, alt: 'Professional business meeting in London' },
@@ -286,22 +292,22 @@ const Home = () => {
 
           <div className="institutions-showcase">
             <a href="https://iccwbo.org/dispute-resolution/dispute-resolution-services/icc-international-court-of-arbitration/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
-              <img src="/global resources/images (1).png" alt="ICC International Court of Arbitration" />
+              <img src={iccLogo} alt="ICC International Court of Arbitration" />
             </a>
             <a href="https://www.lcia.org/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
-              <img src="/global resources/images (4).jpg" alt="LCIA" />
+              <img src={lciaLogo} alt="LCIA" />
             </a>
             <a href="https://siac.org.sg/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
-              <img src="/global resources/images.jpg" alt="SIAC" />
+              <img src={siacLogo} alt="SIAC" />
             </a>
             <a href="https://www.hkiac.org/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
-              <img src="/global resources/images.png" alt="HKIAC" />
+              <img src={hkiacLogo} alt="HKIAC" />
             </a>
             <a href="https://sccarbitrationinstitute.se/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
-              <img src="/global resources/logo_main.png" alt="SCC Arbitration Institute" />
+              <img src={sccLogo} alt="SCC Arbitration Institute" />
             </a>
             <a href="https://www.icdr.org/" target="_blank" rel="noopener noreferrer" className="institution-logo-card">
-              <img src="/global resources/logo.png" alt="ICDR" />
+              <img src={icdrLogo} alt="ICDR" />
             </a>
           </div>
 
