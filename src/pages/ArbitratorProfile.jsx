@@ -12,6 +12,7 @@ const arbitratorsData = {
     title: 'FCIArb, FCIMArb',
     subtitle: 'Partner, Hill Dickinson Singapore',
     image: iainSharpImage,
+    ogImage: '/og-images/ian-sharp.jpg', // Static image for social sharing
     bio: `Iain Sharp is an English solicitor and Partner at Hill Dickinson in Singapore, specialising in international commercial arbitration, international trade and commodities, energy and natural resources.
 
     With more than 25 years' experience across private practice and in-house roles, he has conducted major arbitrations across Europe, the Middle East and Asia under leading rules including ICC, LCIA, SIAC, HKIAC, CIETAC and UNCITRAL.
@@ -80,12 +81,7 @@ const ArbitratorProfile = () => {
 
   // Construct absolute URL for the profile
   const profileUrl = `https://www.thecima.org/arbitrator/${profileId}`
-  // Get the origin (works for both dev and production)
-  const origin = typeof window !== 'undefined' ? window.location.origin : 'https://www.thecima.org'
-  // For Vite imported images, they already contain the full path after build
-  const imageUrl = arbitrator.image.startsWith('http') 
-    ? arbitrator.image 
-    : `${origin}${arbitrator.image.startsWith('/') ? '' : '/'}${arbitrator.image}`
+  const imageUrl = `https://www.thecima.org${arbitrator.ogImage}`
   const description = `${arbitrator.name}, ${arbitrator.title} - ${arbitrator.subtitle}. ${arbitrator.expertise.slice(0, 3).join(', ')}.`
 
   return (

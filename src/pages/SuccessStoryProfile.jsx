@@ -13,6 +13,7 @@ const successStoriesData = {
     qualification: 'ACIMArb',
     location: 'Singapore',
     image: amandaLeeImage,
+    ogImage: '/og-images/amanda-lee.jpg', // Static image for social sharing
     certificate: certificate1,
     story: {
       intro: "Amanda Lee's CIMA journey began with one lecture.",
@@ -72,12 +73,7 @@ const SuccessStoryProfile = () => {
 
   // Construct absolute URLs
   const storyUrl = `https://www.thecima.org/success-story/${storyId}`
-  // Get the origin (works for both dev and production)
-  const origin = typeof window !== 'undefined' ? window.location.origin : 'https://www.thecima.org'
-  // For Vite imported images, they already contain the full path after build
-  const imageUrl = story.image.startsWith('http') 
-    ? story.image 
-    : `${origin}${story.image.startsWith('/') ? '' : '/'}${story.image}`
+  const imageUrl = `https://www.thecima.org${story.ogImage}`
   const description = `${story.story.intro} Read how ${story.name} achieved ${story.qualification} certification through CIMA's professional training programs.`
 
   return (
