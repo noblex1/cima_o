@@ -72,10 +72,12 @@ const SuccessStoryProfile = () => {
 
   // Construct absolute URLs
   const storyUrl = `https://www.thecima.org/success-story/${storyId}`
-  // Get the full absolute URL for the image (handle both dev and production)
+  // Get the origin (works for both dev and production)
+  const origin = typeof window !== 'undefined' ? window.location.origin : 'https://www.thecima.org'
+  // For Vite imported images, they already contain the full path after build
   const imageUrl = story.image.startsWith('http') 
     ? story.image 
-    : `https://www.thecima.org${story.image}`
+    : `${origin}${story.image.startsWith('/') ? '' : '/'}${story.image}`
   const description = `${story.story.intro} Read how ${story.name} achieved ${story.qualification} certification through CIMA's professional training programs.`
 
   return (
