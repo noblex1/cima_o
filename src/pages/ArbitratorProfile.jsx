@@ -80,7 +80,10 @@ const ArbitratorProfile = () => {
 
   // Construct absolute URL for the profile
   const profileUrl = `https://www.thecima.org/arbitrator/${profileId}`
-  const imageUrl = `https://www.thecima.org${arbitrator.image}`
+  // Get the full absolute URL for the image (handle both dev and production)
+  const imageUrl = arbitrator.image.startsWith('http') 
+    ? arbitrator.image 
+    : `https://www.thecima.org${arbitrator.image}`
   const description = `${arbitrator.name}, ${arbitrator.title} - ${arbitrator.subtitle}. ${arbitrator.expertise.slice(0, 3).join(', ')}.`
 
   return (
