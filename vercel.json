@@ -7,6 +7,10 @@
       "config": {
         "distDir": "dist"
       }
+    },
+    {
+      "src": "api/og.js",
+      "use": "@vercel/node"
     }
   ],
   "headers": [
@@ -62,12 +66,24 @@
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
     },
     {
       "src": "/og-images/(.*)",
       "dest": "/og-images/$1"
+    },
+    {
+      "src": "/arbitrator/([^/]+)$",
+      "dest": "/api/og?type=arbitrator&id=$1"
+    },
+    {
+      "src": "/success-story/([^/]+)$",
+      "dest": "/api/og?type=success-story&id=$1"
     },
     {
       "src": "/(.*)",
