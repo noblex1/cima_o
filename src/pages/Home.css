@@ -1552,7 +1552,7 @@
 }
 
 .arbitrator-content > div:first-child {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1563,7 +1563,7 @@
   color: var(--text-light);
   font-weight: 500;
   margin-bottom: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 
 .arbitrator-preview {
