@@ -79,8 +79,8 @@ const ArbitratorProfile = () => {
     )
   }
 
-  // Construct absolute URL for the profile
-  const baseUrl = window.location.origin
+  // Construct absolute URL for the profile - use current origin to match shared URL
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://www.thecima.org'
   const profileUrl = `${baseUrl}/arbitrator/${profileId}`
   const imageUrl = `${baseUrl}${arbitrator.ogImage}`
   const description = `${arbitrator.name}, ${arbitrator.title} - ${arbitrator.subtitle}. ${arbitrator.expertise.slice(0, 3).join(', ')}.`

@@ -71,8 +71,8 @@ const SuccessStoryProfile = () => {
     )
   }
 
-  // Construct absolute URLs
-  const baseUrl = window.location.origin
+  // Construct absolute URLs - use current origin to match shared URL
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://www.thecima.org'
   const storyUrl = `${baseUrl}/success-story/${storyId}`
   const imageUrl = `${baseUrl}${story.ogImage}`
   const description = `${story.story.intro} Read how ${story.name} achieved ${story.qualification} certification through CIMA's professional training programs.`
