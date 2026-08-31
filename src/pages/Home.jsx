@@ -23,6 +23,7 @@ import logo9 from '../../assets/trusted/trustedby/OXFORD U.webp'
 import logo10 from '../../assets/trusted/trustedby/TAS.png'
 import iainSharpImage from '../../assets/ian.jpeg'
 import amandaLeeImage from '../../assets/lee.jpeg'
+import accreditImage from '../../assets/accredit.jpeg'
 import iccLogo from '../../assets/arbitration-logos/icc-logo.png'
 import lciaLogo from '../../assets/arbitration-logos/lcia-logo.jpg'
 import siacLogo from '../../assets/arbitration-logos/siac-logo.jpg'
@@ -566,11 +567,16 @@ const Home = () => {
       {/* Final CTA */}
       <section className="final-cta">
         <div className="container">
-          <div className="final-cta-content">
-            <h2>Apply for CIMA Accreditation</h2>
-            <p>Become a CIMA-Accredited ADR Center.<br />Demonstrate your commitment to professional excellence, quality standards and best practice in ADR.</p>
-            <div className="final-cta-buttons">
-              <a href="mailto:info@thecima.org" className="btn-cta-primary">Apply Now: info@thecima.org</a>
+          <div className="final-cta-wrapper">
+            <div className="final-cta-image">
+              <img src={accreditImage} alt="CIMA Accreditation" />
+            </div>
+            <div className="final-cta-content">
+              <h2>Apply for CIMA Accreditation</h2>
+              <p>Become a CIMA-Accredited ADR Center.<br />Demonstrate your commitment to professional excellence, quality standards and best practice in ADR.</p>
+              <div className="final-cta-buttons">
+                <a href="mailto:info@thecima.org" className="btn-cta-primary">Apply Now: info@thecima.org</a>
+              </div>
             </div>
           </div>
         </div>
