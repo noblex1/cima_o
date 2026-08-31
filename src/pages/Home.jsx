@@ -573,7 +573,7 @@ const Home = () => {
             </div>
             <div className="final-cta-content">
               <h2>Apply for CIMA Accreditation</h2>
-              <p>Become a CIMA-Accredited ADR Center.<br />Demonstrate your commitment to professional excellence, quality standards and best practice in ADR.</p>
+              <p>Become a CIMA-Accredited ADR Center.</p>
               <div className="final-cta-buttons">
                 <a href="mailto:info@thecima.org" className="btn-cta-primary">Apply Now: info@thecima.org</a>
               </div>
