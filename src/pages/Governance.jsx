@@ -179,28 +179,6 @@ const Governance = () => {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="content-section">
-        <div className="container">
-          <div className="video-feature">
-            <div className="video-header">
-              <h3>Law, Practice and Procedures in International Arbitration - Dr. Gael Brown Diawuo, FCIArb, FCIMArb, Barrister</h3>
-            </div>
-            <div className="video-wrapper">
-              <iframe
-                width="100%"
-                height="500"
-                src="https://www.youtube.com/embed/Y7eAsjyGaoI"
-                title="CIMA Leadership Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Subscribe Section */}
       <section className="subscribe-section">
         <div className="container">
