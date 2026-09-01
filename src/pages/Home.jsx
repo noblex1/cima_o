@@ -24,6 +24,7 @@ import logo10 from '../../assets/trusted/trustedby/TAS.png'
 import iainSharpImage from '../../assets/ian.jpeg'
 import amandaLeeImage from '../../assets/lee.jpeg'
 import accreditImage from '../../assets/accredit.jpeg'
+import businessFlyer from '../../assets/business.jpeg'
 import iccLogo from '../../assets/arbitration-logos/icc-logo.png'
 import lciaLogo from '../../assets/arbitration-logos/lcia-logo.jpg'
 import siacLogo from '../../assets/arbitration-logos/siac-logo.jpg'
@@ -559,6 +560,25 @@ const Home = () => {
                   Read Story <ArrowRight size={18} />
                 </Link>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Career Opportunities Teaser */}
+      <section className="opportunities-teaser">
+        <div className="container">
+          <div className="opportunities-teaser-content">
+            <div className="opportunities-flyer">
+              <img src={businessFlyer} alt="Business Development Volunteers - Join CIMA" />
+            </div>
+            <div className="opportunities-teaser-actions">
+              <Link to="/opportunities" className="btn-view-details">
+                View Details <ArrowRight size={20} />
+              </Link>
+              <a href="mailto:info@thecima.org?subject=Business Development Volunteer Application" className="btn-apply-now">
+                Apply Now
+              </a>
             </div>
           </div>
         </div>

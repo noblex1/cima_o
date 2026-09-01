@@ -53,6 +53,7 @@ const Footer = () => {
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/news">News</Link></li>
               <li><Link to="/events">Events</Link></li>
+              <li><Link to="/opportunities">Careers</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
@@ -123,11 +124,32 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Center for International Mediators and Arbitrators. All rights reserved.</p>
-          <div className="footer-bottom-links">
-            <Link to="/privacy">Privacy Policy</Link>
-            <Link to="/terms">Terms of Service</Link>
-            <Link to="/cookie-policy">Cookie Policy</Link>
+          <div className="footer-legal">
+            <div className="footer-legal-content">
+              <h5>Legal & Corporate Information</h5>
+              <p className="footer-legal-text">
+                The Center for International Mediators and Arbitrators Ltd (CIMA) is an international ADR organisation 
+                registered in the United Kingdom as an Overseas Entity (OE034880), with its UK administrative headquarters 
+                at Oxford Science Park, Oxfordshire.
+              </p>
+              <p className="footer-legal-text">
+                CIMA is also incorporated in Accra, Ghana as a company limited by guarantee, with its Africa Regional 
+                Secretariat at CIMA House, Accra.
+              </p>
+              <p className="footer-legal-text">
+                CIMA maintains International Desks in several jurisdictions, including Italy, India, South Africa, 
+                Hong Kong, Kenya, the United States, Pakistan, Malaysia, the UAE, Sierra Leone and Singapore.
+              </p>
+            </div>
+          </div>
+          
+          <div className="footer-bottom-bar">
+            <p>&copy; {new Date().getFullYear()} CIMA. All rights reserved.</p>
+            <div className="footer-bottom-links">
+              <Link to="/privacy">Privacy Policy</Link>
+              <Link to="/terms">Terms of Service</Link>
+              <Link to="/cookie-policy">Cookie Policy</Link>
+            </div>
           </div>
         </div>
       </div>

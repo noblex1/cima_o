@@ -43,6 +43,7 @@ import SummerSchoolDetail from './pages/SummerSchoolDetail'
 import ArbitratorProfile from './pages/ArbitratorProfile'
 import SuccessStoryProfile from './pages/SuccessStoryProfile'
 import ArbitrationResources from './pages/ArbitrationResources'
+import Opportunities from './pages/Opportunities'
 
 function App() {
   return (
@@ -91,6 +92,7 @@ function App() {
             <Route path="/arbitrator/:profileId" element={<ArbitratorProfile />} />
             <Route path="/success-story/:storyId" element={<SuccessStoryProfile />} />
             <Route path="/arbitration-resources" element={<ArbitrationResources />} />
+            <Route path="/opportunities" element={<Opportunities />} />
           </Routes>
           <Footer />
         </div>
