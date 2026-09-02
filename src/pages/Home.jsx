@@ -254,7 +254,7 @@ const Home = () => {
             </div>
             <div className="stat-item">
               <div className="stat-number" id="stat-2">0+</div>
-              <div className="stat-label">Jurisdictions Reached</div>
+              <div className="stat-label">Member Jurisdictions</div>
             </div>
             <div className="stat-item">
               <div className="stat-number" id="stat-3">0+</div>
@@ -262,7 +262,7 @@ const Home = () => {
             </div>
             <div className="stat-item">
               <div className="stat-number" id="stat-4">0+</div>
-              <div className="stat-label">Partners</div>
+              <div className="stat-label">Countries Covered</div>
             </div>
           </div>
         </div>
