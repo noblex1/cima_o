@@ -128,7 +128,7 @@ const Footer = () => {
             <div className="footer-legal-content">
               <h5>Legal & Corporate Information</h5>
               <p className="footer-legal-text">
-                The Center for International Mediators and Arbitrators Ltd (CIMA) is an international ADR organisation 
+                The Center for International Mediators and Arbitrators (CIMA) is an international ADR body 
                 registered in the United Kingdom as an Overseas Entity (OE034880), with its UK administrative headquarters 
                 at Oxford Science Park, Oxfordshire.
               </p>

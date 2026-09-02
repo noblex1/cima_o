@@ -521,25 +521,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Career Opportunities Teaser */}
-      <section className="opportunities-teaser">
-        <div className="container">
-          <div className="opportunities-teaser-content">
-            <div className="opportunities-flyer">
-              <img src={businessFlyer} alt="Business Development Volunteers - Join CIMA" />
-            </div>
-            <div className="opportunities-teaser-actions">
-              <Link to="/opportunities" className="btn-view-details">
-                View Details <ArrowRight size={20} />
-              </Link>
-              <a href="mailto:info@thecima.org?subject=Business Development Volunteer Application" className="btn-apply-now">
-                Apply Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="final-cta">
         <div className="container">

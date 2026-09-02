@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Briefcase, MapPin, Clock, ArrowRight, Users, Target, Heart, Zap } from 'lucide-react'
 import './CommonPages.css'
+import businessFlyer from '../../assets/business.jpeg'
 
 const Careers = () => {
   const jobOpenings = [
@@ -194,6 +196,25 @@ const Careers = () => {
                 <p>{benefit.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Business Development Volunteers Section */}
+      <section className="opportunities-teaser">
+        <div className="container">
+          <div className="opportunities-teaser-content">
+            <div className="opportunities-flyer">
+              <img src={businessFlyer} alt="Business Development Volunteers - Join CIMA" />
+            </div>
+            <div className="opportunities-teaser-actions">
+              <Link to="/opportunities" className="btn-view-details">
+                View Full Details <ArrowRight size={20} />
+              </Link>
+              <a href="mailto:info@thecima.org?subject=Business Development Volunteer Application" className="btn-apply-now">
+                Apply Now
+              </a>
+            </div>
           </div>
         </div>
       </section>
