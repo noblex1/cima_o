@@ -681,6 +681,15 @@
   background: var(--white);
 }
 
+.cohort-section {
+  padding: 2rem 0 4rem 0;
+  background: var(--off-white);
+}
+
+.cohort-card .event-image {
+  height: 100%;
+}
+
 .events-header {
   display: flex;
   justify-content: space-between;

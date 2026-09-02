@@ -8,6 +8,7 @@ import accraTwoImage from '../../assets/ACCRA-2.jpg'
 import accraOneImage from '../../assets/ACCRA-1.jpg'
 import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.01.jpeg'
 import asiaAfricaPoster from '../../assets/WhatsApp Image 2026-08-21 at 08.15.32.jpeg'
+import cohortPoster from '../../assets/cohortf.jpeg'
 import certificate1 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.53.jpeg'
 import summerSchoolBrochure from '../../assets/2026 CIMA Summer School (2) (1).pdf'
 import asiaAfricaBrochure from '../../assets/Asia-Africa Mock Arbitration Flyer (1).pdf'
@@ -236,6 +237,44 @@ const Home = () => {
                   </a>
                   <a href={asiaAfricaBrochure} download="CIMA_Asia_Africa_Mock_Arbitration_Flyer.pdf" className="btn-event-download">
                     Download Brochure
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Register for Next Cohort */}
+      <section className="upcoming-events cohort-section">
+        <div className="container">
+          <div className="events-header">
+            <div>
+              <h2>Register for Next Cohort</h2>
+              <p>Join our upcoming training cohort and advance your ADR career</p>
+            </div>
+          </div>
+
+          <div className="events-grid">
+            <div className="event-card cohort-card">
+              <div className="event-image">
+                <img 
+                  src={cohortPoster} 
+                  alt="CIMA Associate & Membership Training - September 2026"
+                />
+              </div>
+              <div className="event-content">
+                <div className="event-date">
+                  <Calendar size={18} />
+                  <span>23-30 September, 2026</span>
+                </div>
+                <h3>Law, Practice and Procedure in Domestic and International Arbitration</h3>
+                <div className="event-actions">
+                  <a href="https://cimalearn.thecima.org/course/1345ebaf-f10b-4b2b-882d-1836b9b070d8" target="_blank" rel="noreferrer" className="btn-event-register">
+                    Register Now
+                  </a>
+                  <a href="mailto:info@thecima.org?subject=Cohort Registration Inquiry" className="btn-event-download">
+                    Contact Us
                   </a>
                 </div>
               </div>
