@@ -96,7 +96,7 @@ const Home = () => {
       { id: 'stat-1', target: 1500, suffix: '+' },
       { id: 'stat-2', target: 33, suffix: '+' },
       { id: 'stat-3', target: 75, suffix: '+' },
-      { id: 'stat-4', target: 27, suffix: '+' }
+      { id: 'stat-4', target: 193, suffix: '+' }
     ]
 
     counters.forEach((counter) => {
@@ -181,46 +181,64 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="services-overview">
+      {/* Upcoming Events */}
+      <section className="upcoming-events">
         <div className="container">
-          <div className="services-grid">
-            <div className="service-card">
-              <div className="service-icon">
-                <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <rect x="7" y="6" width="50" height="39" rx="4" />
-                  <circle cx="32" cy="22" r="6" />
-                  <path d="M20 41c0-6 4.5-10 12-10s12 4 12 10" />
-                  <path d="M32 45v10M23 55h18" />
-                </svg>
+          <div className="events-header">
+            <div>
+              <h2>Upcoming Events</h2>
+              <p>Join our training programs, mock proceedings, and thought-leadership events</p>
+            </div>
+            <Link to="/events" className="view-all">View all events</Link>
+          </div>
+
+          <div className="events-grid">
+            <div className="event-card">
+              <div className="event-image">
+                <img 
+                  src={summerSchoolPoster} 
+                  alt="CIMA Summer School"
+                />
               </div>
-              <h3>Global Training & Certification</h3>
-              <p>Professional ADR courses, executive training, and certification at Associate, Member, and Fellowship levels.</p>
-              <Link to="/arbitration" className="service-link">
-                Learn more <ArrowRight size={16} />
-              </Link>
+              <div className="event-content">
+                <div className="event-date">
+                  <Calendar size={18} />
+                  <span>26 Aug - 4 Sept, 2026</span>
+                </div>
+                <h3>2026 CIMA Summer School on International Arbitration</h3>
+                <div className="event-actions">
+                  <Link to="/events/summer-school-2026" className="btn-event-register">
+                    Register
+                  </Link>
+                  <a href={summerSchoolBrochure} download="CIMA_Summer_School_2026_Brochure.pdf" className="btn-event-download">
+                    Download Brochure
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <div className="service-card">
-              <div className="service-icon">
-                <Users size={32} />
+            <div className="event-card">
+              <div className="event-image">
+                <img 
+                  src={asiaAfricaPoster} 
+                  alt="Asia-Africa Mock Arbitration Programme"
+                />
               </div>
-              <h3>Membership & Recognition</h3>
-              <p>Individual and institutional membership, roster inclusion, accreditation, and professional standing.</p>
-              <Link to="/mediation" className="service-link">
-                Learn more <ArrowRight size={16} />
-              </Link>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon">
-                <Globe size={32} />
+              <div className="event-content">
+                <div className="event-date">
+                  <Calendar size={18} />
+                  <span>2026</span>
+                </div>
+                <h3>Asia-Africa Mock Arbitration Programme</h3>
+                <div className="event-actions">
+                  <a href="https://cimalearn.thecima.org" target="_blank" rel="noreferrer" className="btn-event-register">
+                    Register
+                  </a>
+                  <a href={asiaAfricaBrochure} download="CIMA_Asia_Africa_Mock_Arbitration_Flyer.pdf" className="btn-event-download">
+                    Download Brochure
+                  </a>
+                </div>
               </div>
-              <h3>International Network</h3>
-              <p>Join professionals across 33+ jurisdictions committed to excellence in alternative dispute resolution.</p>
-              <Link to="/about" className="service-link">
-                Learn more <ArrowRight size={16} />
-              </Link>
             </div>
           </div>
         </div>
@@ -384,69 +402,6 @@ const Home = () => {
                 <Link to="/news/3" className="read-more">Read more <ArrowRight size={16} /></Link>
               </div>
             </article>
-          </div>
-        </div>
-      </section>
-
-      {/* Upcoming Events */}
-      <section className="upcoming-events">
-        <div className="container">
-          <div className="events-header">
-            <div>
-              <h2>Upcoming Events</h2>
-              <p>Join our training programs, mock proceedings, and thought-leadership events</p>
-            </div>
-            <Link to="/events" className="view-all">View all events</Link>
-          </div>
-
-          <div className="events-grid">
-            <div className="event-card">
-              <div className="event-image">
-                <img 
-                  src={summerSchoolPoster} 
-                  alt="CIMA Summer School"
-                />
-              </div>
-              <div className="event-content">
-                <div className="event-date">
-                  <Calendar size={18} />
-                  <span>26 Aug - 4 Sept, 2026</span>
-                </div>
-                <h3>2026 CIMA Summer School on International Arbitration</h3>
-                <div className="event-actions">
-                  <Link to="/events/summer-school-2026" className="btn-event-register">
-                    Register
-                  </Link>
-                  <a href={summerSchoolBrochure} download="CIMA_Summer_School_2026_Brochure.pdf" className="btn-event-download">
-                    Download Brochure
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="event-card">
-              <div className="event-image">
-                <img 
-                  src={asiaAfricaPoster} 
-                  alt="Asia-Africa Mock Arbitration Programme"
-                />
-              </div>
-              <div className="event-content">
-                <div className="event-date">
-                  <Calendar size={18} />
-                  <span>2026</span>
-                </div>
-                <h3>Asia-Africa Mock Arbitration Programme</h3>
-                <div className="event-actions">
-                  <a href="https://cimalearn.thecima.org" target="_blank" rel="noreferrer" className="btn-event-register">
-                    Register
-                  </a>
-                  <a href={asiaAfricaBrochure} download="CIMA_Asia_Africa_Mock_Arbitration_Flyer.pdf" className="btn-event-download">
-                    Download Brochure
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

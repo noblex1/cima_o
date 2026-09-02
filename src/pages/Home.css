@@ -677,8 +677,8 @@
 
 /* Upcoming Events */
 .upcoming-events {
-  padding: 1rem 0 4rem 0;
-  background: var(--off-white);
+  padding: 3rem 0 4rem 0;
+  background: var(--white);
 }
 
 .events-header {
