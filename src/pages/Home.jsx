@@ -491,7 +491,7 @@ const Home = () => {
         <div className="container">
           <div className="section-header-center">
             <h2>Student Success Stories</h2>
-            <p>Real journeys from CIMA students achieving professional excellence in arbitration and mediation</p>
+            <p>Real journeys from CIMA students achieving professional excellence in arbitration and mediation - Next Gen</p>
           </div>
           
           <div className="success-stories-grid">
