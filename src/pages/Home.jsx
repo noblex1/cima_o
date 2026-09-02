@@ -250,8 +250,8 @@ const Home = () => {
         <div className="container">
           <div className="events-header">
             <div>
-              <h2>Register for Next Cohort</h2>
-              <p>Join our upcoming training cohort and advance your ADR career</p>
+              <h2>Register for the Next Cohort</h2>
+              <p>Join our upcoming cohort and advance your professional standing in dispute resolution.</p>
             </div>
           </div>
 
