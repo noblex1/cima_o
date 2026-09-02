@@ -95,6 +95,15 @@
   font-family: Georgia, 'Times New Roman', serif;
 }
 
+.hero-subtext {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  margin-top: -1.5rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
 .hero-subtitle {
   font-size: 1.125rem;
   line-height: 1.6;
@@ -1386,6 +1395,12 @@
     margin-bottom: 1.5rem;
   }
 
+  .hero-subtext {
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+  }
+
   .hero-subtitle {
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
@@ -1532,6 +1547,12 @@
 
   .hero-title {
     font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.75rem;
+    margin-top: -0.75rem;
     margin-bottom: 1.25rem;
   }
 

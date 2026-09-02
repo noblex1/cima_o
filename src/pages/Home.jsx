@@ -150,8 +150,9 @@ const Home = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Empowering ADR Professionals Worldwide<br />
+              Advancing Arbitration and Mediation Worldwide
             </h1>
+            <p className="hero-subtext">Training • Membership • Accreditation • Global Programmes</p>
             <p className="hero-subtitle">
             </p>
             <p className="hero-description">
