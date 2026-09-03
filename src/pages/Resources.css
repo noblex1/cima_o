@@ -240,7 +240,7 @@
   border-color: #C74236;
   box-shadow: 0 12px 32px rgba(199, 66, 54, 0.2);
   transform: translateY(-6px);
-  background: linear-gradient(135deg, #FFFFFF 0%, #FFF5F5 100%);
+  background: var(--off-white);
 }
 
 .resource-item:hover::before {
@@ -298,6 +298,11 @@
   margin-bottom: 0;
   line-height: 1.4;
   letter-spacing: 0;
+  transition: color 0.3s ease;
+}
+
+.resource-item:hover .resource-info h4 {
+  color: var(--text-dark);
 }
 
 .resource-meta {
@@ -306,6 +311,11 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.resource-item:hover .resource-meta {
+  color: #666;
 }
 
 .resource-category-tag {
