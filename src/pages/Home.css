@@ -3,6 +3,34 @@
   padding-top: 0;
 }
 
+/* Dual Sections Layout */
+.dual-sections-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.dual-section-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.dual-section-item .events-header {
+  margin-bottom: 2rem;
+}
+
+.dual-section-item .event-card {
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .dual-sections-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
 /* Hero Section */
 .hero {
   position: relative;
