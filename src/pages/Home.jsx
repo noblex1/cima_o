@@ -284,11 +284,11 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Inside CIMA Research */}
+            {/* Research & Scholarship */}
             <div className="dual-section-item">
               <div className="events-header">
                 <div>
-                  <h2>Inside CIMA Research</h2>
+                  <h2>Research & Scholarship</h2>
                   <p>Explore our research initiatives and scholarly programs advancing global dispute resolution.</p>
                 </div>
               </div>
