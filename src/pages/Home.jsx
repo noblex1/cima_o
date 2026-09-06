@@ -183,12 +183,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Upcoming Events */}
+      {/* Upcoming ADR Events */}
       <section className="upcoming-events">
         <div className="container">
           <div className="events-header">
             <div>
-              <h2>Upcoming Events</h2>
+              <h2>Upcoming ADR Events</h2>
               <p>Join our training programs, mock proceedings, and thought-leadership events</p>
             </div>
             <Link to="/events" className="view-all">View all events</Link>
@@ -246,15 +246,15 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Register for Next Cohort & Inside CIMA Research - Side by Side */}
+      {/* Join Next Cohort & ADR Scholarship - Side by Side */}
       <section className="upcoming-events cohort-section">
         <div className="container">
           <div className="dual-sections-wrapper">
-            {/* Register for Next Cohort */}
+            {/* Join Next Cohort */}
             <div className="dual-section-item">
               <div className="events-header">
                 <div>
-                  <h2>Register for the Next Cohort</h2>
+                  <h2>Join Next Cohort</h2>
                   <p>Join our upcoming cohort and advance your professional standing in dispute resolution.</p>
                 </div>
               </div>
@@ -284,11 +284,11 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Research & Scholarship */}
+            {/* ADR Scholarship */}
             <div className="dual-section-item">
               <div className="events-header">
                 <div>
-                  <h2>Research & Scholarship</h2>
+                  <h2>ADR Scholarship</h2>
                   <p>Explore our research initiatives and scholarly programs advancing global dispute resolution.</p>
                 </div>
               </div>
@@ -381,11 +381,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Global Arbitration Resource Hub */}
+      {/* Global ADR Resource Hub */}
       <section className="resource-hub">
         <div className="container">
           <div className="section-header-center">
-            <h2>Global Arbitration Resource Hub</h2>
+            <h2>Global ADR Resource Hub</h2>
             <p>A curated gateway to leading arbitration institutions and professional resources.</p>
           </div>
 
@@ -429,12 +429,12 @@ const Home = () => {
         />
       </section>
 
-      {/* Latest News & Events */}
+      {/* ADR News */}
       <section className="news-events">
         <div className="container">
           <div className="news-events-header">
             <div>
-              <h2>Latest News</h2>
+              <h2>ADR News</h2>
               <p>Stay updated with CIMA's training programs and professional development initiatives</p>
             </div>
             <Link to="/news" className="view-all">View all news</Link>
