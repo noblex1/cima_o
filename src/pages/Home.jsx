@@ -12,6 +12,7 @@ import cohortPoster from '../../assets/cohortf.jpeg'
 import certificate1 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.53.jpeg'
 import nycConvPoster from '../../gallery/nyc_conv.jpeg'
 import summerSchoolBrochure from '../../assets/2026 CIMA Summer School (2) (1).pdf'
+import cohortBrochure from '../../assets/trusted/CIMA Summer School Extension.pdf'
 import asiaAfricaBrochure from '../../assets/Asia-Africa Mock Arbitration Flyer (1).pdf'
 import logo1 from '../../assets/trusted/trustedby/AAA.png'
 import logo2 from '../../assets/trusted/trustedby/AF BAR.png'
@@ -276,8 +277,8 @@ const Home = () => {
                     <a href="https://cimalearn.thecima.org/course/1345ebaf-f10b-4b2b-882d-1836b9b070d8" target="_blank" rel="noreferrer" className="btn-event-register">
                       Register Now
                     </a>
-                    <a href="mailto:info@thecima.org?subject=Cohort Registration Inquiry" className="btn-event-download">
-                      Contact Us
+                    <a href={cohortBrochure} download="CIMA_Cohort_Brochure.pdf" className="btn-event-download">
+                      Download Brochure
                     </a>
                   </div>
                 </div>
