@@ -66,18 +66,6 @@ const Governance = () => {
       bio: "Expert in international commercial arbitration with focus on cross-border dispute resolution and ADR capacity building."
     },
     {
-      name: "Abasiemdiong Etuk",
-      role: "Commercial Arbitrator",
-      image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=400",
-      bio: "Specialized in commercial arbitration and mediation with extensive experience in regional and international dispute resolution."
-    },
-    {
-      name: "Michael Smith",
-      role: "Senior ADR Consultant",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400",
-      bio: "Senior consultant in alternative dispute resolution with focus on institutional development and professional training programs."
-    },
-    {
       name: "Dr. Kolawale Mayomi",
       role: "Research Director & ADR Specialist",
       image: kolawoleImage,
@@ -101,7 +89,7 @@ const Governance = () => {
           <div className="section-intro">
             <h2 className="section-title governance-title">Governance</h2>
             <p className="section-description">
-              CIMA is governed by a distinguished Board of Trustees comprised of seasoned professionals in arbitration and mediation. The Board guides CIMA's strategic direction, ensuring the organization stays true to its mission of advancing ADR excellence globally.
+              CIMA is governed by a distinguished International Advisory Board comprised of seasoned professionals in arbitration and mediation. The Board guides CIMA's strategic direction, ensuring the organization stays true to its mission of advancing ADR excellence globally.
             </p>
             <div className="governance-structure">
               <div className="governance-item">
@@ -122,7 +110,7 @@ const Governance = () => {
           </div>
 
           <div className="profiles-section">
-            <h3 className="profiles-subtitle">Board of Trustees</h3>
+            <h3 className="profiles-subtitle">International Advisory Board</h3>
             <div className="profiles-grid">
               {boardMembers.map((member, index) => (
                 <div key={index} className="profile-card">
@@ -152,13 +140,6 @@ const Governance = () => {
       {/* Leadership Section */}
       <section className="content-section alt-bg">
         <div className="container">
-          <div className="section-intro">
-            <h2 className="section-title governance-title">Leadership Team</h2>
-            <p className="section-description">
-              At the core of CIMA's operations is a dedicated leadership team committed to advancing alternative dispute resolution across borders. With diverse backgrounds and a shared vision, our leaders champion innovation, inclusion, and excellence at every level, leading us as we empower ADR professionals worldwide.
-            </p>
-          </div>
-
           <div className="profiles-section">
             <h3 className="profiles-subtitle">Profiles</h3>
             <div className="profiles-grid">
