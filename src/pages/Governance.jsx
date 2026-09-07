@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './CommonPages.css'
-import justiceAdjeiImage from '../../assets/justice-adjei.jpeg'
 import presidentCampagnaImage from '../../gallery/frn.jpeg'
 import vicePresidentDicksonImage from '../../gallery/DOB.jpeg'
 import governanceTeamImage from '../../assets/gg.jpeg'
+import mariekeImage from '../../assets/marieke.jpg'
+import marcoImage from '../../assets/marco.jpg'
+import kwasiImage from '../../assets/kwasi.jpg'
 import kaurImage from '../../assets/Kaur.png'
 import patrickImage from '../../assets/Patrick.png'
 import davidImage from '../../assets/David updated.jpg'
@@ -15,7 +17,7 @@ import kolawoleImage from '../../assets/Kolawole.jpg'
 const Governance = () => {
   const boardMembers = [
     {
-      name: "Francesco Campagna, Esq. FCIMArb",
+      name: "Francesco Campagna, FCIMArb",
       role: "Honorary President, CIMA",
       image: presidentCampagnaImage,
       bio: "Francesco Campagna, Esq. FCIMArb, brings a wealth of experience and expertise to the role as an Honorary President. With a background in arbitration and a deep understanding of governance principles, he provides strategic guidance and oversight to ensure the organization's objectives are met effectively."
@@ -27,16 +29,22 @@ const Governance = () => {
       bio: "International lawyer with expertise in cybersecurity law, international commercial arbitration, maritime strategy, and investor-state dispute settlement. CIMA World Fellow and Professor of Practice. Course Director of the Oxford-Africa Forum on International Arbitration. Ranked Global No. 3 and Africa No. 1 on the 2023 Thinkers360 Global List of Top 100 National Security Thought Leaders."
     },
     {
-      name: "Justice Dennis Dominic Adjei, JSC, FGA",
-      role: "Justice of the Supreme Court of Ghana",
-      image: justiceAdjeiImage,
-      bio: "Ghanaian jurist and active Justice of the Supreme Court of Ghana. Previously served as Justice of the African Court on Human and Peoples' Rights and Justice of the Court of Appeal of Ghana. Known for his commitment to ensuring justice is accessible to all."
+      name: "Marieke Witkamp, FClArb, FCIMArb",
+      role: "International Arbitration Expert",
+      image: mariekeImage,
+      bio: "Distinguished international arbitration specialist with extensive experience in complex commercial disputes and cross-border arbitration matters."
     },
     {
-      name: "W. Patrick McPhilamy III",
-      role: "International Mediator & Arbitrator",
-      image: patrickImage,
-      bio: "Seasoned international mediator, arbitrator, and ADR attorney based in California. Earned Master of Laws (LL.M.) from Cambridge University. Focuses on guiding parties toward amicable and lasting settlements in complex disputes. Over 40 years of experience in practice."
+      name: "Marco Casano, FCIMArb",
+      role: "International Arbitrator",
+      image: marcoImage,
+      bio: "Experienced international arbitrator specializing in commercial arbitration with a focus on international dispute resolution and ADR practices."
+    },
+    {
+      name: "Kwasi Prempeh, Esq. FCIMArb",
+      role: "Legal Expert & Arbitrator",
+      image: kwasiImage,
+      bio: "Distinguished legal practitioner and arbitrator with extensive experience in alternative dispute resolution and commercial arbitration."
     }
   ]
 
