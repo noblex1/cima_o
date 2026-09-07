@@ -990,6 +990,9 @@
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .profile-card:hover {
@@ -1018,6 +1021,9 @@
 
 .profile-info {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .profile-name {
@@ -1040,6 +1046,7 @@
   font-size: 1.05rem;
   color: var(--text-light);
   line-height: 1.6;
+  flex-grow: 1;
 }
 
 .video-feature {
