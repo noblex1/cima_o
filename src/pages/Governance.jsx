@@ -6,7 +6,7 @@ import mariekeImage from '../../gallery/governance/marieke.jpeg'
 import marcoImage from '../../gallery/governance/marc.jpeg'
 import kwasiImage from '../../gallery/governance/kwasi.jpeg'
 import patrickImage from '../../gallery/governance/phil.jpeg'
-import misharImage from '../../gallery/governance/mishar.jpeg'
+import misharImage from '../../gallery/governance/kumar.jpeg'
 
 const Governance = () => {
   const boardMembers = [
