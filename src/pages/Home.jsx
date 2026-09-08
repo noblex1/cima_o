@@ -255,7 +255,7 @@ const Home = () => {
             <div className="dual-section-item">
               <div className="events-header">
                 <div>
-                  <h2>Join Next Cohort</h2>
+                  <h2>Join the Next Cohort</h2>
                   <p>Join our upcoming cohort and advance your professional standing in dispute resolution.</p>
                 </div>
               </div>
