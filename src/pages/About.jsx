@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Award, Globe, Users, TrendingUp } from 'lucide-react'
 import './CommonPages.css'
+import oxfordOfficeImage from '../../gallery/governance/oxford.jpeg'
 
 const About = () => {
   const [statsCounted, setStatsCounted] = useState(false)
@@ -85,7 +86,7 @@ const About = () => {
             </p>
             <div className="office-image-container">
               <img 
-                src="/gallery/governance/oxford.jpeg" 
+                src={oxfordOfficeImage} 
                 alt="CIMA International Program Office Building at Oxford Science Park" 
                 className="office-image"
               />
