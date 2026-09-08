@@ -104,6 +104,20 @@ const About = () => {
             </div>
           </div>
 
+          <div className="office-showcase">
+            <h2>CIMA International Program Office</h2>
+            <p className="section-description">
+              Our International Program Office is located at the prestigious Oxford Science Park in Oxfordshire, United Kingdom—a hub of innovation and excellence.
+            </p>
+            <div className="office-image-container">
+              <img 
+                src="/gallery/oxf.jpeg" 
+                alt="CIMA International Program Office Building at Oxford Science Park" 
+                className="office-image"
+              />
+            </div>
+          </div>
+
           <div className="stats-section">
             <div className="stat-card">
               <div className="stat-icon">
