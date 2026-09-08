@@ -70,7 +70,7 @@ const Governance = () => {
       <section className="content-section">
         <div className="container">
           <div className="profiles-section">
-            <h3 className="profiles-subtitle">Advisory Board</h3>
+            <h3 className="profiles-subtitle">International Advisory Board</h3>
             <div className="profiles-grid">
               {boardMembers.map((member, index) => (
                 <div key={index} className="profile-card">
