@@ -7,7 +7,6 @@ import marcoImage from '../../assets/marco.jpg'
 import kwasiImage from '../../dist/new_pic/kwasi.jpeg'
 import patrickImage from '../../dist/new_pic/phil.jpeg'
 import misharImage from '../../dist/new_pic/mishar.jpeg'
-import georgeImage from '../../assets/george.jpg'
 
 const Governance = () => {
   const boardMembers = [
@@ -52,12 +51,6 @@ const Governance = () => {
       role: "ADR Expert & Mediator",
       image: misharImage,
       bio: "Distinguished expert in alternative dispute resolution with extensive experience in mediation and international arbitration."
-    },
-    {
-      name: "Ambassador (Rtd) Dr William George Brandful",
-      role: "Diplomat & International Relations Expert",
-      image: georgeImage,
-      bio: "Retired Ambassador with extensive diplomatic experience and expertise in international relations, conflict resolution, and multilateral negotiations."
     }
   ]
 

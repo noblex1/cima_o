@@ -71,7 +71,7 @@ const About = () => {
         <div className="hero-content">
           <h1 className="hero-title">About CIMA</h1>
           <p className="hero-subtitle">
-            Empowering ADR professionals across 33+ jurisdictions worldwide
+            Center for International Mediators and Arbitrators
           </p>
         </div>
       </section>
@@ -79,14 +79,29 @@ const About = () => {
       <section className="page-content">
         <div className="container">
           <div className="about-intro">
-            <h2>Leading ADR Training & Certification Organization</h2>
+            <h2>Mission</h2>
             <p className="lead-text">
-              The Center for International Mediators and Arbitrators (CIMA), headquartered in Oxford and Accra, 
-              is dedicated to empowering lawyers, ADR practitioners, and students through internationally 
-              benchmarked training and certification. With members in more than 33 jurisdictions, we provide 
-              AI-driven simulations, thought-leadership events, practical mock proceedings, and comprehensive 
-              professional development programs.
+              Our mission is to advance the global practice of Alternative Dispute Resolution (ADR) by establishing rigorous professional standards, accrediting world-class training programs, and certifying an elite roster of dispute resolution practitioners. Through international collaboration, statutory integration, and absolute commitment to ethical integrity, we empower commercial, public, and private entities worldwide to resolve conflicts with speed, fairness, and finality.
             </p>
+          </div>
+
+          <div className="about-intro">
+            <h2>Vision</h2>
+            <p className="lead-text">
+              Our vision is to be recognized as one of the world's premier, self-governing international authority in Alternative Dispute Resolution (ADR), setting global standards of excellence, issuing elite professional credentials, and shaping the future of cross-border dispute resolution in 193 jurisdictions.
+            </p>
+          </div>
+
+          <div className="mission-section">
+            <div className="mission-content">
+              <h2>How our Global Vision and Mission Work Together</h2>
+              <p>
+                <strong>Where CIMA is going:</strong> Our vision defines the destination—becoming the premier, self-governing international authority that sets the rules and benchmarks global ADR excellence.
+              </p>
+              <p>
+                <strong>How CIMA gets there:</strong> Our mission outlines the daily execution—training, setting standards, auditing and accrediting institutions, certifying elite practitioners, and enforcing legal and ethical excellence across its global network.
+              </p>
+            </div>
           </div>
 
           <div className="stats-section">
@@ -124,59 +139,106 @@ const About = () => {
           </div>
 
           <div className="values-section">
-            <h2>Our Core Services</h2>
+            <h2>Our Oxfordshire Values</h2>
+            <p className="section-description">
+              CIMA is anchored on the Oxfordshire values. These values guide our global governance, standard-setting, training and the professional conduct of every certified CIMA practitioner worldwide.
+            </p>
             <div className="values-grid">
               <div className="value-card">
-                <h3>Training & Certification</h3>
+                <h3>Rigorous Excellence</h3>
                 <p>
-                  Professional ADR courses, executive training, sector-specific programs, and certification 
-                  at Associate (ACIMArb), Member (MCIMArb), and Fellowship (FCIMArb) levels.
+                  We maintain the highest standards of professional competence. From the strict auditing of Oxfordshire training, to the demanding qualifications required for our Fellowships, we ensure the CIMA designation always signifies elite, world-class expertise.
                 </p>
               </div>
 
               <div className="value-card">
-                <h3>Membership & Recognition</h3>
+                <h3>Independence & Neutrality</h3>
                 <p>
-                  Individual and institutional membership programs providing professional standing, 
-                  roster inclusion, accreditation, and global recognition.
+                  We protect the absolute impartiality of the dispute resolution process. We operate free from external commercial, political, or institutional influence, ensuring that our panels, rules, and adjudicative processes remain fair to all parties.
                 </p>
               </div>
 
               <div className="value-card">
-                <h3>Rules & Publications</h3>
+                <h3>Integrity</h3>
                 <p>
-                  Arbitration rules, practice manuals, journals, policy briefs, research reports, 
-                  and comprehensive digital knowledge resources.
+                  We demand ethical transparency in everything we do. We hold our institution and our certified neutrals to a strict, enforceable code of ethics, ensuring accountability, preventing conflicts of interest, and preserving the public and judicial trust.
                 </p>
               </div>
 
               <div className="value-card">
-                <h3>Simulations & Research</h3>
+                <h3>Global Inclusivity & Portability</h3>
                 <p>
-                  Mock arbitrations, mediation simulations, AI-driven training platforms, and 
-                  advanced research services for practitioners and institutions.
+                  We build bridges across diverse legal jurisdictions and cultural landscapes. Through our international network, we champion ADR practices that are globally respected, regionally adaptable, and seamlessly portable across borders.
+                </p>
+              </div>
+
+              <div className="value-card">
+                <h3>Innovation in Resolution</h3>
+                <p>
+                  We proactively adapt to the evolving nature of global conflict. We embrace modern digital dispute mechanisms, evolving commercial realities, and forward-thinking technologies to ensure disputes are resolved with maximum efficiency, speed, and finality.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="mission-section">
-            <div className="mission-content">
-              <h2>Our Mission</h2>
-              <p>
-                To empower lawyers, ADR practitioners, and students through internationally benchmarked 
-                training and certification programs. We are committed to promoting excellence, diversity, 
-                and inclusion in alternative dispute resolution while creating rules and frameworks that 
-                reflect global realities and remain internationally enforceable. CIMA serves as an Official 
-                CPD Provider and training partner to institutions worldwide, fostering the next generation 
-                of mediators and arbitrators.
-              </p>
-            </div>
-            <div className="mission-image">
-              <img 
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2074" 
-                alt="Team collaboration"
-              />
+          <div className="values-section">
+            <h2>Strategic Goals</h2>
+            <div className="values-grid">
+              <div className="value-card">
+                <h3>Goal 1: Establish Institutional Autonomy & Governance Excellence</h3>
+                <p>
+                  Separate within 3 years regulatory oversight from educational delivery, ensuring the highest level of standard-setting.
+                </p>
+                <ul style={{textAlign: 'left', marginTop: '10px'}}>
+                  <li>Codify and publish the official CIMA International Arbitration & Mediation Rules to serve as an open-source, contract-ready framework for commercial disputes globally.</li>
+                  <li>Convene an independent CIMA ADR Standards Council by 2027, composed of external global legal scholars, retired justices, and international corporate counsel to oversee all credentialing frameworks.</li>
+                </ul>
+              </div>
+
+              <div className="value-card">
+                <h3>Goal 2: Scale the Global Accreditation Ecosystem</h3>
+                <p>
+                  Transition by 2029 from a training provider to an accrediting body that benchmarks external ADR programs worldwide.
+                </p>
+                <ul style={{textAlign: 'left', marginTop: '10px'}}>
+                  <li>Launch the CIMA Qualifying Assessment Program (QAP) 2026, establishing a formal framework to audit and accredit universities, law schools, and domestic ADR centers.</li>
+                  <li>Expand CIMA's global footprint by embedding this institutional accreditation model across all 33 regional desks by 2028.</li>
+                </ul>
+              </div>
+
+              <div className="value-card">
+                <h3>Goal 3: Achieve Peer Alignment and Global Portability</h3>
+                <p>
+                  Secure high-level international recognition, ensuring that CIMA post-nominals (ACIMArb, MCIMArb, FCIMArb) grant frictionless professional mobility.
+                </p>
+                <ul style={{textAlign: 'left', marginTop: '10px'}}>
+                  <li>Align CIMA's mediation curricula with the International Mediation Institute (IMI) guidelines to achieve reciprocal program recognition.</li>
+                  <li>Secure institutional membership within the International Federation of Commercial Arbitration Institutions (IFCAI) and pursue observer status with UNCITRAL Working Groups.</li>
+                </ul>
+              </div>
+
+              <div className="value-card">
+                <h3>Goal 4: Drive Statutory Integration and Court-Connected Recognition</h3>
+                <p>
+                  Anchor CIMA's panel of neutrals into the statutory legal frameworks of core operating jurisdictions, particularly across Africa, Latin America and Asia.
+                </p>
+                <ul style={{textAlign: 'left', marginTop: '10px'}}>
+                  <li>Establish formal partnerships with national judiciaries (e.g., the Judicial Service of Ghana under the ADR Act) to fast-track CIMA Fellows onto court-annexed rosters.</li>
+                  <li>Campaign to position CIMA as the default appointing authority in state-level public-private partnership (PPP) and infrastructure procurement contracts.</li>
+                </ul>
+              </div>
+
+              <div className="value-card">
+                <h3>Goal 5: Enforce Public Trust through Accountability and Professional Development</h3>
+                <p>
+                  Safeguard the integrity of the CIMA credentials by strictly regulating practitioner ethics and continuous education.
+                </p>
+                <ul style={{textAlign: 'left', marginTop: '10px'}}>
+                  <li>Implement a mandatory, audited Continuous Professional Development (CPD) tracking system required for annual credential renewal.</li>
+                  <li>Empower an autonomous Disciplinary and Ethics Board with a transparent, public mechanism to investigate complaints and enforce sanctions against professional malpractice.</li>
+                  <li>Ensure periodic internal board review.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
