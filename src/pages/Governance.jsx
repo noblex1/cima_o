@@ -1,12 +1,12 @@
 import React from 'react'
 import './CommonPages.css'
 import presidentCampagnaImage from '../../gallery/frn.jpeg'
-import vicePresidentDicksonImage from '../../gallery/DOB.jpeg'
-import mariekeImage from '../../assets/marieke.jpg'
+import vicePresidentDicksonImage from '../../dist/new_pic/bonsu.jpeg'
+import mariekeImage from '../../dist/new_pic/marieke.jpeg'
 import marcoImage from '../../assets/marco.jpg'
-import kwasiImage from '../../assets/kwasi.jpg'
-import patrickImage from '../../assets/Patrick.png'
-import misharImage from '../../assets/mishar.jpg'
+import kwasiImage from '../../dist/new_pic/kwasi.jpeg'
+import patrickImage from '../../dist/new_pic/phil.jpeg'
+import misharImage from '../../dist/new_pic/mishar.jpeg'
 import georgeImage from '../../assets/george.jpg'
 
 const Governance = () => {
