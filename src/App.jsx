@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import FAQButton from './components/FAQButton'
 import Home from './pages/Home'
 import Arbitration from './pages/Arbitration'
 import Mediation from './pages/Mediation'
@@ -44,6 +45,7 @@ import ArbitratorProfile from './pages/ArbitratorProfile'
 import SuccessStoryProfile from './pages/SuccessStoryProfile'
 import ArbitrationResources from './pages/ArbitrationResources'
 import Opportunities from './pages/Opportunities'
+import FAQ from './pages/FAQ'
 
 function App() {
   return (
@@ -52,6 +54,7 @@ function App() {
         <ScrollToTop />
         <div className="app">
           <Header />
+          <FAQButton />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/arbitration" element={<Arbitration />} />
@@ -93,6 +96,7 @@ function App() {
             <Route path="/success-story/:storyId" element={<SuccessStoryProfile />} />
             <Route path="/arbitration-resources" element={<ArbitrationResources />} />
             <Route path="/opportunities" element={<Opportunities />} />
+            <Route path="/faq" element={<FAQ />} />
           </Routes>
           <Footer />
         </div>
