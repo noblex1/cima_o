@@ -17,7 +17,7 @@ const Governance = () => {
       bio: "Francesco Campagna, Esq. FCIMArb, brings a wealth of experience and expertise to the role as an Honorary President. With a background in arbitration and a deep understanding of governance principles, he provides strategic guidance and oversight to ensure the organization's objectives are met effectively."
     },
     {
-      name: "Dr. Osei Bonsu Dickson, FCIMArb",
+      name: "Dr Osei Bonsu Dickson, FCIMArb",
       role: "Global Vice-President (Africa) & Dean, CIMA",
       image: vicePresidentDicksonImage,
       bio: "International lawyer with expertise in cybersecurity law, international commercial arbitration, maritime strategy, and investor-state dispute settlement. CIMA World Fellow and Professor of Practice. Course Director of the Oxford-Africa Forum on International Arbitration. Ranked Global No. 3 and Africa No. 1 on the 2023 Thinkers360 Global List of Top 100 National Security Thought Leaders."
@@ -47,7 +47,7 @@ const Governance = () => {
       bio: "Leading expert in international arbitration with extensive experience in complex commercial disputes and cross-border arbitration matters."
     },
     {
-      name: "Mishar Kumar",
+      name: "Dr Mishar Kumar FCIArb",
       role: "ADR Expert & Mediator",
       image: misharImage,
       bio: "Distinguished expert in alternative dispute resolution with extensive experience in mediation and international arbitration."
