@@ -46,6 +46,9 @@ import SuccessStoryProfile from './pages/SuccessStoryProfile'
 import ArbitrationResources from './pages/ArbitrationResources'
 import Opportunities from './pages/Opportunities'
 import FAQ from './pages/FAQ'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
+import SubmitBlog from './pages/SubmitBlog'
 
 function App() {
   return (
@@ -97,6 +100,9 @@ function App() {
             <Route path="/arbitration-resources" element={<ArbitrationResources />} />
             <Route path="/opportunities" element={<Opportunities />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/blog/submit" element={<SubmitBlog />} />
           </Routes>
           <Footer />
         </div>

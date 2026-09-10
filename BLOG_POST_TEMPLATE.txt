@@ -1,0 +1,25 @@
+{
+  id: 4,
+  title: '',
+  slug: '',
+  author: '',
+  authorTitle: '',
+  publishDate: '2026-09-15',
+  category: 'Arbitration',
+  tags: ['', '', ''],
+  excerpt: '',
+  featuredImage: 'https://images.unsplash.com/photo-',
+  content: `
+    <p></p>
+    
+    <h2></h2>
+    <p></p>
+    
+    <h2></h2>
+    <p></p>
+    
+    <h3></h3>
+    <p></p>
+  `,
+  readTime: 5
+},
