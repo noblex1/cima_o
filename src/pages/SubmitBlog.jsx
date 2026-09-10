@@ -73,8 +73,9 @@ const SubmitBlog = () => {
       // Handle image upload if present
       let featuredImageUrl = null
       if (formData.featuredImage) {
-        // For now, use the preview - in production you'd upload to cloud storage
-        featuredImageUrl = imagePreview
+        // For now, use a default image URL
+        // In production, you'd upload to cloud storage like Cloudinary
+        featuredImageUrl = imagePreview || 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070'
       }
 
       // Prepare submission data
@@ -91,7 +92,18 @@ const SubmitBlog = () => {
         featuredImageUrl: featuredImageUrl
       }
 
-      // Submit to API
+      // Check if we're in development mode
+      const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+      
+      if (isDevelopment) {
+        // In development, show a success message with instructions
+        console.log('Blog post data (for development):', submissionData)
+        alert('⚠️ LOCAL DEVELOPMENT MODE\n\nThe blog submission API only works on the live website (Vercel).\n\nTo test this feature, please:\n1. Push your code to GitHub\n2. Let Vercel deploy\n3. Test on the live site: www.thecima.org/blog/submit\n\nYour form data has been logged to the console.')
+        setIsSubmitting(false)
+        return
+      }
+
+      // Submit to API (only works in production on Vercel)
       const response = await fetch('/api/submit-blog', {
         method: 'POST',
         headers: {
@@ -128,7 +140,7 @@ const SubmitBlog = () => {
       }
     } catch (error) {
       console.error('Error submitting blog:', error)
-      alert('Failed to submit your blog post. Please try again or contact support.')
+      alert('Failed to submit your blog post. Please try again or contact support.\n\nError: ' + error.message)
       setIsSubmitting(false)
     }
   }
