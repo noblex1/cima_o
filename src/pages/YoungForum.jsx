@@ -12,7 +12,7 @@ const YoungForum = () => {
         <div className="contact-hero-overlay"></div>
         <div className="contact-hero-content">
           <div className="contact-hero-text">
-            <h1 className="contact-hero-title">CIMA Young Forum</h1>
+            <h1 className="contact-hero-title">CIMA Young Arbitrators Forum</h1>
             <p className="contact-hero-subtitle">
               Empowering the next generation of dispute resolution professionals through mentorship, networking, and professional development.
             </p>
@@ -25,12 +25,12 @@ const YoungForum = () => {
         <div className="container">
           <div className="overview-content">
             <div className="overview-text">
-              <h2>Welcome to the CIMA Young Forum</h2>
+              <h2>Welcome to the CIMA Young Arbitrators Forum</h2>
               <p className="lead-text">
-                The CIMA Young Forum is a vibrant community designed for young professionals, students, and early-career practitioners in alternative dispute resolution. We provide a dynamic platform for learning, networking, and professional growth in arbitration, mediation, and related fields.
+                The CIMA Young Arbitrators Forum is a vibrant community designed for young professionals, students, and early-career practitioners in alternative dispute resolution. We provide a dynamic platform for learning, networking, and professional growth in arbitration, mediation, and related fields.
               </p>
               <p>
-                Whether you're a law student exploring ADR, a young lawyer building your practice, or an aspiring arbitrator or mediator, the Young Forum offers resources, mentorship, and opportunities to connect with peers and experienced practitioners across the globe.
+                Whether you're a law student exploring ADR, a young lawyer building your practice, or an aspiring arbitrator or mediator, the Young Arbitrators Forum offers resources, mentorship, and opportunities to connect with peers and experienced practitioners across the globe.
               </p>
             </div>
             <div className="overview-stats">
@@ -86,7 +86,7 @@ const YoungForum = () => {
       <section className="young-forum-benefits">
         <div className="container">
           <div className="section-header">
-            <h2>Why Join the CIMA Young Forum?</h2>
+            <h2>Why Join the CIMA Young Arbitrators Forum?</h2>
             <p>Unlock exclusive opportunities designed for young professionals</p>
           </div>
 
@@ -148,7 +148,7 @@ const YoungForum = () => {
           <h2>Membership Eligibility</h2>
           <div className="eligibility-content">
             <p className="eligibility-intro">
-              The CIMA Young Forum is open to individuals who meet the following criteria:
+              The CIMA Young Arbitrators Forum is open to individuals who meet the following criteria:
             </p>
             <div className="eligibility-list">
               <div className="eligibility-item">
@@ -204,7 +204,7 @@ const YoungForum = () => {
                 <h3>Competitions & Moots</h3>
               </div>
               <ul className="activity-list">
-                <li>Annual CIMA Young Forum Mock Arbitration</li>
+                <li>Annual CIMA Young Arbitrators Forum Mock Arbitration</li>
                 <li>Mediation advocacy competitions</li>
                 <li>Case study challenges and hackathons</li>
                 <li>Regional and international moot collaborations</li>
@@ -220,7 +220,7 @@ const YoungForum = () => {
                 <li>Young practitioner networking sessions</li>
                 <li>Meet-the-experts panels and Q&A sessions</li>
                 <li>Virtual coffee chats and regional meetups</li>
-                <li>Annual Young Forum Conference</li>
+                <li>Annual Young Arbitrators Forum Conference</li>
               </ul>
             </div>
 
@@ -230,7 +230,7 @@ const YoungForum = () => {
                 <h3>Publications & Research</h3>
               </div>
               <ul className="activity-list">
-                <li>Young Forum newsletter and blog</li>
+                <li>Young Arbitrators Forum newsletter and blog</li>
                 <li>Contribute articles to CIMA publications</li>
                 <li>Research collaborations on ADR topics</li>
                 <li>Social media engagement and thought leadership</li>
@@ -246,14 +246,14 @@ const YoungForum = () => {
           <div className="join-content">
             <h2>How to Join</h2>
             <p className="join-intro">
-              Becoming a member of the CIMA Young Forum is simple and provides immediate access to our global community and resources.
+              Becoming a member of the CIMA Young Arbitrators Forum is simple and provides immediate access to our global community and resources.
             </p>
             <div className="join-steps">
               <div className="join-step">
                 <div className="step-number">1</div>
                 <div className="step-content">
                   <h3>Complete Application</h3>
-                  <p>Fill out the Young Forum membership application form with your details and areas of interest.</p>
+                  <p>Fill out the Young Arbitrators Forum membership application form with your details and areas of interest.</p>
                 </div>
               </div>
               <div className="join-step">
@@ -267,7 +267,7 @@ const YoungForum = () => {
                 <div className="step-number">3</div>
                 <div className="step-content">
                   <h3>Join the Community</h3>
-                  <p>Upon approval, you'll receive access to all Young Forum resources, events, and networking opportunities.</p>
+                  <p>Upon approval, you'll receive access to all Young Arbitrators Forum resources, events, and networking opportunities.</p>
                 </div>
               </div>
             </div>
@@ -290,9 +290,9 @@ const YoungForum = () => {
       <section className="young-forum-contact">
         <div className="container">
           <div className="contact-box-centered">
-            <h2>Get Involved with the Young Forum</h2>
+            <h2>Get Involved with the Young Arbitrators Forum</h2>
             <p>
-              Have questions about membership or want to learn more about our activities? Our Young Forum team is here to help.
+              Have questions about membership or want to learn more about our activities? Our Young Arbitrators Forum team is here to help.
             </p>
             <div className="contact-info-simple">
               <p><strong>Email:</strong> youngforum@thecima.org</p>

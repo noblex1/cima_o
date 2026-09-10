@@ -257,7 +257,7 @@ The top menu provides quick access to all major sections:
 ### **For Students & Early-Career Professionals**
 
 1. **Start Here**: Courses → Foundation programs
-2. **Young Professionals**: Membership → CIMA Young Forum
+2. **Young Professionals**: Membership → CIMA Young Arbitrators Forum
 3. **Certification**: Membership → Associate Level (ACIMArb)
 4. **Events**: News & Events → Upcoming conferences
 
