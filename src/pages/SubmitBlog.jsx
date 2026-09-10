@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FileText, Check, Edit3, ArrowLeft, Send, User, Mail, BookOpen, Image as ImageIcon, X, Upload } from 'lucide-react'
+import Toast from '../components/Toast'
 import './SubmitBlog.css'
 
 const SubmitBlog = () => {
@@ -20,6 +21,15 @@ const SubmitBlog = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
   const [imagePreview, setImagePreview] = useState(null)
+  const [toast, setToast] = useState(null)
+
+  const showToast = (message, type = 'info') => {
+    setToast({ message, type })
+  }
+
+  const closeToast = () => {
+    setToast(null)
+  }
 
   const handleChange = (e) => {
     setFormData({
@@ -33,13 +43,13 @@ const SubmitBlog = () => {
     if (file) {
       // Validate file type
       if (!file.type.startsWith('image/')) {
-        alert('Please upload an image file (JPG, PNG, etc.)')
+        showToast('Please upload an image file (JPG, PNG, etc.)', 'error')
         return
       }
       
       // Validate file size (max 5MB)
       if (file.size > 5 * 1024 * 1024) {
-        alert('Image size should be less than 5MB')
+        showToast('Image size should be less than 5MB', 'error')
         return
       }
 
@@ -54,6 +64,8 @@ const SubmitBlog = () => {
         setImagePreview(reader.result)
       }
       reader.readAsDataURL(file)
+      
+      showToast('Image uploaded successfully!', 'success')
     }
   }
 
@@ -96,9 +108,9 @@ const SubmitBlog = () => {
       const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
       
       if (isDevelopment) {
-        // In development, show a success message with instructions
+        // In development, show a toast with instructions
         console.log('Blog post data (for development):', submissionData)
-        alert('⚠️ LOCAL DEVELOPMENT MODE\n\nThe blog submission API only works on the live website (Vercel).\n\nTo test this feature, please:\n1. Push your code to GitHub\n2. Let Vercel deploy\n3. Test on the live site: www.thecima.org/blog/submit\n\nYour form data has been logged to the console.')
+        showToast('Local development mode: The blog submission API only works on the live website. Push to GitHub and test on www.thecima.org', 'warning')
         setIsSubmitting(false)
         return
       }
@@ -117,6 +129,7 @@ const SubmitBlog = () => {
       if (response.ok && result.success) {
         setIsSubmitting(false)
         setSubmitSuccess(true)
+        showToast('Blog post published successfully! 🎉', 'success')
         
         // Reset form after 5 seconds
         setTimeout(() => {
@@ -140,7 +153,7 @@ const SubmitBlog = () => {
       }
     } catch (error) {
       console.error('Error submitting blog:', error)
-      alert('Failed to submit your blog post. Please try again or contact support.\n\nError: ' + error.message)
+      showToast(`Failed to submit blog post: ${error.message}`, 'error')
       setIsSubmitting(false)
     }
   }
@@ -165,6 +178,15 @@ const SubmitBlog = () => {
 
   return (
     <div className="submit-blog-page">
+      {/* Toast Notification */}
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          onClose={closeToast}
+        />
+      )}
+
       {/* Hero Section */}
       <section className="submit-blog-hero">
         <div className="container">
