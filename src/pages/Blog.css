@@ -426,56 +426,135 @@
 
 /* Submit Blog CTA */
 .submit-blog-cta {
-  padding: 6rem 0;
-  background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFF3E0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-blog-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="30" fill="none" stroke="rgba(117,0,0,0.03)" stroke-width="2"/></svg>');
+  opacity: 0.6;
+}
+
+.submit-blog-cta .container {
+  position: relative;
+  z-index: 1;
 }
 
 .cta-content {
-  text-align: center;
-  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 3rem;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(117, 0, 0, 0.1);
+}
+
+.cta-text {
+  text-align: left;
+}
+
+.cta-text h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .cta-icon {
   color: var(--burgundy);
-  margin-bottom: 1.5rem;
+  flex-shrink: 0;
 }
 
-.cta-content h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 1rem;
-}
-
-.cta-content p {
-  font-size: 1.1rem;
+.cta-text p {
+  font-size: 1.15rem;
   color: var(--text-light);
   line-height: 1.7;
-  margin-bottom: 2.5rem;
+  margin: 0;
+  max-width: 600px;
+}
+
+.cta-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .btn-submit-blog {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
-  padding: 1.25rem 2.5rem;
-  background: var(--burgundy);
+  padding: 1.5rem 3rem;
+  background: linear-gradient(135deg, #750000 0%, #8B0000 100%);
   color: var(--white);
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(117, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 20px rgba(117, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .btn-submit-blog:hover {
-  background: var(--burgundy-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(117, 0, 0, 0.35);
+  background: linear-gradient(135deg, #8B0000 0%, #A52A2A 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(117, 0, 0, 0.4);
+}
+
+.btn-submit-blog:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments for CTA */
+@media (max-width: 968px) {
+  .cta-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2.5rem;
+  }
+
+  .cta-text {
+    text-align: center;
+  }
+
+  .cta-text h2 {
+    font-size: 2.25rem;
+    justify-content: center;
+  }
+
+  .cta-text p {
+    max-width: 100%;
+  }
+
+  .cta-button-wrapper {
+    align-items: center;
+  }
+
+  .btn-submit-blog {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 /* Responsive */

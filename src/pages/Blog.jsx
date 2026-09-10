@@ -165,12 +165,18 @@ const Blog = () => {
       <section className="submit-blog-cta">
         <div className="container">
           <div className="cta-content">
-            <Edit3 size={48} className="cta-icon" />
-            <h2>Share Your Expertise</h2>
-            <p>Contribute to the CIMA Blog and share your insights with the global ADR community. We welcome thought leadership articles, case studies, and practical guidance from practitioners worldwide.</p>
-            <Link to="/blog/submit" className="btn-submit-blog">
-              Submit a Blog Post
-            </Link>
+            <div className="cta-text">
+              <h2>
+                <Edit3 size={42} className="cta-icon" />
+                Share Your Expertise
+              </h2>
+              <p>Contribute to the CIMA Blog and share your insights with the global ADR community. We welcome thought leadership articles, case studies, and practical guidance from practitioners worldwide.</p>
+            </div>
+            <div className="cta-button-wrapper">
+              <Link to="/blog/submit" className="btn-submit-blog">
+                Submit a Blog Post
+              </Link>
+            </div>
           </div>
         </div>
       </section>
