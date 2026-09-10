@@ -69,29 +69,68 @@ const SubmitBlog = () => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate submission (you can replace this with actual API call)
-    setTimeout(() => {
+    try {
+      // Handle image upload if present
+      let featuredImageUrl = null
+      if (formData.featuredImage) {
+        // For now, use the preview - in production you'd upload to cloud storage
+        featuredImageUrl = imagePreview
+      }
+
+      // Prepare submission data
+      const submissionData = {
+        authorName: formData.authorName,
+        authorTitle: formData.authorTitle,
+        authorEmail: formData.authorEmail,
+        articleTitle: formData.articleTitle,
+        category: formData.category,
+        tags: formData.tags,
+        excerpt: formData.excerpt,
+        articleContent: formData.articleContent,
+        authorBio: formData.authorBio,
+        featuredImageUrl: featuredImageUrl
+      }
+
+      // Submit to API
+      const response = await fetch('/api/submit-blog', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(submissionData)
+      })
+
+      const result = await response.json()
+
+      if (response.ok && result.success) {
+        setIsSubmitting(false)
+        setSubmitSuccess(true)
+        
+        // Reset form after 5 seconds
+        setTimeout(() => {
+          setFormData({
+            authorName: '',
+            authorTitle: '',
+            authorEmail: '',
+            articleTitle: '',
+            category: 'Arbitration',
+            tags: '',
+            excerpt: '',
+            articleContent: '',
+            authorBio: '',
+            featuredImage: null
+          })
+          setImagePreview(null)
+          setSubmitSuccess(false)
+        }, 5000)
+      } else {
+        throw new Error(result.error || 'Failed to submit blog post')
+      }
+    } catch (error) {
+      console.error('Error submitting blog:', error)
+      alert('Failed to submit your blog post. Please try again or contact support.')
       setIsSubmitting(false)
-      setSubmitSuccess(true)
-      
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        setFormData({
-          authorName: '',
-          authorTitle: '',
-          authorEmail: '',
-          articleTitle: '',
-          category: 'Arbitration',
-          tags: '',
-          excerpt: '',
-          articleContent: '',
-          authorBio: '',
-          featuredImage: null
-        })
-        setImagePreview(null)
-        setSubmitSuccess(false)
-      }, 3000)
-    }, 2000)
+    }
   }
 
   const guidelines = [
@@ -151,8 +190,8 @@ const SubmitBlog = () => {
               <li><strong>Training & Education:</strong> Professional development insights and educational resources</li>
             </ul>
 
-            <h3>Review Process</h3>
-            <p>All submissions are reviewed by the CIMA Editorial Team within 10-15 business days. We may suggest edits for clarity, length, or style. Authors will be notified of publication decisions and provided with feedback.</p>
+            <h3>Publishing Process</h3>
+            <p>All blog posts submitted through this form are published immediately and will appear on the CIMA blog within seconds. Please ensure your article meets our quality standards before submitting. All posts include full author attribution and biographical information.</p>
 
             <h3>Rights & Attribution</h3>
             <p>By submitting, you grant CIMA non-exclusive rights to publish your article on our website and in promotional materials. You retain copyright and may republish elsewhere after publication on the CIMA blog. All published articles include full author attribution and biographical information.</p>
@@ -171,8 +210,9 @@ const SubmitBlog = () => {
           {submitSuccess && (
             <div className="success-message">
               <Check size={48} />
-              <h3>Submission Successful!</h3>
-              <p>Thank you for your contribution. Our editorial team will review your article and contact you within 10-15 business days.</p>
+              <h3>Blog Post Published!</h3>
+              <p>Your article has been successfully published and is now live on the CIMA blog. Thank you for sharing your expertise!</p>
+              <Link to="/blog" className="btn-view-blog">View Blog</Link>
             </div>
           )}
 

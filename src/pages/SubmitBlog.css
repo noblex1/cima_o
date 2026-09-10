@@ -218,6 +218,26 @@
   font-size: 1.05rem;
   color: #1B5E20;
   line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.success-message .btn-view-blog {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: #4CAF50;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.success-message .btn-view-blog:hover {
+  background: #388E3C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
 }
 
 .blog-form-container {
