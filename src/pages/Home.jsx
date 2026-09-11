@@ -534,7 +534,7 @@ const Home = () => {
         <div className="container">
           <div className="section-header-center">
             <h2>Global Arbitrator</h2>
-            <p>A CIMA weekly profile featuring leading arbitrators, mediators and neutrals shaping global dispute resolution.</p>
+            <p>A CIMA monthly profile featuring leading arbitrators, mediators and neutrals shaping global dispute resolution.</p>
           </div>
 
           <div className="arbitrator-grid">
