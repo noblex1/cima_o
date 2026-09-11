@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FileText, Check, Edit3, ArrowLeft, Send, User, Mail, BookOpen, Image as ImageIcon, X, Upload } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 import Toast from '../components/Toast'
 import './SubmitBlog.css'
 
@@ -82,34 +83,34 @@ const SubmitBlog = () => {
     setIsSubmitting(true)
 
     try {
-      // Prepare blog post data
-      const blogPostData = {
-        authorName: formData.authorName,
-        authorTitle: formData.authorTitle,
-        authorEmail: formData.authorEmail,
-        articleTitle: formData.articleTitle,
+      // Prepare email template parameters
+      const templateParams = {
+        author_name: formData.authorName,
+        author_title: formData.authorTitle,
+        author_email: formData.authorEmail,
+        author_bio: formData.authorBio || 'Not provided',
+        article_title: formData.articleTitle,
         category: formData.category,
-        tags: formData.tags,
+        tags: formData.tags || 'Not provided',
         excerpt: formData.excerpt,
-        articleContent: formData.articleContent,
-        authorBio: formData.authorBio || 'N/A',
-        submissionDate: new Date().toLocaleString(),
-        wordCount: formData.articleContent.split(/\s+/).filter(word => word.length > 0).length
+        article_content: formData.articleContent,
+        word_count: formData.articleContent.split(/\s+/).filter(word => word.length > 0).length,
+        submission_date: new Date().toLocaleString(),
+        reply_to: formData.authorEmail
       }
 
-      // Log the data to console for admin to manually add
-      console.log('='.repeat(60))
-      console.log('NEW BLOG SUBMISSION')
-      console.log('='.repeat(60))
-      console.log(JSON.stringify(blogPostData, null, 2))
-      console.log('='.repeat(60))
-      
-      // Simulate submission
-      await new Promise(resolve => setTimeout(resolve, 2000))
+      // Send email using EmailJS
+      // You need to set up EmailJS account and get these credentials
+      await emailjs.send(
+        'YOUR_SERVICE_ID',  // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        templateParams,
+        'YOUR_PUBLIC_KEY'   // Replace with your EmailJS public key
+      )
       
       setIsSubmitting(false)
       setSubmitSuccess(true)
-      showToast('Thank you for your submission! Our team will review your article and contact you at ' + formData.authorEmail + ' within 2-3 business days. 📧', 'success')
+      showToast('Thank you! Your blog post has been submitted. We\'ll review it and contact you at ' + formData.authorEmail + ' within 2-3 business days. 📧', 'success')
       
       // Reset form after 5 seconds
       setTimeout(() => {
@@ -131,7 +132,7 @@ const SubmitBlog = () => {
       
     } catch (error) {
       console.error('Error submitting blog:', error)
-      showToast(`Failed to submit blog post. Please try again or contact us directly.`, 'error')
+      showToast('Failed to submit blog post. Please try again or email us directly at info@thecima.org', 'error')
       setIsSubmitting(false)
     }
   }
