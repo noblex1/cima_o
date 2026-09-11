@@ -100,12 +100,11 @@ const SubmitBlog = () => {
       }
 
       // Send email using EmailJS
-      // You need to set up EmailJS account and get these credentials
       await emailjs.send(
-        'YOUR_SERVICE_ID',  // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_pk6a1ja',    // EmailJS Service ID
+        'template_d1vcrjq',   // EmailJS Template ID
         templateParams,
-        'YOUR_PUBLIC_KEY'   // Replace with your EmailJS public key
+        'O2WgRA_cNJXE9LU2o'   // EmailJS Public Key
       )
       
       setIsSubmitting(false)
