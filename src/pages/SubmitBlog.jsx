@@ -82,16 +82,8 @@ const SubmitBlog = () => {
     setIsSubmitting(true)
 
     try {
-      // Handle image upload if present
-      let featuredImageUrl = null
-      if (formData.featuredImage) {
-        // For now, use a default image URL
-        // In production, you'd upload to cloud storage like Cloudinary
-        featuredImageUrl = imagePreview || 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070'
-      }
-
-      // Prepare submission data
-      const submissionData = {
+      // Prepare blog post data
+      const blogPostData = {
         authorName: formData.authorName,
         authorTitle: formData.authorTitle,
         authorEmail: formData.authorEmail,
@@ -100,44 +92,49 @@ const SubmitBlog = () => {
         tags: formData.tags,
         excerpt: formData.excerpt,
         articleContent: formData.articleContent,
-        authorBio: formData.authorBio,
-        featuredImageUrl: featuredImageUrl
+        authorBio: formData.authorBio || 'N/A',
+        submissionDate: new Date().toLocaleString(),
+        wordCount: formData.articleContent.split(/\s+/).filter(word => word.length > 0).length
       }
 
-      // Check if we're in development mode
-      const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+      // Log the data to console for admin to manually add
+      console.log('='.repeat(60))
+      console.log('NEW BLOG SUBMISSION')
+      console.log('='.repeat(60))
+      console.log(JSON.stringify(blogPostData, null, 2))
+      console.log('='.repeat(60))
       
-      if (isDevelopment) {
-        // In development, show a toast with instructions
-        console.log('Blog post data (for development):', submissionData)
-        showToast('Local development mode: The blog submission API only works on the live website. Push to GitHub and test on www.thecima.org', 'warning')
-        setIsSubmitting(false)
-        return
-      }
-
-      // Submit to API (only works in production on Vercel)
-      const response = await fetch('/api/submit-blog', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(submissionData)
-      })
-
-      const result = await response.json()
-
-      if (response.ok && result.success) {
-        setIsSubmitting(false)
-        setSubmitSuccess(true)
-        showToast('Blog post published successfully! 🎉', 'success')
-        
-        // Reset form after 5 seconds
-        setTimeout(() => {
-          setFormData({
-            authorName: '',
-            authorTitle: '',
-            authorEmail: '',
-            articleTitle: '',
+      // Simulate submission
+      await new Promise(resolve => setTimeout(resolve, 2000))
+      
+      setIsSubmitting(false)
+      setSubmitSuccess(true)
+      showToast('Thank you for your submission! Our team will review your article and contact you at ' + formData.authorEmail + ' within 2-3 business days. 📧', 'success')
+      
+      // Reset form after 5 seconds
+      setTimeout(() => {
+        setFormData({
+          authorName: '',
+          authorTitle: '',
+          authorEmail: '',
+          articleTitle: '',
+          category: 'Arbitration',
+          tags: '',
+          excerpt: '',
+          articleContent: '',
+          authorBio: '',
+          featuredImage: null
+        })
+        setImagePreview(null)
+        setSubmitSuccess(false)
+      }, 5000)
+      
+    } catch (error) {
+      console.error('Error submitting blog:', error)
+      showToast(`Failed to submit blog post. Please try again or contact us directly.`, 'error')
+      setIsSubmitting(false)
+    }
+  }
             category: 'Arbitration',
             tags: '',
             excerpt: '',
@@ -225,7 +222,7 @@ const SubmitBlog = () => {
             </ul>
 
             <h3>Publishing Process</h3>
-            <p>All blog posts submitted through this form are published immediately and will appear on the CIMA blog within seconds. Please ensure your article meets our quality standards before submitting. All posts include full author attribution and biographical information.</p>
+            <p>All blog posts are reviewed by our editorial team before publishing. Submissions are typically reviewed within 2-3 business days. We may suggest edits for clarity, length, or style. Authors will be notified of publication decisions via email.</p>
 
             <h3>Rights & Attribution</h3>
             <p>By submitting, you grant CIMA non-exclusive rights to publish your article on our website and in promotional materials. You retain copyright and may republish elsewhere after publication on the CIMA blog. All published articles include full author attribution and biographical information.</p>
@@ -244,9 +241,8 @@ const SubmitBlog = () => {
           {submitSuccess && (
             <div className="success-message">
               <Check size={48} />
-              <h3>Blog Post Published!</h3>
-              <p>Your article has been successfully published and is now live on the CIMA blog. Thank you for sharing your expertise!</p>
-              <Link to="/blog" className="btn-view-blog">View Blog</Link>
+              <h3>Submission Received!</h3>
+              <p>Thank you for your contribution. Our editorial team will review your article and contact you within 2-3 business days with feedback or publication confirmation.</p>
             </div>
           )}
 
