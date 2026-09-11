@@ -102,7 +102,7 @@ const SubmitBlog = () => {
       // Send email using EmailJS
       await emailjs.send(
         'service_pk6a1ja',    // EmailJS Service ID
-        'template_d1vcrjq',   // EmailJS Template ID
+        'template_jh3dvbd',   // EmailJS Template ID
         templateParams,
         'O2WgRA_cNJXE9LU2o'   // EmailJS Public Key
       )
