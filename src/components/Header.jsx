@@ -61,6 +61,7 @@ const Header = () => {
               <Link to="/oxfordshire" className="dropdown-item" onClick={closeMobileMenu}>Oxfordshire</Link>
               <Link to="/campaigns" className="dropdown-item" onClick={closeMobileMenu}>Campaigns</Link>
               <Link to="/news" className="dropdown-item" onClick={closeMobileMenu}>News</Link>
+              <Link to="/blog" className="dropdown-item" onClick={closeMobileMenu}>Blog</Link>
               <Link to="/resources" className="dropdown-item" onClick={closeMobileMenu}>Resources</Link>
               <Link to="/careers" className="dropdown-item" onClick={closeMobileMenu}>Careers</Link>
               <Link to="/gallery" className="dropdown-item" onClick={closeMobileMenu}>Gallery</Link>
