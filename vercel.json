@@ -35,35 +35,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "thecima.org"
-        }
-      ],
-      "destination": "https://www.thecima.org",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "thecima.org"
-        }
-      ],
-      "destination": "https://www.thecima.org/:path*",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
-    }
   ]
 }
