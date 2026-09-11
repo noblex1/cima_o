@@ -135,25 +135,6 @@ const SubmitBlog = () => {
       setIsSubmitting(false)
     }
   }
-            category: 'Arbitration',
-            tags: '',
-            excerpt: '',
-            articleContent: '',
-            authorBio: '',
-            featuredImage: null
-          })
-          setImagePreview(null)
-          setSubmitSuccess(false)
-        }, 5000)
-      } else {
-        throw new Error(result.error || 'Failed to submit blog post')
-      }
-    } catch (error) {
-      console.error('Error submitting blog:', error)
-      showToast(`Failed to submit blog post: ${error.message}`, 'error')
-      setIsSubmitting(false)
-    }
-  }
 
   const guidelines = [
     {
