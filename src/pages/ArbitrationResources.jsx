@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, ExternalLink } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Download } from 'lucide-react'
 import './ArbitrationResources.css'
+import cimaGlobalGuide from '../../assets/A-CIMA-GLOBAL-GUIDE-TO-ARBITRATION-AND-MEDIATION.pdf'
 
 const ArbitrationResources = () => {
   return (
@@ -19,6 +20,17 @@ const ArbitrationResources = () => {
 
       <div className="resources-content">
         <div className="container">
+          {/* CIMA Publications */}
+          <section className="resource-category-section cima-publications">
+            <h2>CIMA Publications</h2>
+            <div className="resources-grid">
+              <a href={cimaGlobalGuide} download="A-CIMA-Global-Guide-to-Arbitration-and-Mediation.pdf" className="resource-item download-item">
+                <span className="resource-name">A CIMA Global Guide to Arbitration and Mediation</span>
+                <Download size={16} />
+              </a>
+            </div>
+          </section>
+
           {/* Institutions */}
           <section className="resource-category-section">
             <h2>Institutions</h2>
