@@ -601,6 +601,56 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="testimonials-section">
+        <div className="container">
+          <div className="section-header-center">
+            <h2>What CIMA Members Say</h2>
+            <p>Hear from professionals who have experienced CIMA's world-class training and credentialing</p>
+          </div>
+
+          <div className="testimonials-grid">
+            <div className="testimonial-card">
+              <div className="testimonial-quote">"</div>
+              <p>CIMA delivers rigorous, practice-led training through an exceptional international faculty, including distinguished professionals educated or trained at Oxford, Harvard and Cambridge.</p>
+              <div className="testimonial-author">
+                <div className="author-name">Programme Participant</div>
+              </div>
+            </div>
+
+            <div className="testimonial-card">
+              <div className="testimonial-quote">"</div>
+              <p>Participants learn from some of the world's finest arbitrators, mediators, judges, academics and practitioners, bringing exceptional global expertise to domestic and international dispute resolution.</p>
+              <div className="testimonial-author">
+                <div className="author-name">Programme Participant</div>
+              </div>
+            </div>
+
+            <div className="testimonial-card">
+              <div className="testimonial-quote">"</div>
+              <p>CIMA's realistic and multidisciplinary mock proceedings build practical competence in advocacy, case management, cross-examination, negotiation and decision-making.</p>
+              <div className="testimonial-author">
+                <div className="author-name">Programme Participant</div>
+              </div>
+            </div>
+
+            <div className="testimonial-card">
+              <div className="testimonial-quote">"</div>
+              <p>CIMA represents prestige, professional authority and international respect. Its world-class instruction, practical simulations and personalised feedback prepare professionals to practise confidently at the highest level.</p>
+              <div className="testimonial-author">
+                <div className="author-name">Programme Participant</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="testimonials-conclusion">
+            <p><strong>CIMA offers a complete professional pathway into dispute resolution</strong>—helping people to learn, qualify, belong, practise, gain visibility, access opportunities and ultimately lead.</p>
+            <p>Through world-class practical training, respected professional credentials, realistic simulations, mentorship, international networks and continuing career support, we enable students, lawyers, arbitrators, in-house counsel and institutions to build the skills, confidence, credibility, professional standing and global connections required to succeed in arbitration and mediation.</p>
+            <p><em>CIMA is not merely a training provider or membership body; we help people build and advance careers in dispute resolution.</em></p>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="final-cta">
         <div className="container">
