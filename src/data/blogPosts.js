@@ -3,6 +3,57 @@
 
 export const blogPosts = [
   {
+    id: 3,
+    title: 'CIMA Global Theme 2026–2028: Mainstreaming Mediation and Arbitration',
+    slug: 'cima-global-theme-2026-2028-mainstreaming-mediation-arbitration',
+    author: 'CIMA',
+    authorTitle: 'Center for International Mediators and Arbitrators',
+    publishDate: '2026-09-13',
+    category: 'International Law',
+    tags: ['CIMA', 'Strategic Vision', 'ADR Development', 'Professional Standards', 'Institutionalisation'],
+    excerpt: 'For 2026–2028, CIMA adopts "Mainstreaming Mediation and Arbitration" as its institutional theme, focusing on the systematic integration of ADR into the institutional architecture of dispute prevention, management and resolution.',
+    featuredImage: '/assets/blog/3.jpeg',
+    content: `
+      <h2>CIMA GLOBAL THEME 2026–2028</h2>
+      <h3>Mainstreaming Mediation and Arbitration</h3>
+
+      <p>For 2026–2028, the Center for International Mediators and Arbitrators (CIMA) adopts <strong>"Mainstreaming Mediation and Arbitration"</strong> as its institutional theme.</p>
+
+      <p>Mainstreaming requires the systematic integration of mediation and arbitration into the institutional architecture of dispute prevention, management and resolution, rather than treating them merely as alternatives to litigation.</p>
+
+      <p>This means embedding appropriate dispute-resolution mechanisms within commercial contracts, corporate governance, public procurement, investment frameworks, employment relations, construction and infrastructure projects, financial transactions and court-connected processes. The objective is <strong>procedural proportionality</strong>: matching each dispute with the mechanism best suited to its nature, complexity, value, commercial relationship and enforcement requirements.</p>
+
+      <h2>The Role of CIMA</h2>
+
+      <p>During 2026–2028, CIMA will advance this agenda through five interconnected pillars:</p>
+
+      <h3>1. Professional Capacity</h3>
+      <p>Developing technically competent mediators, arbitrators and ADR counsel through rigorous training, simulations and continuing professional development.</p>
+
+      <h3>2. Institutionalisation</h3>
+      <p>Supporting courts, governments, businesses, law firms and professional bodies to develop effective mediation, arbitration and multi-tier dispute-resolution frameworks.</p>
+
+      <h3>3. Professional Pathways</h3>
+      <p>Connecting training and membership with mentorship, practical exposure, specialist development and pathways to professional appointments.</p>
+
+      <h3>4. Research and Standards</h3>
+      <p>Developing evidence-based guidance and professional standards addressing emerging areas including artificial intelligence, cybersecurity, online dispute resolution and cross-border disputes.</p>
+
+      <h3>5. Internationalisation</h3>
+      <p>Strengthening cross-border professional networks, institutional cooperation and meaningful participation in international dispute resolution.</p>
+
+      <p>CIMA's role therefore extends beyond professional training. It is to strengthen the capacity, standards, institutions and professional ecosystem necessary to make mediation and arbitration credible, accessible and routinely deployed components of modern justice and commerce.</p>
+
+      <p><strong>The 2026–2028 strategic objective is a deliberate transition from "alternative" dispute resolution to appropriate, institutionalised and mainstream dispute resolution.</strong></p>
+
+      <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: linear-gradient(135deg, #750000 0%, #500000 100%); color: white; border-radius: 12px;">
+        <h3 style="color: white; margin-bottom: 1rem;">CIMA 2026–2028</h3>
+        <p style="font-size: 1.25rem; font-weight: 600; color: white; margin: 0;">Mainstreaming Mediation and Arbitration.</p>
+      </div>
+    `,
+    readTime: 4
+  },
+  {
     id: 1,
     title: 'Beyond Certification: Rethinking How We Build Careers in International Dispute Resolution',
     slug: 'beyond-certification-rethinking-careers-dispute-resolution',
