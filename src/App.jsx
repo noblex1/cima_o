@@ -49,6 +49,7 @@ import FAQ from './pages/FAQ'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import SubmitBlog from './pages/SubmitBlog'
+import ClauseBuilder from './pages/ClauseBuilder'
 
 function App() {
   return (
@@ -103,6 +104,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/blog/submit" element={<SubmitBlog />} />
+            <Route path="/clause-builder" element={<ClauseBuilder />} />
           </Routes>
           <Footer />
         </div>

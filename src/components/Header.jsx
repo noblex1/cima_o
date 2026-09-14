@@ -101,6 +101,7 @@ const Header = () => {
             </div>
           </div>
           <Link to="/courses" className="nav-link" onClick={closeMobileMenu}>Courses</Link>
+          <Link to="/clause-builder" className="nav-link" onClick={closeMobileMenu}>Clause Builder</Link>
           <Link to="/global-100" className="nav-link" onClick={closeMobileMenu}>Global 100</Link>
           
           <div className="nav-item dropdown">
