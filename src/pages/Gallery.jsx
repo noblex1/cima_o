@@ -28,6 +28,10 @@ import img22 from '../../gallery/WhatsApp-Image-2026-02-19-at-10.15.06-AM-3.jpeg
 import img23 from '../../gallery/WhatsApp-Image-2026-05-05-at-08.37.jpg'
 import img24 from '../../gallery/2022_john_eccles_10_custom_800x533.jpg'
 import img25 from '../../gallery/multiracial-workers-using-virtual-reality-headsets-2026-01-09-00-01-46-utc-scaled.jpg'
+import img26 from '../../gallery/sharif 1.jpeg'
+import img27 from '../../gallery/sharif 2.jpeg'
+import img28 from '../../gallery/sharif 3.jpeg'
+import img29 from '../../gallery/sharif 4.jpeg'
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -239,6 +243,38 @@ const Gallery = () => {
       alt: 'Modern Training',
       category: 'events',
       title: 'VR Training Session',
+      size: 'medium'
+    },
+    {
+      id: 26,
+      src: img26,
+      alt: 'CIMA Professional Event',
+      category: 'events',
+      title: 'Professional Development Session',
+      size: 'medium'
+    },
+    {
+      id: 27,
+      src: img27,
+      alt: 'CIMA Training Program',
+      category: 'events',
+      title: 'Training Excellence',
+      size: 'large'
+    },
+    {
+      id: 28,
+      src: img28,
+      alt: 'CIMA Team Activity',
+      category: 'team',
+      title: 'Team Collaboration',
+      size: 'wide'
+    },
+    {
+      id: 29,
+      src: img29,
+      alt: 'CIMA Professional Gathering',
+      category: 'events',
+      title: 'International ADR Conference',
       size: 'medium'
     }
   ]
