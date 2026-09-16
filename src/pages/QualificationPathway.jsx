@@ -50,7 +50,7 @@ const QualificationPathway = () => {
                 <BookOpen size={40} />
               </div>
               <h3>Associate Member</h3>
-              <div className="pathway-designation-badge">ACIArb</div>
+              <div className="pathway-designation-badge">ACIMArb</div>
               <p className="pathway-description">
                 Begin your ADR journey with foundational knowledge in mediation and arbitration principles, 
                 procedures, and practices.
@@ -80,7 +80,7 @@ const QualificationPathway = () => {
               <div className="pathway-section">
                 <h4><Star size={18} /> Benefits</h4>
                 <ul className="pathway-list">
-                  <li>Use of ACIArb post-nominal designation</li>
+                  <li>Use of ACIMArb post-nominal designation</li>
                   <li>CIMA membership certificate</li>
                   <li>Access to member resources and training materials</li>
                   <li>Discounts on CIMA courses and events</li>
@@ -110,7 +110,7 @@ const QualificationPathway = () => {
                 <Award size={40} />
               </div>
               <h3>Member</h3>
-              <div className="pathway-designation-badge">MCIArb</div>
+              <div className="pathway-designation-badge">MCIMArb</div>
               <p className="pathway-description">
                 Advance to professional status with demonstrated practical experience and specialized 
                 competence in mediation or arbitration.
@@ -129,7 +129,7 @@ const QualificationPathway = () => {
               <div className="pathway-section">
                 <h4><CheckCircle size={18} /> Requirements</h4>
                 <ul className="pathway-list">
-                  <li>Hold Associate membership (ACIArb) for minimum 12 months</li>
+                  <li>Hold Associate membership (ACIMArb) for minimum 12 months</li>
                   <li>Complete advanced CIMA training modules (60-80 hours)</li>
                   <li>Demonstrate practical experience (minimum 3-5 cases as neutral or advisor)</li>
                   <li>Pass Member-level assessment and practical evaluation</li>
@@ -141,7 +141,7 @@ const QualificationPathway = () => {
               <div className="pathway-section">
                 <h4><Star size={18} /> Benefits</h4>
                 <ul className="pathway-list">
-                  <li>Use of MCIArb professional designation</li>
+                  <li>Use of MCIMArb professional designation</li>
                   <li>Inclusion on CIMA Roll of Mediators & Arbitrators</li>
                   <li>Enhanced professional profile and visibility</li>
                   <li>Priority access to training and CPD programs</li>
@@ -172,7 +172,7 @@ const QualificationPathway = () => {
                 <Trophy size={40} />
               </div>
               <h3>Fellow</h3>
-              <div className="pathway-designation-badge">FCIArb</div>
+              <div className="pathway-designation-badge">FCIMArb</div>
               <p className="pathway-description">
                 Achieve the highest level of professional recognition, reserved for senior practitioners 
                 with extensive experience and distinguished contributions to ADR.
@@ -191,7 +191,7 @@ const QualificationPathway = () => {
               <div className="pathway-section">
                 <h4><CheckCircle size={18} /> Requirements</h4>
                 <ul className="pathway-list">
-                  <li>Hold Member status (MCIArb) for minimum 3-5 years</li>
+                  <li>Hold Member status (MCIMArb) for minimum 3-5 years</li>
                   <li>Extensive ADR practice experience (minimum 5-10 years as neutral)</li>
                   <li>Demonstrated leadership in the ADR field</li>
                   <li>Significant contributions to ADR (publications, teaching, institution building)</li>
@@ -204,7 +204,7 @@ const QualificationPathway = () => {
               <div className="pathway-section">
                 <h4><Star size={18} /> Benefits</h4>
                 <ul className="pathway-list">
-                  <li>Use of prestigious FCIArb designation</li>
+                  <li>Use of prestigious FCIMArb designation</li>
                   <li>Enhanced Roll listing with senior status</li>
                   <li>Leadership roles in CIMA committees and governance</li>
                   <li>Invited speaker at CIMA events and conferences</li>
@@ -241,17 +241,17 @@ const QualificationPathway = () => {
               <thead>
                 <tr>
                   <th>Criteria</th>
-                  <th>Associate (ACIArb)</th>
-                  <th>Member (MCIArb)</th>
-                  <th>Fellow (FCIArb)</th>
+                  <th>Associate (ACIMArb)</th>
+                  <th>Member (MCIMArb)</th>
+                  <th>Fellow (FCIMArb)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>Entry Requirements</strong></td>
                   <td>Legal or professional background</td>
-                  <td>ACIArb + 2-5 years experience</td>
-                  <td>MCIArb + 5-10 years experience</td>
+                  <td>ACIMArb + 2-5 years experience</td>
+                  <td>MCIMArb + 5-10 years experience</td>
                 </tr>
                 <tr>
                   <td><strong>Training Hours</strong></td>
@@ -280,8 +280,8 @@ const QualificationPathway = () => {
                 <tr>
                   <td><strong>Timeline</strong></td>
                   <td>3-6 months</td>
-                  <td>12-24 months from ACIArb</td>
-                  <td>3-5 years from MCIArb</td>
+                  <td>12-24 months from ACIMArb</td>
+                  <td>3-5 years from MCIMArb</td>
                 </tr>
               </tbody>
             </table>
@@ -399,7 +399,7 @@ const QualificationPathway = () => {
               <Award size={36} />
               <h3>Professional Recognition</h3>
               <p>
-                Internationally recognized post-nominal designations (ACIArb, MCIArb, FCIArb) that demonstrate 
+                Internationally recognized post-nominal designations (ACIMArb, MCIMArb, FCIMArb) that demonstrate 
                 your commitment to ADR excellence and adherence to global standards.
               </p>
             </div>
@@ -465,17 +465,17 @@ const QualificationPathway = () => {
               
               <div className="cpd-requirements-grid">
                 <div className="cpd-requirement-card">
-                  <h4>Associate (ACIArb)</h4>
+                  <h4>Associate (ACIMArb)</h4>
                   <div className="cpd-hours">10 Hours</div>
                   <p>Annual CPD requirement</p>
                 </div>
                 <div className="cpd-requirement-card">
-                  <h4>Member (MCIArb)</h4>
+                  <h4>Member (MCIMArb)</h4>
                   <div className="cpd-hours">15 Hours</div>
                   <p>Annual CPD requirement</p>
                 </div>
                 <div className="cpd-requirement-card">
-                  <h4>Fellow (FCIArb)</h4>
+                  <h4>Fellow (FCIMArb)</h4>
                   <div className="cpd-hours">20 Hours</div>
                   <p>Annual CPD requirement</p>
                 </div>
@@ -507,11 +507,11 @@ const QualificationPathway = () => {
               <div className="testimonial-quote">"</div>
               <p>
                 "CIMA's structured pathway gave me the confidence and credentials to establish myself as 
-                a commercial arbitrator. The ACIArb to MCIArb progression was clear and well-supported."
+                a commercial arbitrator. The ACIMArb to MCIMArb progression was clear and well-supported."
               </p>
               <div className="testimonial-author">
                 <strong>Sarah M.</strong>
-                <span>Member (MCIArb), Kenya</span>
+                <span>Member (MCIMArb), Kenya</span>
               </div>
             </div>
 
@@ -523,7 +523,7 @@ const QualificationPathway = () => {
               </p>
               <div className="testimonial-author">
                 <strong>Dr. James O.</strong>
-                <span>Fellow (FCIArb), Nigeria</span>
+                <span>Fellow (FCIMArb), Nigeria</span>
               </div>
             </div>
 
@@ -535,7 +535,7 @@ const QualificationPathway = () => {
               </p>
               <div className="testimonial-author">
                 <strong>Amina K.</strong>
-                <span>Associate (ACIArb), Ghana</span>
+                <span>Associate (ACIMArb), Ghana</span>
               </div>
             </div>
           </div>

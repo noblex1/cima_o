@@ -162,7 +162,7 @@ const RollOfMediators = () => {
             </div>
 
             <div className="fellow-item">
-              <div className="fellow-name">Justin Peter Aytabsi (ACIArb, FCIMArb) (Republic of Ghana)</div>
+              <div className="fellow-name">Justin Peter Aytabsi (ACIMArb, FCIMArb) (Republic of Ghana)</div>
             </div>
           </div>
         </div>

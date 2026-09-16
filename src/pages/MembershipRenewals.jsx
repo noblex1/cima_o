@@ -29,11 +29,11 @@ const MembershipRenewals = () => {
               <p className="column-subtitle">Highly esteemed designations for mediator/arbitrators</p>
               <div className="fee-table">
                 <div className="fee-row">
-                  <span className="fee-label">ACIArb</span>
+                  <span className="fee-label">ACIMArb</span>
                   <span className="fee-amount">£60</span>
                 </div>
                 <div className="fee-row">
-                  <span className="fee-label">MCIArb</span>
+                  <span className="fee-label">MCIMArb</span>
                   <span className="fee-amount">£80</span>
                 </div>
               </div>
@@ -44,15 +44,15 @@ const MembershipRenewals = () => {
               <p className="column-subtitle">(granted from trainings)</p>
               <div className="fee-table">
                 <div className="fee-row">
-                  <span className="fee-label">ACIArb</span>
+                  <span className="fee-label">ACIMArb</span>
                   <span className="fee-amount">£40.00</span>
                 </div>
                 <div className="fee-row">
-                  <span className="fee-label">MCIArb</span>
+                  <span className="fee-label">MCIMArb</span>
                   <span className="fee-amount">£60.00</span>
                 </div>
                 <div className="fee-row">
-                  <span className="fee-label">FCIArb</span>
+                  <span className="fee-label">FCIMArb</span>
                   <span className="fee-amount">£100.00</span>
                 </div>
               </div>

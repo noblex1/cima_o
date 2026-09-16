@@ -73,7 +73,7 @@ const RegisterArbitrator = () => {
               <div className="tier-badge">
                 <Award size={24} />
               </div>
-              <h3>Associate Member (ACIArb)</h3>
+              <h3>Associate Member (ACIMArb)</h3>
               <div className="tier-requirements">
                 <h4>Minimum Requirements:</h4>
                 <ul className="requirements-list">
@@ -92,7 +92,7 @@ const RegisterArbitrator = () => {
               <div className="tier-badge">
                 <Award size={24} />
               </div>
-              <h3>Member (MCIArb)</h3>
+              <h3>Member (MCIMArb)</h3>
               <div className="tier-requirements">
                 <h4>Minimum Requirements:</h4>
                 <ul className="requirements-list">
@@ -112,7 +112,7 @@ const RegisterArbitrator = () => {
               <div className="tier-badge">
                 <Award size={24} />
               </div>
-              <h3>Fellow (FCIArb)</h3>
+              <h3>Fellow (FCIMArb)</h3>
               <div className="tier-requirements">
                 <h4>Minimum Requirements:</h4>
                 <ul className="requirements-list">
