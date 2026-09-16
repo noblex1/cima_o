@@ -11,6 +11,7 @@ import asiaAfricaPoster from '../../assets/WhatsApp Image 2026-08-21 at 08.15.32
 import cohortPoster from '../../assets/cohortf.jpeg'
 import certificate1 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.53.jpeg'
 import nycConvPoster from '../../gallery/nyc_conv.jpeg'
+import clauseBuilderImage from '../../assets/clause builder carousel.jpg'
 import summerSchoolBrochure from '../../assets/2026 CIMA Summer School (2) (1).pdf'
 import cohortBrochure from '../../assets/trusted/CIMA Summer School Extension.pdf'
 import asiaAfricaBrochure from '../../assets/Asia-Africa Mock Arbitration Flyer (1).pdf'
@@ -42,11 +43,27 @@ const heroImages = [
   { source: accraOneImage, alt: 'Professional business meeting in Accra' },
 ]
 
+const clauseBuilderSlide = {
+  type: 'clause-builder',
+  title: 'CLAUSE BUILDER',
+  subtitle: 'AI SUPERDRAFTER',
+  description: 'Draft smarter. Resolve with confidence.',
+  tagline: 'Intelligent arbitration agreements, tailored in minutes.',
+  features: [
+    { icon: 'brain', label: 'AI-GUIDED' },
+    { icon: 'globe', label: 'JURISDICTION-READY' },
+    { icon: 'eye', label: 'INSTANT PREVIEW' },
+    { icon: 'file', label: 'PROFESSIONAL OUTPUT' }
+  ]
+}
+
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
   const [statsCounted, setStatsCounted] = useState(false)
+  
+  const totalSlides = heroImages.length + 1 // +1 for clause builder slide
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -61,11 +78,11 @@ const Home = () => {
     if (isPaused || prefersReducedMotion) return undefined
 
     const timer = window.setInterval(() => {
-      setCurrentSlide((slide) => (slide + 1) % heroImages.length)
+      setCurrentSlide((slide) => (slide + 1) % totalSlides)
     }, 5000)
 
     return () => window.clearInterval(timer)
-  }, [isPaused, prefersReducedMotion])
+  }, [isPaused, prefersReducedMotion, totalSlides])
 
   // Counter animation for statistics
   useEffect(() => {
@@ -148,6 +165,24 @@ const Home = () => {
               aria-hidden={index !== currentSlide}
             />
           ))}
+          
+          {/* Clause Builder Slide */}
+          <div 
+            className={`hero-slide clause-builder-slide ${currentSlide === heroImages.length ? 'active' : ''}`}
+            aria-hidden={currentSlide !== heroImages.length}
+          >
+            <img
+              src={clauseBuilderImage}
+              alt="CIMA Clause Builder - AI Superdrafter"
+              className="clause-builder-image"
+            />
+            <div className="clause-builder-overlay"></div>
+            <div className="clause-builder-cta">
+              <Link to="/clause-builder" className="btn-clause-cta">
+                START DRAFTING →
+              </Link>
+            </div>
+          </div>
         </div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
@@ -171,12 +206,12 @@ const Home = () => {
           </div>
         </div>
         <div className="hero-controls" aria-label="Hero image controls">
-          {heroImages.map((image, index) => (
+          {[...Array(totalSlides)].map((_, index) => (
             <button
-              key={image.source}
+              key={index}
               type="button"
               className={`hero-dot${index === currentSlide ? ' active' : ''}`}
-              aria-label={`Show hero image ${index + 1}`}
+              aria-label={`Show slide ${index + 1}`}
               aria-current={index === currentSlide ? 'true' : undefined}
               onClick={() => setCurrentSlide(index)}
             />

@@ -2236,3 +2236,111 @@
     margin-bottom: 1.25rem;
   }
 }
+
+/* Clause Builder Slide Styles */
+.clause-builder-slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clause-builder-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.clause-builder-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  z-index: 1;
+}
+
+.clause-builder-cta {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  animation: slideUpFade 0.8s ease-out;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.btn-clause-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 3rem;
+  background: linear-gradient(135deg, #b49a67 0%, #9a8456 100%);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.btn-clause-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(180, 154, 103, 0.6);
+  background: linear-gradient(135deg, #c4aa77 0%, #aa9466 100%);
+}
+
+/* Hide default hero content when clause builder is active */
+.clause-builder-slide.active ~ .hero-overlay,
+.clause-builder-slide.active ~ .hero-content {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .clause-builder-cta {
+    bottom: 6%;
+  }
+
+  .btn-clause-cta {
+    padding: 1rem 2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clause-builder-cta {
+    bottom: 5%;
+  }
+
+  .btn-clause-cta {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.85rem;
+  }
+}
