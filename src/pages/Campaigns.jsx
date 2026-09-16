@@ -76,19 +76,36 @@ const Campaigns = () => {
             <div className="campaign-message">
               <h3>What Trainers Say</h3>
               <p>
-                "As Law Professors and Practitioners at Universities and Professional Institutes, we have a high sense of urgency in bringing the next generation of highly educated ADR practitioners who practice conflict resolution through research. We have joined CIMA because it helps us access professional recognition and credibility through a globally recognized professional grade."
+                "The CIMA Academy offers more than arbitration training—it is an intensive professional immersion combining academic rigor, world-class faculty, practical insight, and a global pathway to domestic and international practice."
               </p>
               
               <div className="trainer-profile">
                 <div className="trainer-image">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400" 
-                    alt="Annanto Dabo"
+                    src="/assets/talib.jpg" 
+                    alt="Mohammed Talib"
                   />
                 </div>
                 <div className="trainer-info">
-                  <h4>Annanto Dabo</h4>
-                  <p>ADR Lecturer, [Institution]</p>
+                  <h4>Mohammed Talib</h4>
+                  <p>Partner, PINSENT MASONS, International Arbitration Lecturer, HONG KONG</p>
+                </div>
+              </div>
+
+              <p className="trainer-quote-secondary">
+                "CIMA's integrated practice model produces more than qualified practitioners; it develops confident dispute-resolution leaders equipped to shape strategy, efficient proceedings and deliver results across jurisdictions."
+              </p>
+              
+              <div className="trainer-profile">
+                <div className="trainer-image">
+                  <img 
+                    src="/assets/mishar kumar.jpg" 
+                    alt="Dr Misha Kumar"
+                  />
+                </div>
+                <div className="trainer-info">
+                  <h4>Dr Misha Kumar</h4>
+                  <p>Managing Partner, MMK Chambers, International Arbitration Lecturer, INDIA</p>
                 </div>
               </div>
             </div>

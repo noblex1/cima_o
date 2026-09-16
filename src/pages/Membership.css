@@ -1341,8 +1341,8 @@
 
 .fee-amount {
   font-size: 2rem;
-  font-weight: 700;
-  color: var(--burgundy);
+  font-weight: 800;
+  color: #252525 !important;
   margin-bottom: 2rem;
 }
 
@@ -2304,8 +2304,8 @@
 
 .fee-amount {
   font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--burgundy);
+  font-weight: 800;
+  color: var(--burgundy-dark);
 }
 
 /* Payment Methods Section */

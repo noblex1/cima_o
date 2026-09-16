@@ -1540,15 +1540,16 @@
 .campaign-stat .stat-number {
   font-size: 3rem;
   font-weight: 800;
-  color: var(--burgundy);
+  color: #750000 !important;
   margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .campaign-stat .stat-label {
   font-size: 1.1rem;
-  color: var(--text-light);
-  font-weight: 500;
+  color: #2c2c2c !important;
+  font-weight: 600;
 }
 
 .campaign-message {
@@ -1610,6 +1611,14 @@
   color: var(--text-light);
   margin: 0;
   font-style: normal;
+}
+
+.trainer-quote-secondary {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin: 2.5rem 0 2rem 0;
+  font-style: italic;
 }
 
 .campaign-cta-section {
