@@ -29,6 +29,8 @@ import iainSharpImage from '../../assets/ian.jpeg'
 import amandaLeeImage from '../../assets/lee.jpeg'
 import accreditImage from '../../assets/accredit.jpeg'
 import businessFlyer from '../../assets/business.jpeg'
+import talibImage from '../../gallery/talib.jpg'
+import misharImage from '../../gallery/governance/mishar kumar.jpg'
 import iccLogo from '../../assets/arbitration-logos/icc-logo.png'
 import lciaLogo from '../../assets/arbitration-logos/lcia-logo.jpg'
 import siacLogo from '../../assets/arbitration-logos/siac-logo.jpg'
@@ -649,7 +651,11 @@ const Home = () => {
               <div className="testimonial-quote">"</div>
               <p>CIMA delivers rigorous, practice-led training through an exceptional international faculty, including distinguished professionals educated or trained at Oxford, Harvard and Cambridge.</p>
               <div className="testimonial-author">
-                <div className="author-name">Programme Participant</div>
+                <img src={talibImage} alt="Talib" className="author-image" />
+                <div className="author-info">
+                  <div className="author-name">Talib Ahmed</div>
+                  <div className="author-title">Programme Participant</div>
+                </div>
               </div>
             </div>
 
@@ -657,7 +663,11 @@ const Home = () => {
               <div className="testimonial-quote">"</div>
               <p>Participants learn from some of the world's finest arbitrators, mediators, judges, academics and practitioners, bringing exceptional global expertise to domestic and international dispute resolution.</p>
               <div className="testimonial-author">
-                <div className="author-name">Programme Participant</div>
+                <img src={misharImage} alt="Mishar Kumar" className="author-image" />
+                <div className="author-info">
+                  <div className="author-name">Mishar Kumar</div>
+                  <div className="author-title">Programme Participant</div>
+                </div>
               </div>
             </div>
 

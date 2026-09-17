@@ -2124,14 +2124,38 @@
 }
 
 .testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   border-top: 2px solid var(--burgundy);
   padding-top: 1rem;
+}
+
+.author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--burgundy);
+  flex-shrink: 0;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .author-name {
   font-weight: 700;
   color: var(--burgundy);
   font-size: 1rem;
+}
+
+.author-title {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
 }
 
 .testimonials-conclusion {
