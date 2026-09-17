@@ -1,8 +1,8 @@
 import React from 'react'
 import { Users, BookOpen, Award } from 'lucide-react'
 import './CommonPages.css'
-import talibImage from '../../gallery/talib.jpg'
-import misharImage from '../../gallery/governance/mishar kumar.jpg'
+import talibImage from '../../assets/talib.jpg'
+import misharImage from '../../assets/mishar-kumar.jpg'
 
 const Campaigns = () => {
   const faqs = [
