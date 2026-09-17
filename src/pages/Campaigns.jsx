@@ -1,6 +1,8 @@
 import React from 'react'
 import { Users, BookOpen, Award } from 'lucide-react'
 import './CommonPages.css'
+import talibImage from '../../gallery/talib.jpg'
+import misharImage from '../../gallery/governance/mishar kumar.jpg'
 
 const Campaigns = () => {
   const faqs = [
@@ -82,7 +84,7 @@ const Campaigns = () => {
               <div className="trainer-profile">
                 <div className="trainer-image">
                   <img 
-                    src="/assets/talib.jpg" 
+                    src={talibImage} 
                     alt="Mohammed Talib"
                   />
                 </div>
@@ -99,7 +101,7 @@ const Campaigns = () => {
               <div className="trainer-profile">
                 <div className="trainer-image">
                   <img 
-                    src="/assets/mishar kumar.jpg" 
+                    src={misharImage} 
                     alt="Dr Misha Kumar"
                   />
                 </div>
