@@ -235,21 +235,21 @@ const Home = () => {
               <div className="event-image">
                 <img 
                   src={cimaSponsorship} 
-                  alt="CIMA Sponsorship and Partnership Opportunities"
+                  alt="CIMA Gold Sponsor - Oxford Arbitration Day 2026"
                 />
               </div>
               <div className="event-content">
                 <div className="event-date">
                   <Calendar size={18} />
-                  <span>Ongoing</span>
+                  <span>27 November, 2026</span>
                 </div>
-                <h3>Partner with CIMA: Sponsorship and Collaboration Opportunities</h3>
-                <p className="event-description">Support excellence in international arbitration and mediation. Join leading institutions, law firms, and organisations in advancing global dispute resolution education and professional development.</p>
+                <h3>CIMA Gold Sponsor: Oxford Arbitration Day</h3>
+                <p className="event-description">CIMA is proud to be the Gold Sponsor of the Oxford Arbitration Day at the University of Oxford. Join the global arbitration community for this prestigious annual gathering advancing arbitration and mediation worldwide.</p>
                 <div className="event-actions">
-                  <Link to="/partnership" className="btn-event-register">
+                  <a href="https://www.thecima.org" target="_blank" rel="noreferrer" className="btn-event-register">
                     Learn More
-                  </Link>
-                  <a href="mailto:info@thecima.org?subject=Partnership Inquiry" className="btn-event-download">
+                  </a>
+                  <a href="mailto:info@thecima.org?subject=Oxford Arbitration Day 2026 Inquiry" className="btn-event-download">
                     Contact Us
                   </a>
                 </div>
