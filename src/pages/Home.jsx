@@ -113,10 +113,10 @@ const Home = () => {
 
   const animateCounters = () => {
     const counters = [
-      { id: 'stat-1', target: 7600, suffix: '+' },
-      { id: 'stat-2', target: 6300, suffix: '+' },
-      { id: 'stat-3', target: 4500, suffix: '+' },
-      { id: 'stat-4', target: 4500, suffix: '+' }
+      { id: 'stat-1', target: 1500, suffix: '+' },
+      { id: 'stat-2', target: 33, suffix: '+' },
+      { id: 'stat-3', target: 75, suffix: '+' },
+      { id: 'stat-4', target: 193, suffix: '+' }
     ]
 
     counters.forEach((counter) => {
@@ -351,19 +351,19 @@ const Home = () => {
           <div className="stats-grid">
             <div className="stat-item">
               <div className="stat-number" id="stat-1">0+</div>
-              <div className="stat-label">Africa</div>
+              <div className="stat-label">Professionals Trained</div>
             </div>
             <div className="stat-item">
               <div className="stat-number" id="stat-2">0+</div>
-              <div className="stat-label">Asia</div>
+              <div className="stat-label">Member Jurisdictions</div>
             </div>
             <div className="stat-item">
               <div className="stat-number" id="stat-3">0+</div>
-              <div className="stat-label">Latin America</div>
+              <div className="stat-label">Expert Instructors</div>
             </div>
             <div className="stat-item">
               <div className="stat-number" id="stat-4">0+</div>
-              <div className="stat-label">North America & Europe</div>
+              <div className="stat-label">Countries Covered</div>
             </div>
           </div>
         </div>

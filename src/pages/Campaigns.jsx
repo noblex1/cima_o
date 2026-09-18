@@ -46,16 +46,16 @@ const Campaigns = () => {
             
             <div className="campaign-stats">
               <div className="campaign-stat">
-                <div className="stat-number">150+</div>
-                <div className="stat-label">Partners</div>
+                <div className="stat-number">7600+</div>
+                <div className="stat-label">Africa</div>
               </div>
               <div className="campaign-stat">
-                <div className="stat-number">1300+</div>
-                <div className="stat-label">Trained Lawyers</div>
+                <div className="stat-number">6300+</div>
+                <div className="stat-label">Asia</div>
               </div>
               <div className="campaign-stat">
-                <div className="stat-number">54+</div>
-                <div className="stat-label">AI Agents</div>
+                <div className="stat-number">4500+</div>
+                <div className="stat-label">Latin America</div>
               </div>
             </div>
 
