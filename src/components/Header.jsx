@@ -59,7 +59,7 @@ const Header = () => {
               <Link to="/about" className="dropdown-item" onClick={closeMobileMenu}>About CIMA</Link>
               <Link to="/governance" className="dropdown-item" onClick={closeMobileMenu}>Governance & Leadership</Link>
               <Link to="/oxfordshire" className="dropdown-item" onClick={closeMobileMenu}>Oxfordshire</Link>
-              <Link to="/campaigns" className="dropdown-item" onClick={closeMobileMenu}>Campaigns</Link>
+              <Link to="/campaigns" className="dropdown-item" onClick={closeMobileMenu}>Faculty Perspectives</Link>
               <Link to="/news" className="dropdown-item" onClick={closeMobileMenu}>News</Link>
               <Link to="/blog" className="dropdown-item" onClick={closeMobileMenu}>Blog</Link>
               <Link to="/resources" className="dropdown-item" onClick={closeMobileMenu}>Resources</Link>
