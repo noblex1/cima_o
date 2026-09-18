@@ -34,7 +34,7 @@ const Campaigns = () => {
       <section className="page-hero campaigns-hero">
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1 className="page-title">Campaigns</h1>
+          <h1 className="page-title">Faculty Perspectives</h1>
         </div>
       </section>
 
@@ -64,19 +64,19 @@ const Campaigns = () => {
               <div className="split-image-item">
                 <img 
                   src={talibImage} 
-                  alt="Mohammed Talib - CIMA Trainer"
+                  alt="Mohammed Talib - CIMA Lecturer"
                 />
               </div>
               <div className="split-image-item">
                 <img 
                   src={misharImage} 
-                  alt="Dr Misha Kumar - CIMA Trainer"
+                  alt="Dr Misha Kumar - CIMA Lecturer"
                 />
               </div>
             </div>
 
             <div className="campaign-message">
-              <h3>What Trainers Say</h3>
+              <h3>What Our Lecturers Say</h3>
               <p>
                 "The CIMA Academy offers more than arbitration training—it is an intensive professional immersion combining academic rigor, world-class faculty, practical insight, and a global pathway to domestic and international practice."
               </p>
