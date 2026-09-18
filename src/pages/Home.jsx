@@ -79,7 +79,7 @@ const Home = () => {
 
     const timer = window.setInterval(() => {
       setCurrentSlide((slide) => (slide + 1) % totalSlides)
-    }, 5000)
+    }, 3000)
 
     return () => window.clearInterval(timer)
   }, [isPaused, prefersReducedMotion, totalSlides])
