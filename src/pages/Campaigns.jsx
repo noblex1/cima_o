@@ -63,14 +63,14 @@ const Campaigns = () => {
             <div className="campaign-image-split">
               <div className="split-image-item">
                 <img 
-                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084" 
-                  alt="Team collaboration"
+                  src={talibImage} 
+                  alt="Mohammed Talib - CIMA Trainer"
                 />
               </div>
               <div className="split-image-item">
                 <img 
-                  src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069" 
-                  alt="Professional workspace"
+                  src={misharImage} 
+                  alt="Dr Misha Kumar - CIMA Trainer"
                 />
               </div>
             </div>
