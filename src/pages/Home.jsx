@@ -12,7 +12,7 @@ import cohortPoster from '../../assets/cohortf.jpeg'
 import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.01.jpeg'
 import certificate1 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.53.jpeg'
 import nycConvPoster from '../../gallery/nyc_conv.jpeg'
-import clauseBuilderImage from '../../assets/clause builder carousel.jpg'
+import clauseBuilderImage from '../../assets/new-carousel.jpeg'
 import cohortBrochure from '../../assets/trusted/CIMA Summer School Extension.pdf'
 import asiaAfricaBrochure from '../../assets/Asia-Africa Mock Arbitration Flyer (1).pdf'
 import logo1 from '../../assets/trusted/trustedby/AAA.png'
@@ -166,23 +166,13 @@ const Home = () => {
             />
           ))}
           
-          {/* Clause Builder Slide */}
-          <div 
-            className={`hero-slide clause-builder-slide ${currentSlide === heroImages.length ? 'active' : ''}`}
-            aria-hidden={currentSlide !== heroImages.length}
-          >
-            <img
-              src={clauseBuilderImage}
-              alt="CIMA Clause Builder - AI Superdrafter"
-              className="clause-builder-image"
-            />
-            <div className="clause-builder-overlay"></div>
-            <div className="clause-builder-cta">
-              <Link to="/clause-builder" className="btn-clause-cta">
-                START DRAFTING →
-              </Link>
-            </div>
-          </div>
+          {/* New Carousel Slide */}
+          <img
+            src={clauseBuilderImage}
+            alt="CIMA - Advancing Arbitration and Mediation"
+            className="hero-image"
+            aria-hidden={heroImages.length !== currentSlide}
+          />
         </div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
