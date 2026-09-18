@@ -246,10 +246,7 @@ const Home = () => {
                 <h3>CIMA Gold Sponsor: Oxford Arbitration Day</h3>
                 <p className="event-description">CIMA is proud to be the Gold Sponsor of the Oxford Arbitration Day at the University of Oxford. Join the global arbitration community for this prestigious annual gathering advancing arbitration and mediation worldwide.</p>
                 <div className="event-actions">
-                  <a href="https://www.thecima.org" target="_blank" rel="noreferrer" className="btn-event-register">
-                    Learn More
-                  </a>
-                  <a href="mailto:info@thecima.org?subject=Oxford Arbitration Day 2026 Inquiry" className="btn-event-download">
+                  <a href="mailto:info@thecima.org?subject=Oxford Arbitration Day 2026 Inquiry" className="btn-event-register" style={{ width: '100%' }}>
                     Contact Us
                   </a>
                 </div>
