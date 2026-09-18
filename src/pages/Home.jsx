@@ -6,13 +6,13 @@ import heroImage from '../../assets/LONDON.jpg'
 import chinaImage from '../../assets/CHINA-1.jpg'
 import accraTwoImage from '../../assets/ACCRA-2.jpg'
 import accraOneImage from '../../assets/ACCRA-1.jpg'
-import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.01.jpeg'
+import cimaSponsorship from '../../assets/cima-sponsor.jpeg'
 import asiaAfricaPoster from '../../assets/WhatsApp Image 2026-08-21 at 08.15.32.jpeg'
 import cohortPoster from '../../assets/cohortf.jpeg'
+import summerSchoolPoster from '../../assets/WhatsApp Image 2026-08-22 at 17.14.01.jpeg'
 import certificate1 from '../../assets/WhatsApp Image 2026-08-25 at 18.29.53.jpeg'
 import nycConvPoster from '../../gallery/nyc_conv.jpeg'
 import clauseBuilderImage from '../../assets/clause builder carousel.jpg'
-import summerSchoolBrochure from '../../assets/2026 CIMA Summer School (2) (1).pdf'
 import cohortBrochure from '../../assets/trusted/CIMA Summer School Extension.pdf'
 import asiaAfricaBrochure from '../../assets/Asia-Africa Mock Arbitration Flyer (1).pdf'
 import logo1 from '../../assets/trusted/trustedby/AAA.png'
@@ -234,22 +234,23 @@ const Home = () => {
             <div className="event-card">
               <div className="event-image">
                 <img 
-                  src={summerSchoolPoster} 
-                  alt="CIMA Summer School"
+                  src={cimaSponsorship} 
+                  alt="CIMA Sponsorship and Partnership Opportunities"
                 />
               </div>
               <div className="event-content">
                 <div className="event-date">
                   <Calendar size={18} />
-                  <span>26 Aug - 4 Sept, 2026</span>
+                  <span>Ongoing</span>
                 </div>
-                <h3>2026 CIMA Summer School on International Arbitration</h3>
+                <h3>Partner with CIMA: Sponsorship and Collaboration Opportunities</h3>
+                <p className="event-description">Support excellence in international arbitration and mediation. Join leading institutions, law firms, and organisations in advancing global dispute resolution education and professional development.</p>
                 <div className="event-actions">
-                  <Link to="/events/summer-school-2026" className="btn-event-register">
-                    Register
+                  <Link to="/partnership" className="btn-event-register">
+                    Learn More
                   </Link>
-                  <a href={summerSchoolBrochure} download="CIMA_Summer_School_2026_Brochure.pdf" className="btn-event-download">
-                    Download Brochure
+                  <a href="mailto:info@thecima.org?subject=Partnership Inquiry" className="btn-event-download">
+                    Contact Us
                   </a>
                 </div>
               </div>

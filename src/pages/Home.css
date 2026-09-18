@@ -855,6 +855,14 @@
   flex-grow: 1;
 }
 
+.event-description {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
 /* Student Success Stories - Card Style */
 .success-stories {
   padding: 6rem 0;
