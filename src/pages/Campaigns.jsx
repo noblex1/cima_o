@@ -1,7 +1,7 @@
 import React from 'react'
 import { Users, BookOpen, Award } from 'lucide-react'
 import './CommonPages.css'
-import talibImage from '../../assets/talib.jpg'
+import talibImage from '../../assets/talib-new-pic.jpeg'
 import misharImage from '../../assets/mishar-new-photo.jpeg'
 
 const Campaigns = () => {
@@ -78,7 +78,7 @@ const Campaigns = () => {
             <div className="campaign-message">
               <h3>What Our Lecturers Say</h3>
               <p>
-                "The CIMA Academy offers more than arbitration training—it is an intensive professional immersion combining academic rigor, world-class faculty, practical insight, and a global pathway to domestic and international practice."
+                "The CIMA Academy offers more than arbitral training—it is an intensive professional immersion combining academic rigor, world-class faculty, practical insight, and a global pathway to domestic and international practice."
               </p>
               
               <div className="trainer-profile">
